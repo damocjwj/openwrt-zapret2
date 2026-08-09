@@ -1,0 +1,33 @@
+{
+	"admin/services/zapret2": {
+		"title": "Zapret2",
+		"order": 66,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [ "luci-app-zapret2" ],
+			"uci": { "zapret2": true }
+		}
+	},
+	"admin/services/zapret2/config": {
+		"title": "Plugin configuration",
+		"order": 10,
+		"action": { "type": "view", "path": "zapret2/v4r10/config" }
+	},
+	"admin/services/zapret2/profiles": {
+		"title": "Strategy configuration",
+		"order": 20,
+		"action": { "type": "view", "path": "zapret2/v4r10/profiles" }
+	},
+	"admin/services/zapret2/lists": {
+		"title": "Local lists",
+		"order": 30,
+		"action": { "type": "view", "path": "zapret2/v4r10/lists" }
+	},
+	"admin/services/zapret2/log": {
+		"title": "Log",
+		"order": 40,
+		"action": { "type": "view", "path": "zapret2/v4r10/log" }
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"luci-app-zapret2": {
+		"description": "Grant access to the Zapret2 OpenWrt adapter",
+		"read": {
+			"ubus": {
+				"zapret2": [ "info", "status", "runtime", "validate", "plan", "list_index", "list_get", "log" ]
+			},
+			"uci": [ "zapret2" ]
+		},
+		"write": {
+			"ubus": {
+				"zapret2": [ "service", "list_put", "list_delete", "list_clear" ]
+			},
+			"uci": [ "zapret2" ]
+		}
+	}
+}

@@ -1,0 +1,12 @@
+# Optional integration example. Nikki assigns a generic routing mark to a
+# direct outbound; Zapret2 may consume the same mark through include_mark.
+# Replace the domains and mark with values reserved in your own policy.
+nikki-proxies:
+  - name: ZAPRET2-DIRECT
+    type: direct
+    udp: true
+    routing-mark: 268435456
+
+nikki-rules:
+  - DOMAIN,www.example.cn,ZAPRET2-DIRECT
+  - DOMAIN-SUFFIX,example.cn,ZAPRET2-DIRECT

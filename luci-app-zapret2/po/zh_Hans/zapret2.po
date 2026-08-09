@@ -1,0 +1,2377 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-zapret2 4.0.0-r10\n"
+"PO-Revision-Date: 2026-08-09 15:00+0800\n"
+"Last-Translator: Damoc\n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:180
+msgid "Acknowledge all-traffic risk"
+msgstr "确认全部流量模式的风险"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:77
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:489
+msgid "Actions"
+msgstr "操作"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:718
+msgid "Add"
+msgstr "添加"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:650
+msgid "Add HTTP preset"
+msgstr "添加 HTTP 预设"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:670
+msgid "Add QUIC preset"
+msgstr "添加 QUIC 预设"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:660
+msgid "Add TLS preset"
+msgstr "添加 TLS 预设"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:640
+msgid "Add blank profile"
+msgstr "添加空白 Profile"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:693
+msgid "Add ordered step"
+msgstr "添加有序步骤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:517
+msgid "Add step"
+msgstr "添加步骤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1026
+msgid "Address family"
+msgstr "地址族"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:169
+msgid "Advanced runtime"
+msgstr "高级运行参数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:9
+msgid "Alert"
+msgstr "警报"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:177
+msgid "All eligible traffic"
+msgstr "全部符合条件的流量"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:180
+#, fuzzy
+msgid ""
+"All mode may include proxy or VPN tunnels unless an external mark excludes "
+"them."
+msgstr "“全部”模式也可能接管代理或 VPN 隧道，除非外部为其打标并在此排除。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:9
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:801
+msgid "Any"
+msgstr "任意"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:62
+msgid "Applied"
+msgstr "已应用"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:136
+#, fuzzy
+msgid "Applied argv"
+msgstr "已应用"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:142
+msgid "Applied nftables rules"
+msgstr "已应用的 nftables 规则"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:131
+#, fuzzy
+msgid "Applied runtime details"
+msgstr "已应用的 nftables 规则"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:102
+msgid "Applied runtime details were refreshed."
+msgstr "已刷新当前应用的运行详情。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:63
+msgid "Atomically clear the engine-managed automatic hostlist for %s?"
+msgstr "要以原子方式清空由引擎管理的 %s 自动主机列表吗？"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:191
+msgid ""
+"Autohostlist requires conntrack and will be rejected when this is enabled."
+msgstr "自动主机列表依赖连接跟踪，启用此项时相关配置会被拒绝。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:83
+#, fuzzy
+msgid "Automatic domain lists"
+msgstr "排除的域名列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:334
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1018
+#, fuzzy
+msgid "Automatic hostlist"
+msgstr "域名列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:26
+msgid "Automatic refresh is paused."
+msgstr "自动刷新已暂停。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:169
+#, fuzzy
+msgid "Basic settings"
+msgstr "全局设置"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:58
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:824
+#, fuzzy
+msgid "Blob or clone ID"
+msgstr "内置或克隆的 Blob"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:190
+msgid "Cache hostnames by IP"
+msgstr "按 IP 缓存主机名"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:46
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:704
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:83
+msgid "Cancel"
+msgstr "取消"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:72
+msgid "Clear"
+msgstr "清空"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:63
+msgid "Clear automatic hostlist"
+msgstr "清空自动主机列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:33
+msgid "Clone TLS ClientHello"
+msgstr "克隆 TLS ClientHello"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:59
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:828
+#, fuzzy
+msgid "Clone fallback blob"
+msgstr "TLS 克隆回退 Blob"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:381
+msgid "Collapse steps (%d)"
+msgstr "收起步骤（%d）"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:46
+msgid "Configuration"
+msgstr "配置"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:161
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:995
+msgid ""
+"Configuration is read-only until the core API and schema versions match."
+msgstr "在核心 API 与配置结构版本匹配之前，配置将保持只读。"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:91
+#, fuzzy
+msgid "Confirm"
+msgstr "配置"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:181
+msgid "Connection tracking mark"
+msgstr "连接跟踪标记"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:44
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:50
+msgid "Copied to clipboard."
+msgstr "已复制到剪贴板。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:139
+#, fuzzy
+msgid "Copy argv"
+msgstr "复制规则"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:59
+#, fuzzy
+msgid "Copy log"
+msgstr "复制规则"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:143
+msgid "Copy rules"
+msgstr "复制规则"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:680
+msgid "Create a profile before adding a step."
+msgstr "请先创建 Profile，再添加步骤。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:84
+msgid "Create list"
+msgstr "创建列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:39
+msgid "Create local list"
+msgstr "创建本地列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:10
+msgid "Critical"
+msgstr "严重"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:44
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:87
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:896
+msgid "DHT directory number"
+msgstr "DHT 目录编号"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:11
+msgid "Debug"
+msgstr "调试"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:188
+msgid "Debug logging"
+msgstr "调试日志"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:52
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:803
+msgid "Delay (milliseconds)"
+msgstr "延迟（毫秒）"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:60
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:75
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:296
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:366
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:459
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:609
+msgid "Delete"
+msgstr "删除"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:60
+#, fuzzy
+msgid "Delete list %s?"
+msgstr "删除本地列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:60
+msgid "Delete local list"
+msgstr "删除本地列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:294
+msgid "Delete profile"
+msgstr "删除 Profile"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:366
+msgid "Delete step"
+msgstr "删除步骤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:295
+#, fuzzy
+msgid "Delete this Profile and all of its ordered steps?"
+msgstr "删除 Profile %s 及其全部有序步骤？"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:366
+msgid "Delete this processing step?"
+msgstr "删除此处理步骤？"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:135
+msgid "Diagnostics"
+msgstr "诊断信息"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:798
+msgid "Direction"
+msgstr "方向"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:191
+msgid "Disable nfqws2 conntrack"
+msgstr "禁用 nfqws2 连接跟踪"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:194
+msgid "Disable payload detectors"
+msgstr "禁用 Payload 检测器"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:195
+msgid "Disable reassembly"
+msgstr "禁用重组"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:29
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:548
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:64
+msgid "Disabled"
+msgstr "已禁用"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:77
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:879
+msgid "Disorder-after position"
+msgstr "乱序后置位置"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:32
+msgid "Domain"
+msgstr "域名"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1016
+msgid "Domain filtering"
+msgstr "域名过滤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:83
+msgid "Domain lists"
+msgstr "域名列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:43
+msgid ""
+"Domain lists accept domains and ^exact.domain. IP lists accept IPv4, IPv6 "
+"and CIDR. Empty lines and # comments are allowed."
+msgstr ""
+"域名列表接受普通域名和 ^精确域名；IP 列表接受 IPv4、IPv6 和 CIDR。允许空行和"
+"以 # 开头的注释。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:560
+msgid "Domain/IP filters: %s"
+msgstr "域名/IP 过滤：%s"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:332
+msgid "Domains +%d / −%d"
+msgstr "域名 +%d / −%d"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:449
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:599
+msgid "Down"
+msgstr "下移"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:22
+#, fuzzy
+msgid "Drop packet"
+msgstr "UDP 回向包数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:628
+msgid ""
+"Each Profile contains traffic matching conditions and ordered processing "
+"steps. Once it matches, later Profiles are not evaluated."
+msgstr ""
+"每个 Profile 由流量匹配条件和有序处理步骤组成。匹配成功后，不再检查后续 "
+"Profile。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:74
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:427
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:577
+msgid "Edit"
+msgstr "编辑"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:39
+msgid "Edit local list"
+msgstr "编辑本地列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:484
+msgid "Effective context"
+msgstr "生效上下文"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:9
+msgid "Emergency"
+msgstr "紧急"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:102
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:934
+msgid "Enable IP fragmentation"
+msgstr "启用 IP 分片"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:170
+msgid "Enable Zapret2"
+msgstr "启用 Zapret2"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1093
+msgid "Enable managed automatic hostlist"
+msgstr "启用托管自动主机列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:548
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1024
+msgid "Enabled"
+msgstr "已启用"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1065
+msgid "Enter a domain or ^exact.domain."
+msgstr "输入域名或 ^精确域名。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:857
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:873
+#, fuzzy
+msgid "Enter a hostname without ^."
+msgstr "请输入不带精确匹配前缀的主机名。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1066
+msgid "Enter an IPv4/IPv6 address or CIDR."
+msgstr "输入 IPv4/IPv6 地址或 CIDR。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:813
+#, fuzzy
+msgid "Enter exactly four ASCII letters."
+msgstr "请恰好输入四个 ASCII 字母。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:77
+msgid "Entries"
+msgstr "条目数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:10
+msgid "Error"
+msgstr "错误"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:192
+msgid "Established timeout"
+msgstr "已建立连接超时"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:179
+msgid "Exclude packet marks"
+msgstr "排除数据包标记"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1059
+#, fuzzy
+msgid "Excluded IP addresses"
+msgstr "排除的 IP 列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1074
+msgid "Excluded IP lists"
+msgstr "排除的 IP 列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1072
+msgid "Excluded domain lists"
+msgstr "排除的域名列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1057
+#, fuzzy
+msgid "Excluded domains"
+msgstr "排除的域名列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:179
+msgid "Exclusion always takes precedence."
+msgstr "排除规则始终优先。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:71
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:848
+msgid "Existing SNI name type"
+msgstr "现有 SNI 名称类型"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:381
+msgid "Expand steps (%d)"
+msgstr "展开步骤（%d）"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:71
+msgid "Export"
+msgstr "导出"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:192
+msgid "FIN timeout"
+msgstr "FIN 超时"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1097
+msgid "Failure threshold"
+msgstr "失败阈值"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1098
+#, fuzzy
+msgid "Failure window (seconds)"
+msgstr "流量窗口大小"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:39
+msgid "Fake disorder"
+msgstr "伪造乱序"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:40
+msgid "Fake host split"
+msgstr "伪造主机名拆分"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:34
+msgid "Fake packet"
+msgstr "伪造数据包"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:38
+msgid "Fake split"
+msgstr "伪造拆分"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:31
+msgid "Flow window size"
+msgstr "流量窗口大小"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:57
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:821
+msgid "Forced cutoff payloads"
+msgstr "强制截止的 Payload"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:174
+msgid "Forward source networks"
+msgstr "转发流量来源网络"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:753
+msgid "Function default"
+msgstr "函数默认值"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:733
+#, fuzzy
+msgid "Function defaults"
+msgstr "函数默认值"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:52
+msgid "Generated"
+msgstr "生成包"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:181
+msgid "Generated packet mark"
+msgstr "生成包标记"
+
+#: root/usr/share/rpcd/acl.d/luci-app-zapret2.json:3
+#, fuzzy
+msgid "Grant access to the Zapret2 OpenWrt adapter"
+msgstr "授予访问 Zapret2 流量选择服务的权限"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:26
+msgid "HTTP Host header case"
+msgstr "HTTP Host 标头大小写"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:54
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:809
+msgid "HTTP Host spelling"
+msgstr "HTTP Host 拼写"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:29
+msgid "HTTP Unix line endings"
+msgstr "HTTP Unix 换行符"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:27
+msgid "HTTP domain case"
+msgstr "HTTP 域名大小写"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:28
+msgid "HTTP method line break"
+msgstr "HTTP 方法前换行"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:76
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:871
+msgid "Host template"
+msgstr "主机名模板"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1038
+msgid "ICMP type and code"
+msgstr "ICMP 类型和代码"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:77
+msgid "ID"
+msgstr "标识符"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:32
+msgid "IP address"
+msgstr "IP 地址"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:83
+#, fuzzy
+msgid "IP address lists"
+msgstr "IP 列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:190
+msgid "IP cache lifetime (seconds)"
+msgstr "IP 缓存有效期（秒）"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1017
+msgid "IP filtering"
+msgstr "IP 过滤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:777
+msgid "IP fragmentation"
+msgstr "IP 分片"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1041
+#, fuzzy
+msgid "IP protocols"
+msgstr "应用层协议"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:321
+#, fuzzy
+msgid "IP protocols %s"
+msgstr "应用层协议"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:333
+msgid "IPs +%d / −%d"
+msgstr "IP +%d / −%d"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:311
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1027
+msgid "IPv4 + IPv6"
+msgstr "IPv4 + IPv6"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:100
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:928
+msgid "IPv4 IP ID policy"
+msgstr "IPv4 IP ID 策略"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:189
+msgid "IPv4 PBR bind fix"
+msgstr "IPv4 PBR 绑定修复"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:89
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:903
+msgid "IPv4 TTL"
+msgstr "IPv4 TTL"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:91
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:913
+msgid "IPv4 automatic TTL"
+msgstr "IPv4 自动 TTL"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:90
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:904
+msgid "IPv6 Hop Limit"
+msgstr "IPv6 跳数限制"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:189
+msgid "IPv6 PBR bind fix"
+msgstr "IPv6 PBR 绑定修复"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:92
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:914
+msgid "IPv6 automatic Hop Limit"
+msgstr "IPv6 自动跳数限制"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:42
+msgid "Import local text file"
+msgstr "导入本地文本文件"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:800
+msgid "Inbound"
+msgstr "入站"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:21
+msgid "Inbound range"
+msgstr "入站范围"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:178
+msgid "Include packet marks"
+msgstr "包含数据包标记"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1058
+#, fuzzy
+msgid "Included IP addresses"
+msgstr "包含的 IP 列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1073
+msgid "Included IP lists"
+msgstr "包含的 IP 列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1071
+msgid "Included domain lists"
+msgstr "包含的域名列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1056
+#, fuzzy
+msgid "Included domains"
+msgstr "包含的域名列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:177
+msgid "Included packet marks only"
+msgstr "仅包含匹配标记的数据包"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:66
+msgid "Incompatible schema"
+msgstr "配置格式不兼容"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:11
+msgid "Info"
+msgstr "信息"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1032
+#, fuzzy
+msgid "Initial packets"
+msgstr "包含数据包标记"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:177
+msgid "Interception mode"
+msgstr "流量接管模式"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1033
+msgid "Keep matching packets queued"
+msgstr "持续将匹配的数据包加入队列"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:25
+msgid "Last refresh failed: %s"
+msgstr "最近一次刷新失败：%s"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:26
+msgid "Last updated: %s · refresh interval: %s seconds"
+msgstr "最近更新：%s · 刷新间隔：%s 秒"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1050
+#, fuzzy
+msgid "Layer-7 protocols"
+msgstr "应用层协议"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:37
+msgid "Legacy multiple disorder"
+msgstr "传统多段乱序"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:40
+msgid "List ID"
+msgstr "列表 ID"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:41
+#, fuzzy
+msgid "List type"
+msgstr "步骤类型"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:140
+#, fuzzy
+msgid "Load applied nftables rules"
+msgstr "已应用的 nftables 规则"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:88
+#, fuzzy
+msgid "Loading applied runtime details…"
+msgstr "候选配置与已应用运行状态"
+
+#: root/usr/share/luci/menu.d/luci-app-zapret2.json:24
+msgid "Local lists"
+msgstr "本地列表"
+
+#: root/usr/share/luci/menu.d/luci-app-zapret2.json:29
+msgid "Log"
+msgstr "日志"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1121
+msgid "Log automatic hostlist decisions"
+msgstr "记录自动主机列表判定"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:193
+msgid "Lua garbage collection interval"
+msgstr "Lua 垃圾回收间隔"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:775
+#, fuzzy
+msgid "Main action"
+msgstr "UDP 动作"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:134
+msgid "Manifest"
+msgstr "清单"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1015
+#, fuzzy
+msgid "Matching conditions"
+msgstr "步骤与条件"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:85
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:894
+msgid "Maximum UDP length"
+msgstr "UDP 最大长度"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1101
+msgid "Maximum incoming sequence"
+msgstr "最大入向序列值"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1100
+msgid "Maximum retransmission sequence"
+msgstr "最大重传序列值"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:84
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:893
+msgid "Minimum UDP length"
+msgstr "UDP 最小长度"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:24
+msgid "Modify packet"
+msgstr "修改数据包"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:36
+msgid "Multiple disorder"
+msgstr "多段乱序"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:35
+msgid "Multiple split"
+msgstr "多段拆分"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:185
+msgid "NFQUEUE number"
+msgstr "NFQUEUE 队列号"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1022
+msgid "Name"
+msgstr "名称"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:72
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:849
+msgid "New SNI name type"
+msgstr "新 SNI 名称类型"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:104
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:908
+msgid "Next-header value"
+msgstr "下一标头值"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:413
+#, fuzzy
+msgid "No"
+msgstr "排除"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:335
+msgid "No domain or IP filter"
+msgstr "未设置域名或 IP 过滤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:78
+#, fuzzy
+msgid "No lists available."
+msgstr "没有可用的本地列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1081
+msgid "No local lists available"
+msgstr "没有可用的本地列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:341
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:493
+msgid "No processing steps"
+msgstr "未设置处理步骤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:616
+#, fuzzy
+msgid "No profiles configured."
+msgstr "尚未配置 Profile"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:77
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:81
+msgid "Not"
+msgstr "排除"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:726
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:728
+msgid "Not configured"
+msgstr "尚未配置"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:15
+msgid ""
+"Not validated. Saving will validate again before writing this configuration."
+msgstr "尚未校验。保存时会在写入此配置前再次校验。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:11
+msgid "Notice"
+msgstr "通知"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:81
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:890
+msgid "OOB byte"
+msgstr "OOB 字节"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:82
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:891
+msgid "OOB urgent pointer"
+msgstr "OOB 紧急指针"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:188
+msgid "Off"
+msgstr "关闭"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:166
+msgid ""
+"OpenWrt traffic interception is configured separately from ordered upstream "
+"Zapret2 profiles."
+msgstr "OpenWrt 流量接管层与上游语义的有序 Zapret2 Profile 分开配置。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:482
+msgid "Order"
+msgstr "顺序"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:51
+#, fuzzy
+msgid "Other out / in"
+msgstr "TCP 原向 / 回向"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+#, fuzzy
+msgid "Other protocol outbound packets"
+msgstr "TCP 原向包数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+#, fuzzy
+msgid "Other protocol reply packets"
+msgstr "TCP 回程包数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:799
+msgid "Outbound"
+msgstr "出站"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:20
+msgid "Outbound range"
+msgstr "出站范围"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:40
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:47
+msgid "PID"
+msgstr "PID"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:776
+msgid "Packet headers and sending"
+msgstr "数据包标头与发送"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:622
+msgid ""
+"Packet interception → first matching enabled Profile → ordered processing "
+"steps"
+msgstr "流量接管 → 首个匹配的已启用 Profile → 按顺序执行处理步骤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:86
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:895
+#, fuzzy
+msgid "Pattern offset"
+msgstr "填充模式 Blob"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:57
+msgid "Pause automatic refresh"
+msgstr "暂停自动刷新"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:507
+msgid ""
+"Payload and range conditions apply only to actions that follow them in this "
+"Profile."
+msgstr "Payload 和范围条件仅影响同一 Profile 中位于其后的动作。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:697
+#, fuzzy
+msgid ""
+"Payload and range steps affect only actions that follow them in this Profile."
+msgstr ""
+"Payload 和范围步骤只影响其后的动作。请选择插入位置，以保持上游 Zapret2 命令顺"
+"序。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:773
+msgid "Payload and range steps affect only later actions in this Profile."
+msgstr "Payload 和范围步骤仅影响此 Profile 中排在其后的动作。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:772
+#, fuzzy
+msgid "Payload and ranges"
+msgstr "载荷类型"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:19
+msgid "Payload filter"
+msgstr "Payload 过滤器"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:784
+msgid "Payload values"
+msgstr "载荷类型"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:168
+#: root/usr/share/luci/menu.d/luci-app-zapret2.json:14
+msgid "Plugin configuration"
+msgstr "插件配置"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:75
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:863
+msgid "Position expression"
+msgstr "位置表达式"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:171
+msgid "Process IPv4"
+msgstr "处理 IPv4"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:171
+msgid "Process IPv6"
+msgstr "处理 IPv6"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:173
+msgid "Process forwarded traffic"
+msgstr "处理转发流量"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:175
+msgid "Process router-local traffic"
+msgstr "处理路由器本机流量"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:565
+msgid "Processing steps: %s"
+msgstr "处理步骤：%s"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1019
+#, fuzzy
+msgid "Profile ID"
+msgstr "Profile"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:40
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:48
+msgid "Profiles"
+msgstr "Profile"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1031
+msgid "Queue mode"
+msgstr "队列模式"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:169
+#, fuzzy
+msgid "Queue settings"
+msgstr "有效设置"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:930
+msgid "Random"
+msgstr "随机"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:50
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:790
+#, fuzzy
+msgid "Range expression"
+msgstr "位置表达式"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:77
+msgid "Referenced by"
+msgstr "引用方"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:75
+#, fuzzy
+msgid "Referenced lists cannot be deleted or renamed."
+msgstr "删除 %s？被 Profile 引用的列表无法删除。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:44
+msgid ""
+"Referenced lists may be edited, but their ID and type are locked until all "
+"Profile references are removed."
+msgstr ""
+"可以编辑被引用列表的内容，但在移除所有策略引用前，其 ID 和类型将保持锁定。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:84
+#, fuzzy
+msgid "Refresh"
+msgstr "刷新日志"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:58
+#, fuzzy
+msgid "Refresh now"
+msgstr "刷新日志"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:138
+#, fuzzy
+msgid "Refresh runtime details"
+msgstr "刷新运行状态"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:125
+msgid "Reload"
+msgstr "重新加载"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:63
+msgid "Reload required"
+msgstr "需要重新加载"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:53
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:804
+msgid "Repeats"
+msgstr "重复次数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1113
+msgid "Reset retransmission counter"
+msgstr "重置重传计数器"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:42
+msgid "Resume automatic refresh"
+msgstr "恢复自动刷新"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1099
+msgid "Retransmission threshold"
+msgstr "重传阈值"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:103
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:935
+msgid "Reverse fragment order"
+msgstr "反向发送分片"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:28
+msgid "Running"
+msgstr "运行中"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:32
+msgid "SYN payload"
+msgstr "SYN Payload"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:192
+msgid "SYN timeout"
+msgstr "SYN 超时"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:88
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:897
+msgid "SYN/ACK split mode"
+msgstr "SYN/ACK 拆分模式"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:30
+msgid "SYN/ACK window size"
+msgstr "SYN/ACK 窗口大小"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:51
+#, fuzzy
+msgid "Save list"
+msgstr "创建列表"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:973
+msgid ""
+"Save validates again before writing. Save & Apply validates, writes the "
+"configuration, then reloads the service."
+msgstr "保存会再次校验后写入配置；保存并应用会校验、写入配置，再重载服务。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1167
+msgid "Saved and applied. Zapret2 has reloaded this configuration."
+msgstr "已保存并应用，Zapret2 已重载此配置。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:72
+msgid "Scroll to head"
+msgstr "滚动到开头"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:71
+msgid "Scroll to tail"
+msgstr "滚动到末尾"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:23
+#, fuzzy
+msgid "Send packet"
+msgstr "伪造数据包"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:889
+msgid "Sequence overlap"
+msgstr "序列号重叠"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:929
+msgid "Sequential"
+msgstr "顺序递增"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:45
+msgid "Service"
+msgstr "服务"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:122
+#, fuzzy
+msgid ""
+"Service actions use the last saved configuration. Save pending edits before "
+"starting or reloading."
+msgstr ""
+"服务按钮操作的是最近保存并应用的配置。启动或重新加载前请先保存待处理的表单修"
+"改。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:128
+msgid "Show or hide runtime details"
+msgstr "显示或隐藏运行详情"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:77
+msgid "Size"
+msgstr "大小"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:46
+msgid "Split SYN/ACK"
+msgstr "拆分 SYN/ACK"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:124
+msgid "Start"
+msgstr "启动"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:94
+msgid ""
+"Static lists are atomically validated and replaced. Automatic lists are "
+"owned by nfqws2 and can only be viewed, exported, or cleared."
+msgstr ""
+"静态列表经过完整校验后原子替换。自动列表由 nfqws2 管理，只能查看、导出或清"
+"空。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:483
+msgid "Step"
+msgstr "步骤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:700
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:778
+msgid "Step type"
+msgstr "步骤类型"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:126
+msgid "Stop"
+msgstr "停止"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:29
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:65
+msgid "Stopped unexpectedly"
+msgstr "异常停止"
+
+#: root/usr/share/luci/menu.d/luci-app-zapret2.json:19
+msgid "Strategy configuration"
+msgstr "策略配置"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:45
+msgid "Synthetic SYN/ACK"
+msgstr "合成 SYN/ACK"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:188
+msgid "System log"
+msgstr "系统日志"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:94
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:906
+msgid "TCP acknowledgement offset"
+msgstr "TCP 确认号偏移"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:41
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:49
+msgid "TCP out / in"
+msgstr "TCP 原向 / 回向"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:42
+msgid "TCP out-of-band"
+msgstr "TCP 带外数据"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+msgid "TCP outbound packets"
+msgstr "TCP 原向包数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1036
+#, fuzzy
+msgid "TCP ports"
+msgstr "TCP 端口/范围"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+msgid "TCP reply packets"
+msgstr "TCP 回程包数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:25
+#, fuzzy
+msgid "TCP reset"
+msgstr "TCP 分段"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:41
+msgid "TCP segment"
+msgstr "TCP 分段"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:93
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:905
+msgid "TCP sequence offset"
+msgstr "TCP 序列号偏移"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:95
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:907
+msgid "TCP timestamp offset"
+msgstr "TCP 时间戳偏移"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:74
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:855
+msgid "TLS SNI hostname"
+msgstr "TLS SNI 主机名"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:73
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:850
+#, fuzzy
+msgid "TLS modifications"
+msgstr "TLS Fake 修改"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/strategy.js:109
+#, fuzzy
+msgid "The candidate configuration exceeds 128 KiB."
+msgstr "候选配置有效。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:49
+msgid "The list exceeds the backend file-size limit."
+msgstr "列表超过后端文件大小限制。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:240
+msgid "The maximum number of profiles has been reached."
+msgstr "已达到 Profile 数量上限。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:78
+#, fuzzy
+msgid "The saved configuration is valid."
+msgstr "候选配置有效。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:685
+msgid "The step limit has been reached."
+msgstr "已达到步骤数量上限。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:132
+msgid ""
+"These values describe the currently applied process and may differ from "
+"saved edits awaiting reload."
+msgstr "这些内容描述当前已经应用的进程，可能与已保存但尚未重新加载的设置不同。"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/rpc.js:21
+msgid "This LuCI application requires Zapret2 API v%d and UCI schema v%d."
+msgstr "此 LuCI 应用需要 Zapret2 API v%d 和 UCI 配置结构 v%d。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:164
+msgid ""
+"This LuCI application requires Zapret2 UCI schema v2. The incompatible "
+"configuration is not editable."
+msgstr "此 LuCI 应用需要 Zapret2 UCI schema v2，不能编辑不兼容的配置。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:954
+msgid ""
+"This checks the complete, unsaved configuration with the same compiler used "
+"at service start. It does not save the configuration, reload Zapret2, or "
+"change traffic handling."
+msgstr ""
+"此操作使用与服务启动相同的编译器校验完整的未保存配置；不会写入配置、重载 "
+"Zapret2 或改变流量处理。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1003
+msgid "This page requires Zapret2 UCI schema v2."
+msgstr "此页面需要 Zapret2 UCI schema v2。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:178
+msgid ""
+"This selects packets before Profile matching; it is not a domain or IP list."
+msgstr "此项在 Profile 匹配前选择数据包，并不是域名或 IP 列表。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:169
+msgid "Traffic interception"
+msgstr "流量接管"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:555
+msgid "Traffic match: %s"
+msgstr "流量匹配：%s"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1103
+#, fuzzy
+msgid "UDP inbound packets"
+msgstr "UDP 原向包数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:43
+msgid "UDP length"
+msgstr "UDP 长度"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:83
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:892
+msgid "UDP length increment"
+msgstr "UDP 长度增量"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:41
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:50
+msgid "UDP out / in"
+msgstr "UDP 原向 / 回向"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1102
+msgid "UDP outbound packets"
+msgstr "UDP 原向包数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1037
+#, fuzzy
+msgid "UDP ports"
+msgstr "UDP 端口/范围"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+msgid "UDP reply packets"
+msgstr "UDP 回向包数"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:192
+msgid "UDP timeout"
+msgstr "UDP 超时"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:19
+#, fuzzy
+msgid "Unable to read the selected file."
+msgstr "在所选 Profile 内数值越小越先执行。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:932
+msgid "Unchanged"
+msgstr "保持不变"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:67
+msgid "Unknown"
+msgstr "未知"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:198
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:8
+#, fuzzy
+msgid "Unknown error"
+msgstr "未知步骤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:111
+msgid "Unknown step"
+msgstr "未知步骤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:438
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:588
+msgid "Up"
+msgstr "上移"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:397
+msgid "Updates following steps"
+msgstr "更新后续步骤"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1043
+msgid "Use * or protocol number 0..255."
+msgstr "使用 * 或 0..255 的协议号。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1038
+msgid "Use *, TYPE or TYPE:CODE."
+msgstr "使用 *、TYPE 或 TYPE:CODE。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:178
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:179
+msgid "Use 0xVALUE/0xMASK."
+msgstr "请使用 0x值/0x掩码 格式。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:48
+msgid "Use 1 to 32 lowercase letters, digits or underscores for the list ID."
+msgstr "列表 ID 应使用 1 至 32 个小写字母、数字或下划线。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:943
+msgid "Use a multiple of 8 from 8 to 1480."
+msgstr "请输入 8 到 1480 之间的 8 的倍数。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1036
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1037
+msgid "Use a port, range, *, or ~ exclusion."
+msgstr "使用端口、端口范围、* 或 ~ 排除项。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:865
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:881
+#, fuzzy
+msgid "Use a safe nfqws2 position expression."
+msgstr "可填写 b、e 或上游位置表达式。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:794
+#, fuzzy
+msgid "Use a valid nfqws2 n/a/d/s/p/b/x range expression."
+msgstr "上游范围表达式无效。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:922
+#, fuzzy
+msgid "Use delta,min-max within valid TTL bounds."
+msgstr "使用 delta,min-max 格式，最小值和最大值须在 1～255 内。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:182
+msgid "Use one nonzero hexadecimal bit."
+msgstr "请使用仅含一个非零位的十六进制标记。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:949
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:961
+msgid "Validate current changes"
+msgstr "校验当前修改"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:127
+#, fuzzy
+msgid "Validate saved configuration"
+msgstr "校验已应用配置"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:191
+msgid "Validating the current changes…"
+msgstr "正在校验当前修改…"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:198
+msgid "Validation failed: %s"
+msgstr "校验失败：%s"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:182
+msgid ""
+"Validation passed with %d warnings. The current changes can be saved but are "
+"not applied."
+msgstr "校验通过，但有 %d 条警告。当前修改可以保存，尚未应用。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:184
+msgid ""
+"Validation passed. The current changes can be saved but are not applied."
+msgstr "校验通过。当前修改可以保存，尚未应用。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:172
+msgid "WAN networks"
+msgstr "WAN 网络"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:10
+msgid "Warning"
+msgstr "警告"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:56
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:816
+msgid "Window scale"
+msgstr "窗口缩放因子"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:55
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:815
+msgid "Window size"
+msgstr "窗口大小"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:413
+msgid "Yes"
+msgstr "是"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:161
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:164
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:166
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:74
+#: root/usr/share/luci/menu.d/luci-app-zapret2.json:3
+msgid "Zapret2"
+msgstr "Zapret2"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:618
+msgid "Zapret2 Profiles"
+msgstr "Zapret2 Profile"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:92
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:94
+#, fuzzy
+msgid "Zapret2 local lists"
+msgstr "创建本地列表"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/rpc.js:28
+msgid "Zapret2 returned an invalid response."
+msgstr "Zapret2 返回了无效响应。"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:119
+msgid "Zapret2 status"
+msgstr "Zapret2 状态"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:993
+#, fuzzy
+msgid "Zapret2 strategies"
+msgstr "Zapret2 状态"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:931
+msgid "Zero"
+msgstr "置零"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:82
+msgid "including:"
+msgstr "包含："
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:13
+#, fuzzy
+msgid "line %d"
+msgstr "处理步骤：%s"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:11
+#, fuzzy
+msgid "option %s"
+msgstr "条件"
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:10
+#, fuzzy
+msgid "section %s"
+msgstr "操作"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:78
+msgid "severity:"
+msgstr "级别："
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:12
+msgid "step %s"
+msgstr "步骤 %s"
+
+#, fuzzy
+#~ msgid "Configuration execution order:"
+#~ msgstr "配置有效。"
+
+#, fuzzy
+#~ msgid "Configuration validation"
+#~ msgstr "配置有效。"
+
+#, fuzzy
+#~ msgid "Current changes"
+#~ msgstr "校验当前修改"
+
+#, fuzzy
+#~ msgid "Domain/IP filters"
+#~ msgstr "域名/IP 过滤：%s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Packet interception → first matching enabled Profile → ordered processing "
+#~ "steps in that Profile."
+#~ msgstr "流量接管 → 首个匹配的已启用 Profile → 按顺序执行处理步骤"
+
+#~ msgid "Processing steps"
+#~ msgstr "处理步骤"
+
+#, fuzzy
+#~ msgid "Profile"
+#~ msgstr "Profile"
+
+#, fuzzy
+#~ msgid "The current changes can be saved."
+#~ msgstr "校验通过。当前修改可以保存，尚未应用。"
+
+#, fuzzy
+#~ msgid "Traffic match"
+#~ msgstr "流量匹配：%s"
+
+#, fuzzy
+#~ msgid "Validate"
+#~ msgstr "校验候选配置"
+
+#, fuzzy
+#~ msgid "Validating current changes…"
+#~ msgstr "正在校验当前修改…"
+
+#, fuzzy
+#~ msgid "Validation failed"
+#~ msgstr "校验失败：%s"
+
+#, fuzzy
+#~ msgid "Validation passed"
+#~ msgstr "校验失败：%s"
+
+#, fuzzy
+#~ msgid "Validation warning"
+#~ msgstr "校验失败：%s"
+
+#, fuzzy
+#~ msgid "Summary"
+#~ msgstr "匹配摘要"
+
+#~ msgid "Current Profile"
+#~ msgstr "当前 Profile"
+
+#~ msgid "Current step editor"
+#~ msgstr "当前正在编辑步骤"
+
+#~ msgid "No Profile selected"
+#~ msgstr "未选择 Profile"
+
+#~ msgid "Processing steps for %s"
+#~ msgstr "%s 的处理步骤"
+
+#~ msgid ""
+#~ "Select a Profile above to view and edit only its steps. This selection "
+#~ "does not change matching order or runtime behavior."
+#~ msgstr ""
+#~ "在上方选择一个 Profile 后，仅查看和编辑该 Profile 的步骤；此选择不会改变匹"
+#~ "配顺序或运行时行为。"
+
+#~ msgid "Select for step editing"
+#~ msgstr "选择并编辑步骤"
+
+#~ msgid ""
+#~ "Steps run in order within the selected Profile. Payload and range "
+#~ "conditions apply only to later actions."
+#~ msgstr ""
+#~ "步骤在当前 Profile 内按顺序执行。Payload 和范围条件仅作用于其后的动作。"
+
+#~ msgid "Applicable traffic: %s"
+#~ msgstr "适用流量：%s"
+
+#, fuzzy
+#~ msgid "Candidate argv"
+#~ msgstr "复制候选命令"
+
+#, fuzzy
+#~ msgid "Candidate configuration plan"
+#~ msgstr "候选配置有效。"
+
+#, fuzzy
+#~ msgid "Candidate nftables rules"
+#~ msgstr "已应用的 nftables 规则"
+
+#, fuzzy
+#~ msgid ""
+#~ "Each strategy combines a matching scope and an ordered pipeline. Once a "
+#~ "strategy matches, later strategies are not evaluated."
+#~ msgstr ""
+#~ "策略（Profile）由匹配范围和有序处理步骤组成。流量只使用首个匹配且已启用的"
+#~ "策略，不再继续匹配后续策略。"
+
+#~ msgid "Filters: %s"
+#~ msgstr "过滤条件：%s"
+
+#, fuzzy
+#~ msgid "Generate plan"
+#~ msgstr "生成包"
+
+#, fuzzy
+#~ msgid "Generate plan with nftables rules"
+#~ msgstr "已应用的 nftables 规则"
+
+#, fuzzy
+#~ msgid ""
+#~ "Generated by the same backend compiler used for service startup. It "
+#~ "includes unsaved values currently visible on this page."
+#~ msgstr ""
+#~ "由服务启动所用的同一套已校验后端生成；浏览器不会自行重构 Zapret2 参数。"
+
+#, fuzzy
+#~ msgid "Generating candidate plan…"
+#~ msgstr "正在通过后端生成预览…"
+
+#~ msgid "Ordered payload, range and action steps"
+#~ msgstr "有序的 Payload、范围与动作步骤"
+
+#, fuzzy
+#~ msgid "Ordered strategies (Profiles)"
+#~ msgstr "有序 Zapret2 Profile"
+
+#, fuzzy
+#~ msgid ""
+#~ "Payload and range steps affect only later actions in the selected Profile."
+#~ msgstr ""
+#~ "Payload 和范围步骤只影响其后的动作。请选择插入位置，以保持上游 Zapret2 命"
+#~ "令顺序。"
+
+#~ msgid "Pipeline: %s"
+#~ msgstr "处理步骤：%s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Profiles use upstream first-match semantics. Payload and range steps "
+#~ "affect only actions that follow them."
+#~ msgstr ""
+#~ "新步骤会添加到当前 Profile 的末尾。Payload 和范围步骤只影响排在其后的动"
+#~ "作。"
+
+#~ msgid ""
+#~ "This is the plan for the current candidate form, not the applied runtime."
+#~ msgstr "这是当前候选表单的计划，不是已经应用的运行状态。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Traffic interception → first matching enabled strategy → ordered steps "
+#~ "within that strategy"
+#~ msgstr "流量接管（插件配置）→ 首个匹配的已启用策略 → 策略内按顺序执行步骤"
+
+#~ msgid "Case-insensitive browser-side filter"
+#~ msgstr "浏览器端过滤，不区分大小写"
+
+#, fuzzy
+#~ msgid "Clear filter"
+#~ msgstr "Payload 过滤器"
+
+#, fuzzy
+#~ msgid "Filter text"
+#~ msgstr "过滤条件：%s"
+
+#~ msgid ""
+#~ "The view follows the system-wide LuCI polling interval and reads only the "
+#~ "backend-limited Zapret2 log tail."
+#~ msgstr ""
+#~ "此页面遵循 LuCI 全局轮询间隔，并且只读取后端限制范围内的 Zapret2 日志尾"
+#~ "部。"
+
+#~ msgid "Zapret2 log"
+#~ msgstr "Zapret2 日志"
+
+#~ msgid ""
+#~ "The Zapret2 API or configuration schema is incompatible with this LuCI "
+#~ "application."
+#~ msgstr "Zapret2 API 或配置 schema 与此 LuCI 应用不兼容。"
+
+#~ msgid "Runtime status"
+#~ msgstr "运行状态"
+
+#~ msgid "Strategy editor"
+#~ msgstr "策略编辑器"
+
+#~ msgid "Strategy presets"
+#~ msgstr "策略预设"
+
+#~ msgid ""
+#~ "Create a blank strategy or a conservative HTTP, TLS or QUIC preset. "
+#~ "Strategy cards below show their actual order and matching scope."
+#~ msgstr ""
+#~ "可创建空白策略，或使用保守的 HTTP、TLS、QUIC 预设。下方策略卡片显示实际顺"
+#~ "序和匹配范围。"
+
+#~ msgid "Selected strategy: %s"
+#~ msgstr "当前策略：%s"
+
+#~ msgid "Edit selected strategy"
+#~ msgstr "编辑当前策略"
+
+#~ msgid ""
+#~ "Edit matching conditions, domain/IP filters and then the ordered steps "
+#~ "below."
+#~ msgstr "先编辑匹配条件与域名/IP 过滤，再在下方编辑有序处理步骤。"
+
+#~ msgid ""
+#~ "The saved configuration plan below is generated from the committed UCI "
+#~ "configuration. It does not include unsaved changes on other pages and is "
+#~ "not active until the service is reloaded."
+#~ msgstr ""
+#~ "下方计划由已保存的 UCI 配置生成，不包含其他页面尚未保存的修改；重载服务前"
+#~ "它不会生效。"
+
+#~ msgid "Saved configuration plan"
+#~ msgstr "已保存的配置计划"
+
+#~ msgid "Refresh saved plan"
+#~ msgstr "刷新已保存计划"
+
+#~ msgid "Validate saved plan"
+#~ msgstr "校验已保存计划"
+
+#~ msgid "Applied nftables rules and counters"
+#~ msgstr "已应用的 nftables 规则与计数"
+
+#~ msgid "The log is read only when you select Refresh log."
+#~ msgstr "仅在点击“刷新日志”时读取日志。"
+
+#~ msgid "%d B"
+#~ msgstr "%d B"
+
+#~ msgid "%s KiB"
+#~ msgstr "%s KiB"
+
+#~ msgid "(disabled)"
+#~ msgstr "（已禁用）"
+
+#~ msgid ""
+#~ "A restricted OpenWrt integration of the original zapret2 profile model. "
+#~ "Traffic interception marks are independent from profile domain/IP filters "
+#~ "and ordered strategy steps."
+#~ msgstr ""
+#~ "对 zapret2 原版 Profile 模型的受限 OpenWrt 集成。流量接管标记独立于 "
+#~ "Profile 的域名/IP 过滤器和有序策略步骤。"
+
+#~ msgid "Action"
+#~ msgstr "动作"
+
+#~ msgid "Action parameters"
+#~ msgstr "动作参数"
+
+#~ msgid ""
+#~ "Address family, explicit transport ports and L7 filters form the upstream "
+#~ "Profile match."
+#~ msgstr ""
+#~ "地址族、明确的传输层端口和 L7 过滤器共同构成上游 Profile 的匹配条件。"
+
+#~ msgid "After %d. %s"
+#~ msgstr "在第 %d 项“%s”之后"
+
+#~ msgid "Applied process command"
+#~ msgstr "已应用的进程命令"
+
+#~ msgid "At least one profile must remain. Add a replacement profile first."
+#~ msgstr "必须至少保留一个 Profile。请先添加替代 Profile。"
+
+#~ msgid "At the end"
+#~ msgstr "末尾"
+
+#~ msgid "Back up and initialize"
+#~ msgstr "备份并初始化"
+
+#~ msgid "Back up and initialize schema v1"
+#~ msgstr "备份并初始化 schema v1"
+
+#~ msgid "Back up and restore defaults"
+#~ msgstr "备份并恢复默认值"
+
+#~ msgid "Back up the old configuration and initialize schema v1 now?"
+#~ msgstr "是否立即备份旧配置并初始化 schema v1？"
+
+#~ msgid "Bad checksum"
+#~ msgstr "错误校验和"
+
+#~ msgid "Before %d. %s"
+#~ msgstr "在第 %d 项“%s”之前"
+
+#~ msgid "Blob name"
+#~ msgstr "Blob 名称"
+
+#~ msgid "Candidate backend command"
+#~ msgstr "候选后端命令"
+
+#~ msgid "Candidate validation failed."
+#~ msgstr "候选配置校验失败。"
+
+#~ msgid "Commands and runtime"
+#~ msgstr "命令与运行状态"
+
+#~ msgid "Condition"
+#~ msgstr "条件"
+
+#~ msgid "Connection setup"
+#~ msgstr "连接建立"
+
+#~ msgid "Continue IP ID per connection"
+#~ msgstr "按连接连续生成 IP ID"
+
+#~ msgid "Copy"
+#~ msgstr "复制"
+
+#~ msgid "Copy applied command"
+#~ msgstr "复制已应用命令"
+
+#~ msgid "Core version"
+#~ msgstr "核心版本"
+
+#~ msgid "Delete SNI extension"
+#~ msgstr "删除 SNI 扩展"
+
+#~ msgid "Delete SNI names"
+#~ msgstr "删除 SNI 名称"
+
+#~ msgid "Disabled · marks not configured"
+#~ msgstr "已禁用 · 尚未配置标记"
+
+#~ msgid "Do not drop original"
+#~ msgstr "不丢弃原始数据包"
+
+#~ msgid "Duplicate session ID"
+#~ msgstr "复制会话 ID"
+
+#~ msgid ""
+#~ "Earlier schemas are not interpreted. Initialization stops Zapret2, saves "
+#~ "a timestamped backup, installs safe schema v1 defaults, preserves local "
+#~ "list files, and leaves the service disabled."
+#~ msgstr ""
+#~ "本版本不会解释旧版 schema。初始化会停止 Zapret2、保存带时间戳的备份、写入"
+#~ "安全的 schema v1 默认配置、保留本地列表文件，并保持服务关闭。"
+
+#~ msgid "Edit selected profile filters"
+#~ msgstr "编辑所选 Profile 的过滤条件"
+
+#~ msgid "Encapsulate padding"
+#~ msgstr "封装填充"
+
+#~ msgid ""
+#~ "Exact argument vector saved by the backend for the current service "
+#~ "instance. This may differ from pending form edits."
+#~ msgstr ""
+#~ "后端为当前服务实例保存的准确参数向量，可能与尚未保存的表单修改不同。"
+
+#~ msgid "Exclusion is checked before inclusion."
+#~ msgstr "排除规则优先于包含规则。"
+
+#~ msgid ""
+#~ "Experimental upstream behavior useful for zero-phase actions with "
+#~ "hostlists."
+#~ msgstr "上游实验性功能，可供配合域名列表的零阶段动作使用。"
+
+#~ msgid "File exceeds 1 MiB."
+#~ msgstr "文件超过 1 MiB。"
+
+#~ msgid ""
+#~ "For Clone TLS ClientHello this is a new output ID. For other actions it "
+#~ "is an input: a built-in blob or an ID created by an earlier clone step in "
+#~ "this profile."
+#~ msgstr ""
+#~ "对于“克隆 TLS ClientHello”，这里填写新的输出 ID；对于其他动作，这里填写输"
+#~ "入 Blob，可以是内置 Blob，也可以是本 Profile 中更早的克隆步骤所创建的 ID。"
+
+#~ msgid ""
+#~ "Generated from the current form by the same validated backend used for "
+#~ "service startup. It is not active until the configuration is saved and "
+#~ "applied."
+#~ msgstr ""
+#~ "由服务启动时使用的同一套校验后端根据当前表单生成；保存并应用配置前不会生"
+#~ "效。"
+
+#~ msgid ""
+#~ "Generated once and kept read-only so existing step references cannot be "
+#~ "orphaned."
+#~ msgstr "只在创建时生成并保持只读，避免已有步骤引用失效。"
+
+#~ msgid "HTTP and windows"
+#~ msgstr "HTTP 与窗口"
+
+#~ msgid "IP / CIDR"
+#~ msgstr "IP / CIDR"
+
+#~ msgid ""
+#~ "IP and CIDR include lists are a union; exclusions take precedence. Domain "
+#~ "and IP filters are independent dimensions."
+#~ msgstr ""
+#~ "IP 与 CIDR 包含列表取并集，排除规则优先；域名过滤与 IP 过滤是相互独立的两"
+#~ "个维度。"
+
+#~ msgid ""
+#~ "Include lists are a union; exclusions take precedence. With no effective "
+#~ "include entries, domains are not used as a positive filter."
+#~ msgstr ""
+#~ "包含列表取并集，排除规则优先；没有有效的包含项时，不会把域名作为正向过滤条"
+#~ "件。"
+
+#~ msgid "Incompatible configuration schema"
+#~ msgstr "配置格式不兼容"
+
+#~ msgid "Initialize schema v1"
+#~ msgstr "初始化 schema v1"
+
+#~ msgid "Inline excluded IP/CIDR"
+#~ msgstr "内联排除 IP/CIDR"
+
+#~ msgid "Inline excluded domains"
+#~ msgstr "内联排除域名"
+
+#~ msgid "Inline included IP/CIDR"
+#~ msgstr "内联包含 IP/CIDR"
+
+#~ msgid "Inline included domains"
+#~ msgstr "内联包含域名"
+
+#~ msgid "Insert position"
+#~ msgstr "插入位置"
+
+#~ msgid "Invalid entry."
+#~ msgstr "条目无效。"
+
+#~ msgid "Invalid upstream position expression."
+#~ msgstr "上游位置表达式无效。"
+
+#~ msgid "Last error"
+#~ msgstr "最近错误"
+
+#~ msgid "Loading list content…"
+#~ msgstr "正在加载列表内容…"
+
+#~ msgid ""
+#~ "Lower values execute first. Up and Down normalize the order within this "
+#~ "list."
+#~ msgstr "数值越小越先执行。“上移”和“下移”会规范化此列表中的顺序值。"
+
+#~ msgid "Move TCP timestamp first"
+#~ msgstr "将 TCP 时间戳移到首位"
+
+#~ msgid "Move down"
+#~ msgstr "向下移动"
+
+#~ msgid "Move up"
+#~ msgstr "向上移动"
+
+#~ msgid "ZAPRET2"
+#~ msgstr "Zapret2"
+
+#~ msgid "Zapret2 is not currently running with an applied command."
+#~ msgstr "Zapret2 当前没有使用已应用命令运行。"
+
+#~ msgid "Never automatically cut off"
+#~ msgstr "永不自动截止"
+
+#~ msgid "No %s lists"
+#~ msgstr "没有%s"
+
+#~ msgid "Not referenced"
+#~ msgstr "未被引用"
+
+#~ msgid "Not running as configured"
+#~ msgstr "未按配置运行"
+
+#~ msgid ""
+#~ "Only parameters supported by the selected upstream action are shown. "
+#~ "Connection-start actions combined with domain filters require the "
+#~ "hostname IP cache; upstream OOB cannot use domain filters."
+#~ msgstr ""
+#~ "这里只显示所选上游动作支持的参数。连接起始阶段的动作与域名过滤同时使用时需"
+#~ "要启用主机名 IP 缓存；上游 OOB 不支持域名过滤。"
+
+#~ msgid ""
+#~ "Only the selected profile is shown. Payload and range rows change the "
+#~ "state for the actions below them in this profile, matching upstream "
+#~ "Zapret2 command order."
+#~ msgstr ""
+#~ "这里只显示当前选中的 Profile。Payload 和范围行会改变本 Profile 中其后动作"
+#~ "的状态，与上游 Zapret2 的命令顺序一致。"
+
+#~ msgid ""
+#~ "OpenWrt ingress selection. This is not a hostlist or an Zapret2 profile "
+#~ "filter."
+#~ msgstr "这是 OpenWrt 入队选择条件，不是域名列表或 Zapret2 Profile 过滤器。"
+
+#~ msgid ""
+#~ "Optional upstream IP fragmentation settings for actions that support raw "
+#~ "packet reconstruction."
+#~ msgstr "为支持原始数据包重建的动作设置可选的上游 IP 分片参数。"
+
+#~ msgid "Ordered processing pipeline"
+#~ msgstr "有序处理链"
+
+#~ msgid "Overlap pattern blob"
+#~ msgstr "重叠数据模式 Blob"
+
+#~ msgid ""
+#~ "Packet header modifications are restricted to the capabilities exposed by "
+#~ "the selected upstream action."
+#~ msgstr "数据包头修改项仅限于所选上游动作实际支持的能力。"
+
+#~ msgid "Packet modifications"
+#~ msgstr "数据包修改"
+
+#~ msgid "Place cloned SNI first"
+#~ msgstr "将克隆的 SNI 放在首位"
+
+#~ msgid "Place cloned SNI last"
+#~ msgstr "将克隆的 SNI 放在末位"
+
+#~ msgid ""
+#~ "Private conntrack bit used to remember selected connections; it is not "
+#~ "the external allowlist mark."
+#~ msgstr "用于记忆已选连接的私有连接跟踪位；它不是外部白名单标记。"
+
+#~ msgid "Profile strategy editor"
+#~ msgstr "Profile 策略编辑器"
+
+#~ msgid ""
+#~ "Profiles execute by ascending order and the first matching enabled "
+#~ "profile wins. This table manages profile order; use the strategy editor "
+#~ "below for each profile’s filters and processing steps."
+#~ msgstr ""
+#~ "Profile 按顺序升序执行，首个匹配且已启用的 Profile 生效。此表用于管理 "
+#~ "Profile 顺序；请在下方策略编辑器中设置各 Profile 的过滤条件和处理步骤。"
+
+#~ msgid "Protocol matching"
+#~ msgstr "协议匹配"
+
+#~ msgid "Random TCP MD5"
+#~ msgstr "随机 TCP MD5"
+
+#~ msgid "Randomize SNI"
+#~ msgstr "随机化 SNI"
+
+#~ msgid "Randomize TLS fields"
+#~ msgstr "随机化 TLS 字段"
+
+#~ msgid "Range"
+#~ msgstr "范围"
+
+#~ msgid "Read-only view of the table owned exclusively by this service."
+#~ msgstr "只读显示由本服务独占管理的表。"
+
+#~ msgid "Refresh candidate"
+#~ msgstr "刷新候选命令"
+
+#~ msgid "Remove TCP NOP options"
+#~ msgstr "删除 TCP NOP 选项"
+
+#~ msgid "Remove this list from every profile before deleting it."
+#~ msgstr "删除前请先从所有 Profile 中移除此列表。"
+
+#~ msgid "Replacement SNI"
+#~ msgstr "替换 SNI"
+
+#~ msgid "Restore safe defaults"
+#~ msgstr "恢复安全默认值"
+
+#~ msgid "Save"
+#~ msgstr "保存"
+
+#~ msgid ""
+#~ "Select one profile to edit its ordered processing pipeline. Profile "
+#~ "matching filters and steps belong to the same strategy group."
+#~ msgstr ""
+#~ "选择一个 Profile 编辑其有序处理链。Profile 的匹配过滤器和处理步骤属于同一"
+#~ "个策略组。"
+
+#~ msgid ""
+#~ "Select “never” to keep the upstream wssize action active for the entire "
+#~ "connection; this can severely reduce throughput."
+#~ msgstr ""
+#~ "选择“永不自动截止”会让上游 wssize 动作在整个连接期间持续生效，这可能严重降"
+#~ "低吞吐量。"
+
+#~ msgid "Selected profile"
+#~ msgstr "当前 Profile"
+
+#~ msgid "Skip fake 1"
+#~ msgstr "跳过伪造包 1"
+
+#~ msgid "Skip fake 2"
+#~ msgstr "跳过伪造包 2"
+
+#~ msgid "Skip fake 3"
+#~ msgstr "跳过伪造包 3"
+
+#~ msgid "Skip fake 4"
+#~ msgstr "跳过伪造包 4"
+
+#~ msgid "Skip when blob is missing"
+#~ msgstr "数据块缺失时跳过"
+
+#~ msgid "Stable ID"
+#~ msgstr "稳定标识符"
+
+#~ msgid "Status unavailable; displayed values may be stale."
+#~ msgstr "无法获取状态；当前显示的值可能已过期。"
+
+#~ msgid ""
+#~ "Stop Zapret2, back up the current schema v1 configuration, and restore "
+#~ "the safe default profiles? Local domain and IP list files are preserved."
+#~ msgstr ""
+#~ "是否停止 Zapret2、备份当前 schema v1 配置并恢复安全默认 Profile？本地域名"
+#~ "和 IP 列表文件将保留。"
+
+#~ msgid ""
+#~ "Stops the service, backs up /etc/config/zapret2, restores the packaged "
+#~ "schema v5 defaults and preserves local list files."
+#~ msgstr ""
+#~ "停止服务、备份 /etc/config/zapret2、恢复软件包内置的 schema v1 默认值，并"
+#~ "保留本地列表文件。"
+
+#~ msgid "TCP desynchronization actions"
+#~ msgstr "TCP 去同步动作"
+
+#~ msgid "TCP fragment position"
+#~ msgstr "TCP 分片位置"
+
+#~ msgid "The inet zapret2 table is not currently present."
+#~ msgstr "当前不存在 inet zapret2 表。"
+
+#~ msgid "The selected section no longer exists."
+#~ msgstr "所选配置节已不存在。"
+
+#~ msgid ""
+#~ "The step type and preceding payload or range state determine when the "
+#~ "action runs."
+#~ msgstr "步骤类型以及其前方的 Payload 或范围状态共同决定动作何时执行。"
+
+#~ msgid ""
+#~ "To avoid retaining parameters from another action, delete and recreate a "
+#~ "step instead of changing its type."
+#~ msgstr ""
+#~ "为避免残留其他动作的参数，请删除并重新创建步骤，不要直接更改步骤类型。"
+
+#~ msgid "Type"
+#~ msgstr "类型"
+
+#~ msgid "UDP fragment position"
+#~ msgstr "UDP 分片位置"
+
+#~ msgid "UDP padding offset"
+#~ msgstr "UDP 填充偏移"
+
+#~ msgid ""
+#~ "Upstream loop-prevention mark used by zapret2-generated packets and "
+#~ "notrack."
+#~ msgstr "上游用于 zapret2 生成包防递归和 notrack 的标记。"
+
+#~ msgid "Use a port or ascending range."
+#~ msgstr "请输入单个端口或升序端口范围。"
+
+#~ msgid "Use function defaults"
+#~ msgstr "使用函数默认值"
+
+#~ msgid ""
+#~ "Use one entry per line. Domains accept example.com or ^host.example.com "
+#~ "for an exact match. IP lists accept IPv4, IPv6 and CIDR. Validation "
+#~ "errors report the failing line."
+#~ msgstr ""
+#~ "每行填写一个条目。域名可填写 example.com，或使用 ^host.example.com 表示精"
+#~ "确匹配；IP 列表支持 IPv4、IPv6 和 CIDR。校验错误会报告具体行号。"
+
+#~ msgid ""
+#~ "Use upstream counter modes n, a, d, s, p or b; a and x may also be used "
+#~ "alone. Examples: -s32768, a1-d4, b0-b4096, x."
+#~ msgstr ""
+#~ "使用上游计数模式 n、a、d、s、p 或 b；a 和 x 也可单独使用。例如：-s32768、"
+#~ "a1-d4、b0-b4096、x。"
+
+#~ msgid ""
+#~ "Validated local static lists: at most 32 files, 1 MiB each and 8 MiB "
+#~ "total. Empty or comment-only files are valid and are treated by upstream "
+#~ "Zapret2 as an absent filter. Include lists form a union, while exclusions "
+#~ "always take precedence inside a profile."
+#~ msgstr ""
+#~ "经过校验的本地静态列表：最多 32 个文件，每个不超过 1 MiB，总计不超过 8 "
+#~ "MiB。空文件或只有注释的文件有效，上游 Zapret2 会将其视为未设置过滤器。包含"
+#~ "列表取并集，排除列表在 Profile 内始终优先。"
+
+#~ msgid "blob"
+#~ msgstr "Blob"
+
+#~ msgid "direction"
+#~ msgstr "方向"
+
+#~ msgid "host"
+#~ msgstr "主机名"
+
+#~ msgid "in: %s"
+#~ msgstr "入向：%s"
+
+#~ msgid "increment"
+#~ msgstr "增量"
+
+#~ msgid "out: %s"
+#~ msgstr "出向：%s"
+
+#~ msgid "output"
+#~ msgstr "输出"
+
+#~ msgid "payload: %s"
+#~ msgstr "Payload：%s"
+
+#~ msgid "position"
+#~ msgstr "位置"
+
+#~ msgid "repeats"
+#~ msgstr "重复次数"
+
+#~ msgid "Restart"
+#~ msgstr "重启"
+
+#~ msgid ""
+#~ "Service buttons operate on the last saved and applied configuration. Save "
+#~ "pending form edits before starting or restarting."
+#~ msgstr ""
+#~ "服务按钮操作的是最近保存并应用的配置。启动或重启前请先保存待处理的表单修"
+#~ "改。"
+
+#~ msgid "Backend command preview"
+#~ msgstr "后端命令预览"
+
+#~ msgid "Bytes"
+#~ msgstr "字节数"
+
+#~ msgid "Command preview"
+#~ msgstr "命令预览"
+
+#~ msgid "No local lists"
+#~ msgstr "没有本地列表"
+
+#~ msgid "Refresh preview"
+#~ msgstr "刷新预览"
+
+#~ msgid ""
+#~ "Validated local static lists: at most 32 files, 1 MiB each and 8 MiB "
+#~ "total. Empty or comment-only files are valid and are treated by upstream "
+#~ "Zapret2 as an absent filter. Exclusions always take precedence inside a "
+#~ "profile."
+#~ msgstr ""
+#~ "经过校验的本地静态列表：最多 32 个文件，单个不超过 1 MiB，总计不超过 8 "
+#~ "MiB。空文件或只有注释的文件有效，上游 Zapret2 会将其视为未设置对应过滤器。"
+#~ "Profile 内的排除规则始终优先。"
+
+#~ msgid ""
+#~ "Choose the owning profile and step type. Detailed parameters can be "
+#~ "edited after creation."
+#~ msgstr "选择所属 Profile 和步骤类型。创建后可以编辑详细参数。"
+
+#~ msgid "Invalid host template."
+#~ msgstr "主机名模板无效。"
+
+#~ msgid ""
+#~ "Only built-in fake blobs or a stable ID created by an earlier TLS clone "
+#~ "step are accepted."
+#~ msgstr ""
+#~ "仅接受内置 Fake Blob，或同一 Profile 中较早的 TLS 克隆步骤所创建的稳定 "
+#~ "ID。"
+
+#~ msgid "Ordered payload/range/action steps"
+#~ msgstr "有序的 Payload、范围与动作步骤"
+
+#~ msgid "Preview and counters"
+#~ msgstr "预览与计数器"
+
+#~ msgid ""
+#~ "Profiles execute by ascending Order; the first matching enabled profile "
+#~ "wins. Ports, L7, domain and IP rules are original Zapret2 profile "
+#~ "filters. No include lists means match all; exclusions always win."
+#~ msgstr ""
+#~ "Profile 按“顺序”数值升序执行，首个匹配的已启用 Profile 生效。端口、L7、域"
+#~ "名和 IP 规则均为 Zapret2 原版 Profile 过滤器。没有包含列表时匹配全部，排除"
+#~ "规则始终优先。"
+
+#~ msgid ""
+#~ "Steps are grouped by Profile and execute by ascending Order. Payload and "
+#~ "range steps affect only following actions in the same profile, matching "
+#~ "upstream zapret2 command order."
+#~ msgstr ""
+#~ "步骤按 Profile 分组，并按“顺序”数值升序执行。Payload 和范围步骤仅影响同一 "
+#~ "Profile 中排在其后的动作，与上游 zapret2 命令顺序一致。"
+
+#~ msgid "UDP padding blob"
+#~ msgstr "UDP 填充 Blob"
+
+#~ msgid ""
+#~ "Validated local lists: at most 32 files, 1 MiB each and 8 MiB total. "
+#~ "Domain and IP lists are separate; exclusions always take precedence "
+#~ "inside a profile. List file changes take effect immediately; save pending "
+#~ "profile edits first."
+#~ msgstr ""
+#~ "经过校验的本地列表：最多 32 个文件，每个不超过 1 MiB，总计不超过 8 MiB。域"
+#~ "名列表与 IP 列表相互独立，Profile 内的排除规则始终优先。列表文件修改会立即"
+#~ "生效；请先保存待处理的 Profile 修改。"

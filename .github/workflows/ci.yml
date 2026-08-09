@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  source-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install test dependencies
+        run: sudo apt-get update && sudo apt-get install -y gettext
+      - name: Check core package contract
+        run: sh zapret2/tests/test-contract.sh
+      - name: Check LuCI JavaScript syntax
+        run: |
+          find luci-app-zapret2/htdocs/luci-static/resources -type f -name '*.js' \
+            -exec node --check {} \;
+      - name: Check LuCI API and UI contract
+        run: node luci-app-zapret2/tests/test-ui.js
+      - name: Check translations
+        run: |
+          msgfmt --check --check-format -o /dev/null \
+            luci-app-zapret2/po/zh_Hans/zapret2.po

@@ -1,0 +1,16 @@
+*.apk
+*.ipk
+*.log
+*.orig
+*.rej
+*.swp
+*~
+.cache/
+.idea/
+.vscode/
+.DS_Store
+bin/
+build_dir/
+node_modules/
+staging_dir/
+tmp/

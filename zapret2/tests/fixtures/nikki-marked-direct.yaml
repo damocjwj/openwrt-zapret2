@@ -1,0 +1,14 @@
+# Temporary device-test mixin. Nikki prepends this direct outbound and rule so
+# its socket mark can be consumed by Zapret2's generic mark selector.
+nikki-proxies:
+  - name: ZAPRET2-DIRECT-TEST
+    type: direct
+    udp: true
+    routing-mark: 268435456
+
+nikki-rules:
+  - DOMAIN,www.bilibili.com,ZAPRET2-DIRECT-TEST
+  - DOMAIN-SUFFIX,bilibili.com,ZAPRET2-DIRECT-TEST
+  # Cover policy engines that resolve domain rules to real destination IPs
+  # before the packet reaches Zapret2's generic mark selector.
+  - GEOIP,CN,ZAPRET2-DIRECT-TEST

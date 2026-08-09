@@ -1,0 +1,1465 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:180
+msgid "Acknowledge all-traffic risk"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:77
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:489
+msgid "Actions"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:718
+msgid "Add"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:650
+msgid "Add HTTP preset"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:670
+msgid "Add QUIC preset"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:660
+msgid "Add TLS preset"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:640
+msgid "Add blank profile"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:693
+msgid "Add ordered step"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:517
+msgid "Add step"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1026
+msgid "Address family"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:169
+msgid "Advanced runtime"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:9
+msgid "Alert"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:177
+msgid "All eligible traffic"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:180
+msgid ""
+"All mode may include proxy or VPN tunnels unless an external mark excludes "
+"them."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:9
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:801
+msgid "Any"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:62
+msgid "Applied"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:136
+msgid "Applied argv"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:142
+msgid "Applied nftables rules"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:131
+msgid "Applied runtime details"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:102
+msgid "Applied runtime details were refreshed."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:63
+msgid "Atomically clear the engine-managed automatic hostlist for %s?"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:191
+msgid ""
+"Autohostlist requires conntrack and will be rejected when this is enabled."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:83
+msgid "Automatic domain lists"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:334
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1018
+msgid "Automatic hostlist"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:26
+msgid "Automatic refresh is paused."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:169
+msgid "Basic settings"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:58
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:824
+msgid "Blob or clone ID"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:190
+msgid "Cache hostnames by IP"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:46
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:704
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:83
+msgid "Cancel"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:72
+msgid "Clear"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:63
+msgid "Clear automatic hostlist"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:33
+msgid "Clone TLS ClientHello"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:59
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:828
+msgid "Clone fallback blob"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:381
+msgid "Collapse steps (%d)"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:46
+msgid "Configuration"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:161
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:995
+msgid ""
+"Configuration is read-only until the core API and schema versions match."
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:91
+msgid "Confirm"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:181
+msgid "Connection tracking mark"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:44
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:50
+msgid "Copied to clipboard."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:139
+msgid "Copy argv"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:59
+msgid "Copy log"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:143
+msgid "Copy rules"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:680
+msgid "Create a profile before adding a step."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:84
+msgid "Create list"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:39
+msgid "Create local list"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:10
+msgid "Critical"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:44
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:87
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:896
+msgid "DHT directory number"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:11
+msgid "Debug"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:188
+msgid "Debug logging"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:52
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:803
+msgid "Delay (milliseconds)"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:60
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:75
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:296
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:366
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:459
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:609
+msgid "Delete"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:60
+msgid "Delete list %s?"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:60
+msgid "Delete local list"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:294
+msgid "Delete profile"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:366
+msgid "Delete step"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:295
+msgid "Delete this Profile and all of its ordered steps?"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:366
+msgid "Delete this processing step?"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:135
+msgid "Diagnostics"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:798
+msgid "Direction"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:191
+msgid "Disable nfqws2 conntrack"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:194
+msgid "Disable payload detectors"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:195
+msgid "Disable reassembly"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:29
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:548
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:64
+msgid "Disabled"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:77
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:879
+msgid "Disorder-after position"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:32
+msgid "Domain"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1016
+msgid "Domain filtering"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:83
+msgid "Domain lists"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:43
+msgid ""
+"Domain lists accept domains and ^exact.domain. IP lists accept IPv4, IPv6 "
+"and CIDR. Empty lines and # comments are allowed."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:560
+msgid "Domain/IP filters: %s"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:332
+msgid "Domains +%d / −%d"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:449
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:599
+msgid "Down"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:22
+msgid "Drop packet"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:628
+msgid ""
+"Each Profile contains traffic matching conditions and ordered processing "
+"steps. Once it matches, later Profiles are not evaluated."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:74
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:427
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:577
+msgid "Edit"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:39
+msgid "Edit local list"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:484
+msgid "Effective context"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:9
+msgid "Emergency"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:102
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:934
+msgid "Enable IP fragmentation"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:170
+msgid "Enable Zapret2"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1093
+msgid "Enable managed automatic hostlist"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:548
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1024
+msgid "Enabled"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1065
+msgid "Enter a domain or ^exact.domain."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:857
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:873
+msgid "Enter a hostname without ^."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1066
+msgid "Enter an IPv4/IPv6 address or CIDR."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:813
+msgid "Enter exactly four ASCII letters."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:77
+msgid "Entries"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:10
+msgid "Error"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:192
+msgid "Established timeout"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:179
+msgid "Exclude packet marks"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1059
+msgid "Excluded IP addresses"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1074
+msgid "Excluded IP lists"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1072
+msgid "Excluded domain lists"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1057
+msgid "Excluded domains"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:179
+msgid "Exclusion always takes precedence."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:71
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:848
+msgid "Existing SNI name type"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:381
+msgid "Expand steps (%d)"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:71
+msgid "Export"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:192
+msgid "FIN timeout"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1097
+msgid "Failure threshold"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1098
+msgid "Failure window (seconds)"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:39
+msgid "Fake disorder"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:40
+msgid "Fake host split"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:34
+msgid "Fake packet"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:38
+msgid "Fake split"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:31
+msgid "Flow window size"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:57
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:821
+msgid "Forced cutoff payloads"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:174
+msgid "Forward source networks"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:753
+msgid "Function default"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:733
+msgid "Function defaults"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:52
+msgid "Generated"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:181
+msgid "Generated packet mark"
+msgstr ""
+
+#: root/usr/share/rpcd/acl.d/luci-app-zapret2.json:3
+msgid "Grant access to the Zapret2 OpenWrt adapter"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:26
+msgid "HTTP Host header case"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:54
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:809
+msgid "HTTP Host spelling"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:29
+msgid "HTTP Unix line endings"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:27
+msgid "HTTP domain case"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:28
+msgid "HTTP method line break"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:76
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:871
+msgid "Host template"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1038
+msgid "ICMP type and code"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:77
+msgid "ID"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:32
+msgid "IP address"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:83
+msgid "IP address lists"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:190
+msgid "IP cache lifetime (seconds)"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1017
+msgid "IP filtering"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:777
+msgid "IP fragmentation"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1041
+msgid "IP protocols"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:321
+msgid "IP protocols %s"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:333
+msgid "IPs +%d / −%d"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:311
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1027
+msgid "IPv4 + IPv6"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:100
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:928
+msgid "IPv4 IP ID policy"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:189
+msgid "IPv4 PBR bind fix"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:89
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:903
+msgid "IPv4 TTL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:91
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:913
+msgid "IPv4 automatic TTL"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:90
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:904
+msgid "IPv6 Hop Limit"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:189
+msgid "IPv6 PBR bind fix"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:92
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:914
+msgid "IPv6 automatic Hop Limit"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:42
+msgid "Import local text file"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:800
+msgid "Inbound"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:21
+msgid "Inbound range"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:178
+msgid "Include packet marks"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1058
+msgid "Included IP addresses"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1073
+msgid "Included IP lists"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1071
+msgid "Included domain lists"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1056
+msgid "Included domains"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:177
+msgid "Included packet marks only"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:66
+msgid "Incompatible schema"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:11
+msgid "Info"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1032
+msgid "Initial packets"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:177
+msgid "Interception mode"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1033
+msgid "Keep matching packets queued"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:25
+msgid "Last refresh failed: %s"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:26
+msgid "Last updated: %s · refresh interval: %s seconds"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1050
+msgid "Layer-7 protocols"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:37
+msgid "Legacy multiple disorder"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:40
+msgid "List ID"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:41
+msgid "List type"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:140
+msgid "Load applied nftables rules"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:88
+msgid "Loading applied runtime details…"
+msgstr ""
+
+#: root/usr/share/luci/menu.d/luci-app-zapret2.json:24
+msgid "Local lists"
+msgstr ""
+
+#: root/usr/share/luci/menu.d/luci-app-zapret2.json:29
+msgid "Log"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1121
+msgid "Log automatic hostlist decisions"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:193
+msgid "Lua garbage collection interval"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:775
+msgid "Main action"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:134
+msgid "Manifest"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1015
+msgid "Matching conditions"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:85
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:894
+msgid "Maximum UDP length"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1101
+msgid "Maximum incoming sequence"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1100
+msgid "Maximum retransmission sequence"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:84
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:893
+msgid "Minimum UDP length"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:24
+msgid "Modify packet"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:36
+msgid "Multiple disorder"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:35
+msgid "Multiple split"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:185
+msgid "NFQUEUE number"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1022
+msgid "Name"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:72
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:849
+msgid "New SNI name type"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:104
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:908
+msgid "Next-header value"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:413
+msgid "No"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:335
+msgid "No domain or IP filter"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:78
+msgid "No lists available."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1081
+msgid "No local lists available"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:341
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:493
+msgid "No processing steps"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:616
+msgid "No profiles configured."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:77
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:81
+msgid "Not"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:726
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:728
+msgid "Not configured"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:15
+msgid ""
+"Not validated. Saving will validate again before writing this configuration."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:11
+msgid "Notice"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:81
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:890
+msgid "OOB byte"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:82
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:891
+msgid "OOB urgent pointer"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:188
+msgid "Off"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:166
+msgid ""
+"OpenWrt traffic interception is configured separately from ordered upstream "
+"Zapret2 profiles."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:482
+msgid "Order"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:51
+msgid "Other out / in"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+msgid "Other protocol outbound packets"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+msgid "Other protocol reply packets"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:799
+msgid "Outbound"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:20
+msgid "Outbound range"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:40
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:47
+msgid "PID"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:776
+msgid "Packet headers and sending"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:622
+msgid ""
+"Packet interception → first matching enabled Profile → ordered processing "
+"steps"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:86
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:895
+msgid "Pattern offset"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:57
+msgid "Pause automatic refresh"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:507
+msgid ""
+"Payload and range conditions apply only to actions that follow them in this "
+"Profile."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:697
+msgid ""
+"Payload and range steps affect only actions that follow them in this Profile."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:773
+msgid "Payload and range steps affect only later actions in this Profile."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:772
+msgid "Payload and ranges"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:19
+msgid "Payload filter"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:784
+msgid "Payload values"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:168
+#: root/usr/share/luci/menu.d/luci-app-zapret2.json:14
+msgid "Plugin configuration"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:75
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:863
+msgid "Position expression"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:171
+msgid "Process IPv4"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:171
+msgid "Process IPv6"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:173
+msgid "Process forwarded traffic"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:175
+msgid "Process router-local traffic"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:565
+msgid "Processing steps: %s"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1019
+msgid "Profile ID"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:40
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:48
+msgid "Profiles"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1031
+msgid "Queue mode"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:169
+msgid "Queue settings"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:930
+msgid "Random"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:50
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:790
+msgid "Range expression"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:77
+msgid "Referenced by"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:75
+msgid "Referenced lists cannot be deleted or renamed."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:44
+msgid ""
+"Referenced lists may be edited, but their ID and type are locked until all "
+"Profile references are removed."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:84
+msgid "Refresh"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:58
+msgid "Refresh now"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:138
+msgid "Refresh runtime details"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:125
+msgid "Reload"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:63
+msgid "Reload required"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:53
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:804
+msgid "Repeats"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1113
+msgid "Reset retransmission counter"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:42
+msgid "Resume automatic refresh"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1099
+msgid "Retransmission threshold"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:103
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:935
+msgid "Reverse fragment order"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:28
+msgid "Running"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:32
+msgid "SYN payload"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:192
+msgid "SYN timeout"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:88
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:897
+msgid "SYN/ACK split mode"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:30
+msgid "SYN/ACK window size"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:51
+msgid "Save list"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:973
+msgid ""
+"Save validates again before writing. Save & Apply validates, writes the "
+"configuration, then reloads the service."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1167
+msgid "Saved and applied. Zapret2 has reloaded this configuration."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:72
+msgid "Scroll to head"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:71
+msgid "Scroll to tail"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:23
+msgid "Send packet"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:889
+msgid "Sequence overlap"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:929
+msgid "Sequential"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:45
+msgid "Service"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:122
+msgid ""
+"Service actions use the last saved configuration. Save pending edits before "
+"starting or reloading."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:128
+msgid "Show or hide runtime details"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:77
+msgid "Size"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:46
+msgid "Split SYN/ACK"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:124
+msgid "Start"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:94
+msgid ""
+"Static lists are atomically validated and replaced. Automatic lists are "
+"owned by nfqws2 and can only be viewed, exported, or cleared."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:483
+msgid "Step"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:700
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:778
+msgid "Step type"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:126
+msgid "Stop"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:29
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:65
+msgid "Stopped unexpectedly"
+msgstr ""
+
+#: root/usr/share/luci/menu.d/luci-app-zapret2.json:19
+msgid "Strategy configuration"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:45
+msgid "Synthetic SYN/ACK"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:188
+msgid "System log"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:94
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:906
+msgid "TCP acknowledgement offset"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:41
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:49
+msgid "TCP out / in"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:42
+msgid "TCP out-of-band"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+msgid "TCP outbound packets"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1036
+msgid "TCP ports"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+msgid "TCP reply packets"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:25
+msgid "TCP reset"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:41
+msgid "TCP segment"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:93
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:905
+msgid "TCP sequence offset"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:95
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:907
+msgid "TCP timestamp offset"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:74
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:855
+msgid "TLS SNI hostname"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:73
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:850
+msgid "TLS modifications"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/strategy.js:109
+msgid "The candidate configuration exceeds 128 KiB."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:49
+msgid "The list exceeds the backend file-size limit."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:240
+msgid "The maximum number of profiles has been reached."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:78
+msgid "The saved configuration is valid."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:685
+msgid "The step limit has been reached."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:132
+msgid ""
+"These values describe the currently applied process and may differ from "
+"saved edits awaiting reload."
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/rpc.js:21
+msgid "This LuCI application requires Zapret2 API v%d and UCI schema v%d."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:164
+msgid ""
+"This LuCI application requires Zapret2 UCI schema v2. The incompatible "
+"configuration is not editable."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:954
+msgid ""
+"This checks the complete, unsaved configuration with the same compiler used "
+"at service start. It does not save the configuration, reload Zapret2, or "
+"change traffic handling."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1003
+msgid "This page requires Zapret2 UCI schema v2."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:178
+msgid ""
+"This selects packets before Profile matching; it is not a domain or IP list."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:169
+msgid "Traffic interception"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:555
+msgid "Traffic match: %s"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1103
+msgid "UDP inbound packets"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:43
+msgid "UDP length"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:83
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:892
+msgid "UDP length increment"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:41
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:50
+msgid "UDP out / in"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1102
+msgid "UDP outbound packets"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1037
+msgid "UDP ports"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:186
+msgid "UDP reply packets"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:192
+msgid "UDP timeout"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:19
+msgid "Unable to read the selected file."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:932
+msgid "Unchanged"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:67
+msgid "Unknown"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:198
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:8
+msgid "Unknown error"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:111
+msgid "Unknown step"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:438
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:588
+msgid "Up"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:397
+msgid "Updates following steps"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1043
+msgid "Use * or protocol number 0..255."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1038
+msgid "Use *, TYPE or TYPE:CODE."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:178
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:179
+msgid "Use 0xVALUE/0xMASK."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:48
+msgid "Use 1 to 32 lowercase letters, digits or underscores for the list ID."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:943
+msgid "Use a multiple of 8 from 8 to 1480."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1036
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:1037
+msgid "Use a port, range, *, or ~ exclusion."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:865
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:881
+msgid "Use a safe nfqws2 position expression."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:794
+msgid "Use a valid nfqws2 n/a/d/s/p/b/x range expression."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:922
+msgid "Use delta,min-max within valid TTL bounds."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:182
+msgid "Use one nonzero hexadecimal bit."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:949
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:961
+msgid "Validate current changes"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:127
+msgid "Validate saved configuration"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:191
+msgid "Validating the current changes…"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:198
+msgid "Validation failed: %s"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:182
+msgid ""
+"Validation passed with %d warnings. The current changes can be saved but are "
+"not applied."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:184
+msgid ""
+"Validation passed. The current changes can be saved but are not applied."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:172
+msgid "WAN networks"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:10
+msgid "Warning"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:56
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:816
+msgid "Window scale"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:55
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:815
+msgid "Window size"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:413
+msgid "Yes"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:161
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:164
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:166
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:74
+#: root/usr/share/luci/menu.d/luci-app-zapret2.json:3
+msgid "Zapret2"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:618
+msgid "Zapret2 Profiles"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:92
+#: htdocs/luci-static/resources/view/zapret2/v4r10/lists.js:94
+msgid "Zapret2 local lists"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/rpc.js:28
+msgid "Zapret2 returned an invalid response."
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/config.js:119
+msgid "Zapret2 status"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:993
+msgid "Zapret2 strategies"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/profiles.js:931
+msgid "Zero"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:82
+msgid "including:"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:13
+msgid "line %d"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:11
+msgid "option %s"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:10
+msgid "section %s"
+msgstr ""
+
+#: htdocs/luci-static/resources/view/zapret2/v4r10/log.js:78
+msgid "severity:"
+msgstr ""
+
+#: htdocs/luci-static/resources/zapret2/v4r10/ui.js:12
+msgid "step %s"
+msgstr ""
