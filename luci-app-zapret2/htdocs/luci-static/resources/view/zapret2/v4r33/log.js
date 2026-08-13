@@ -2,8 +2,8 @@
 'require view';
 'require form';
 'require poll';
-'require zapret2.v4r31.rpc as api';
-'require zapret2.v4r31.ui as zui';
+'require zapret2.v4r33.rpc as api';
+'require zapret2.v4r33.ui as zui';
 
 function setText(option, value) {
 	var element = option.getUIElement('log');

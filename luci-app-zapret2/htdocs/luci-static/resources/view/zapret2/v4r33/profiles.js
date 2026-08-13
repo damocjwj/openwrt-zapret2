@@ -3,10 +3,10 @@
 'require form';
 'require uci';
 'require ui';
-'require zapret2.v4r31.rpc as api';
-'require zapret2.v4r31.strategy as model';
-'require zapret2.v4r31.ui as zui';
-'require zapret2.v4r31.fields as fields';
+'require zapret2.v4r33.rpc as api';
+'require zapret2.v4r33.strategy as model';
+'require zapret2.v4r33.ui as zui';
+'require zapret2.v4r33.fields as fields';
 var map,
 	profileGrid,
 	stepGrid,
@@ -510,18 +510,15 @@ function renderProfileSteps(profile, steps) {
 						STEP_PARAMETER_COLUMNS.map(function (column) {
 							return E('th', { class: 'th' }, column[1]);
 						}),
-							[E('th', { class: 'th center cbi-section-actions', style: 'width:1%;min-width:max-content;text-align:center;white-space:nowrap' }, _('Actions'))],
+							[E('th', { class: 'th center nowrap cbi-section-actions', style: 'min-width:max-content' }, _('Actions'))],
 					),
 				),
 			])
 		: E('em', {}, _('No processing steps'));
 	if (steps.length) {
 		cbi_update_table(content, rows);
+		zui.fitActionColumn(content);
 		content.querySelectorAll('th.cbi-section-actions, td.cbi-section-actions').forEach(function (cell) {
-			cell.style.width = '1%';
-			cell.style.minWidth = 'max-content';
-			cell.style.textAlign = 'center';
-			cell.style.whiteSpace = 'nowrap';
 			cell.style.position = 'sticky';
 			cell.style.right = '0';
 			cell.style.zIndex = cell.tagName === 'TH' ? '3' : '2';
@@ -632,7 +629,7 @@ function addProfileDialog() {
 			E('label', { class: 'cbi-value-title' }, _('Template')),
 			E('div', { class: 'cbi-value-field' }, selector),
 		]),
-		zui.actionRow([
+		zui.modalActions([
 			E('button', { class: 'btn', click: ui.hideModal }, _('Cancel')),
 			E(
 				'button',
@@ -645,7 +642,7 @@ function addProfileDialog() {
 				},
 				_('Add'),
 			),
-		], 'right'),
+		]),
 	]);
 	return Promise.resolve(false);
 }
@@ -657,7 +654,7 @@ function renderProfileOverview(profiles) {
 			E('th', { class: 'th left top' }, _('Traffic match')),
 			E('th', { class: 'th left top' }, _('Filters and steps')),
 			E('th', { class: 'th' }, _('Status')),
-			E('th', { class: 'th cbi-section-actions', style: 'width:1%;white-space:nowrap' }, _('Actions')),
+			E('th', { class: 'th center nowrap cbi-section-actions' }, _('Actions')),
 		]),
 	]);
 	if (profiles.length) {
@@ -679,6 +676,7 @@ function renderProfileOverview(profiles) {
 	} else {
 		cbi_update_table(table, [], E('em', {}, _('No Profiles are configured.')));
 	}
+	zui.fitActionColumn(table);
 	return E('div', { class: 'cbi-section' }, [
 		E('h3', {}, _('Profile order')),
 		zui.sectionDescription(_('The first enabled matching Profile is used. Later Profiles are not evaluated.')),
@@ -746,7 +744,7 @@ function addStepDialog(profile) {
 					E('label', { class: 'cbi-value-title' }, _('Step type')),
 					E('div', { class: 'cbi-value-field' }, selector),
 				]),
-				zui.actionRow([
+				zui.modalActions([
 					E('button', { class: 'btn', click: ui.hideModal }, _('Cancel')),
 					E(
 						'button',
@@ -766,7 +764,7 @@ function addStepDialog(profile) {
 						},
 						_('Add'),
 					),
-				], 'right'),
+				]),
 			]);
 		})
 		.catch(zui.notifyError);
@@ -994,6 +992,29 @@ function configureStepOptions(a) {
 	});
 }
 function renderValidation() {
+	var table = E('table', { class: 'table cbi-section-table' }, [
+		E('tr', { class: 'tr table-titles' }, [
+			E('th', { class: 'th top', style: 'width:1%;white-space:nowrap' }, _('Status')),
+			E('th', { class: 'th left top' }, _('Result')),
+			E('th', { class: 'th center nowrap cbi-section-actions top' }, _('Actions')),
+		]),
+		E('tr', { class: 'tr cbi-section-table-row' }, [
+			E('td', { id: 'zapret2-validation-state', class: 'td middle', style: 'width:1%;white-space:nowrap', 'data-title': _('Status') }, zui.badge(candidateStatus.label, candidateStatus.kind)),
+			E('td', { id: 'zapret2-validation-result', class: 'td left middle', 'data-title': _('Result') }, candidateStatus.result),
+			E('td', { class: 'td center nowrap cbi-section-actions middle', 'data-title': _('Actions') },
+				zui.tableActions([
+					E('button', {
+						id: 'zapret2-validation-button',
+						class: 'btn cbi-button-action' + (candidateStatus.busy ? ' spinning' : ''),
+						disabled: candidateStatus.busy || null,
+						click: ui.createHandlerFn(null, validateCurrentChanges),
+					}, candidateStatus.busy ? _('Validating…') : _('Validate')),
+				]),
+			),
+		]),
+	]);
+	zui.fitActionColumn(table);
+
 	return E('div', { class: 'cbi-section' }, [
 		E('h3', {}, _('Validate changes')),
 		zui.sectionDescription(
@@ -1001,27 +1022,7 @@ function renderValidation() {
 				'Validate the current changes with the same compiler used when the service starts. This does not save or apply the configuration.',
 			),
 		),
-		E('table', { class: 'table cbi-section-table' }, [
-			E('tr', { class: 'tr table-titles' }, [
-				E('th', { class: 'th top', style: 'width:1%;white-space:nowrap' }, _('Status')),
-				E('th', { class: 'th left top' }, _('Result')),
-				E('th', { class: 'th cbi-section-actions top', style: 'width:1%;white-space:nowrap' }, _('Actions')),
-			]),
-			E('tr', { class: 'tr cbi-section-table-row' }, [
-				E('td', { id: 'zapret2-validation-state', class: 'td middle', style: 'width:1%;white-space:nowrap', 'data-title': _('Status') }, zui.badge(candidateStatus.label, candidateStatus.kind)),
-				E('td', { id: 'zapret2-validation-result', class: 'td left middle', 'data-title': _('Result') }, candidateStatus.result),
-				E('td', { class: 'td cbi-section-actions middle', style: 'width:1%;white-space:nowrap', 'data-title': _('Actions') },
-					zui.tableActions([
-						E('button', {
-							id: 'zapret2-validation-button',
-							class: 'btn cbi-button-action' + (candidateStatus.busy ? ' spinning' : ''),
-							disabled: candidateStatus.busy || null,
-							click: ui.createHandlerFn(null, validateCurrentChanges),
-						}, candidateStatus.busy ? _('Validating…') : _('Validate')),
-					]),
-				),
-			]),
-		]),
+		table,
 		zui.alertMessage(
 			candidateStatus.detail,
 			candidateStatus.kind === 'danger' ? 'error' : 'warning',

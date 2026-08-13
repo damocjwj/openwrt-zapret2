@@ -10,9 +10,9 @@ OpenWrt 原生适配，并提供 LuCI 管理界面。构建时下载未经修改
 
 - `zapret2` `1.0.4-r8`：提供 `nfqws2`、上游 Lua 策略文件、UCI schema v2、
   ubus API v1、procd 集成和确定性的 nftables 编译器。
-- `luci-app-zapret2` `4.0.0-r31`：管理运行设置、有序 Profile、本地列表、
-  紧凑的候选配置校验、计数器和受限日志。
-- `luci-i18n-zapret2-zh-cn` `4.0.0-r31`：简体中文翻译。
+- `luci-app-zapret2` `4.0.0-r33`：管理运行设置、有序 Profile、本地列表、
+  紧凑的候选配置校验、计数器、受限日志，以及继承 LuCI 主题的操作布局。
+- `luci-i18n-zapret2-zh-cn` `4.0.0-r33`：简体中文翻译。
 
 服务默认关闭。默认的 `marked` 接管模式没有包含标记，因此仅安装软件包不会接管流量。
 
@@ -98,8 +98,8 @@ logread -e zapret2
 ```sh
 sh zapret2/tests/test-contract.sh
 
-for file in luci-app-zapret2/htdocs/luci-static/resources/zapret2/v4r31/*.js \
-            luci-app-zapret2/htdocs/luci-static/resources/view/zapret2/v4r31/*.js; do
+for file in luci-app-zapret2/htdocs/luci-static/resources/zapret2/v4r33/*.js \
+            luci-app-zapret2/htdocs/luci-static/resources/view/zapret2/v4r33/*.js; do
     node --check "$file"
 done
 

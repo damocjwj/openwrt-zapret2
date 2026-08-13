@@ -11,9 +11,10 @@ by SHA-256; this repository supplies the OpenWrt packaging and control plane.
 
 - `zapret2` `1.0.4-r8`: `nfqws2`, upstream Lua policy files, UCI schema v2,
   ubus API v1, procd integration and the deterministic nftables compiler.
-- `luci-app-zapret2` `4.0.0-r31`: settings, ordered Profiles, local lists,
-  compact candidate validation, counters and bounded logs.
-- `luci-i18n-zapret2-zh-cn` `4.0.0-r31`: Simplified Chinese translation.
+- `luci-app-zapret2` `4.0.0-r33`: settings, ordered Profiles, local lists,
+  compact candidate validation, counters, bounded logs and theme-native action
+  layouts.
+- `luci-i18n-zapret2-zh-cn` `4.0.0-r33`: Simplified Chinese translation.
 
 The service is disabled by default. The default `marked` interception mode has
 an empty include-mark list, so installation alone does not capture traffic.
@@ -115,8 +116,8 @@ usage, overlapping queue modes, invalid list entries and enabled flow offload.
 ```sh
 sh zapret2/tests/test-contract.sh
 
-for file in luci-app-zapret2/htdocs/luci-static/resources/zapret2/v4r31/*.js \
-            luci-app-zapret2/htdocs/luci-static/resources/view/zapret2/v4r31/*.js; do
+for file in luci-app-zapret2/htdocs/luci-static/resources/zapret2/v4r33/*.js \
+            luci-app-zapret2/htdocs/luci-static/resources/view/zapret2/v4r33/*.js; do
     node --check "$file"
 done
 

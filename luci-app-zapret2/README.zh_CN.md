@@ -5,7 +5,7 @@
 这是 `zapret2` 核心软件包所提供 OpenWrt 控制平面的原生 LuCI 客户端。Version 4 直接
 使用 ubus 对象 `zapret2`、API v1 和 UCI schema v2，不额外安装 rpcd 实现。
 
-浏览器模块使用 `zapret2/v4r31/` 命名空间。仅升级 IPK、但固件全局资源版本未变化时，
+浏览器模块使用 `zapret2/v4r33/` 命名空间。仅升级 IPK、但固件全局资源版本未变化时，
 该命名空间可以防止浏览器继续复用旧 RPC、策略或页面模块。
 
 ## 页面
@@ -43,8 +43,8 @@ Profile 不会改变校验状态。较晚返回的 RPC 结果也不会覆盖更�
 ## 检查
 
 ```sh
-for file in htdocs/luci-static/resources/zapret2/v4r31/*.js \
-            htdocs/luci-static/resources/view/zapret2/v4r31/*.js; do
+for file in htdocs/luci-static/resources/zapret2/v4r33/*.js \
+            htdocs/luci-static/resources/view/zapret2/v4r33/*.js; do
     node --check "$file"
 done
 

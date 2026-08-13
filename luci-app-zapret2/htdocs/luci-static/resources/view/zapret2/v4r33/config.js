@@ -5,9 +5,9 @@
 'require uci';
 'require ui';
 'require tools.widgets as widgets';
-'require zapret2.v4r31.rpc as api';
-'require zapret2.v4r31.strategy as model';
-'require zapret2.v4r31.ui as zui';
+'require zapret2.v4r33.rpc as api';
+'require zapret2.v4r33.strategy as model';
+'require zapret2.v4r33.ui as zui';
 
 var map, currentStatus = null, serviceBusy = false;
 
@@ -44,13 +44,13 @@ function renderStatus(status) {
 	if (node) {
 		var service = serviceState(currentStatus);
 		var statusData = currentStatus || {};
-		node.replaceChildren(E('table', { class: 'table cbi-section-table' }, [
+		var table = E('table', { class: 'table cbi-section-table' }, [
 			E('tr', { class: 'tr table-titles' }, [
 				E('th', { class: 'th top' }, _('Service')), E('th', { class: 'th top' }, _('PID')),
 				E('th', { class: 'th top' }, _('Profiles')),
 					E('th', { class: 'th top' }, _('TCP original / reply')), E('th', { class: 'th top' }, _('UDP original / reply')),
 					E('th', { class: 'th top' }, _('Other original / reply')), E('th', { class: 'th top' }, _('Generated')),
-				E('th', { class: 'th cbi-section-actions', style: 'width:1%;white-space:nowrap' }, _('Actions'))
+				E('th', { class: 'th center nowrap cbi-section-actions' }, _('Actions'))
 			]),
 			E('tr', { class: 'tr cbi-section-table-row' }, [
 				statusValue(_('Service'), zui.badge(service[0], service[1])),
@@ -60,9 +60,10 @@ function renderStatus(status) {
 				statusValue(_('UDP original / reply'), currentStatus ? '%d / %d'.format(zui.counter(statusData, 'udp_out'), zui.counter(statusData, 'udp_in')) : '-'),
 				statusValue(_('Other original / reply'), currentStatus ? '%d / %d'.format(zui.counter(statusData, 'other_out'), zui.counter(statusData, 'other_in')) : '-'),
 				statusValue(_('Generated'), currentStatus ? String(zui.counter(statusData, 'generated')) : '-'),
-				E('td', { class: 'td cbi-section-actions middle', style: 'width:1%;white-space:nowrap', 'data-title': _('Actions') }, serviceActions())
+				E('td', { class: 'td center nowrap cbi-section-actions middle', 'data-title': _('Actions') }, serviceActions())
 			])
-		]));
+		]);
+		node.replaceChildren(zui.fitActionColumn(table));
 	}
 	var start = document.getElementById('zapret2-start'), reload = document.getElementById('zapret2-reload'), stop = document.getElementById('zapret2-stop');
 	var statusData = currentStatus || {};

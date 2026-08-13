@@ -6,7 +6,7 @@ Native LuCI client for the versioned OpenWrt control plane provided by the
 `zapret2` core package. Version 4 uses ubus object `zapret2`, API v1 and UCI
 schema v2 directly; it does not install another rpcd implementation.
 
-The `zapret2/v4r31/` browser namespace prevents cached RPC, strategy or view
+The `zapret2/v4r33/` browser namespace prevents cached RPC, strategy or view
 modules from an older IPK-only installation from being reused when the global
 firmware resource version has not changed.
 
@@ -51,8 +51,8 @@ to `luci-base` and `zapret2`.
 ## Checks
 
 ```sh
-for file in htdocs/luci-static/resources/zapret2/v4r31/*.js \
-            htdocs/luci-static/resources/view/zapret2/v4r31/*.js; do
+for file in htdocs/luci-static/resources/zapret2/v4r33/*.js \
+            htdocs/luci-static/resources/view/zapret2/v4r33/*.js; do
     node --check "$file"
 done
 

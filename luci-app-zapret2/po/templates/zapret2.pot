@@ -1,479 +1,479 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:371
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:371
 msgid "%d steps"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:53
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:63
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:69
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:80
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:513
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:660
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1008
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1013
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:53
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:513
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:660
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1008
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1013
 msgid "Actions"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:646
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:767
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:646
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:767
 msgid "Add"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:629
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:694
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:629
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:694
 msgid "Add Profile"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:703
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:703
 msgid "Add a Profile to configure its filters and processing steps."
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:58
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:58
 msgid "Add a TCP MD5 option"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:743
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:743
 msgid "Add ordered step"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:543
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:543
 msgid "Add step"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1082
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1082
 msgid "Address family"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:132
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:132
 msgid "Advanced runtime"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:140
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:140
 msgid "All eligible traffic"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:140
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:140
 msgid ""
 "All mode may include proxy or VPN tunnels unless an external mark excludes "
 "them."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:850
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:850
 msgid "Any direction"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:22
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:22
 msgid "Append the SNI name last"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:153
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:153
 msgid ""
 "Autohostlist requires conntrack and will be rejected when this is enabled."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:86
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:86
 msgid "Automatic domain lists"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:363
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1074
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:363
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1074
 msgid "Automatic hostlist"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:132
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:132
 msgid "Basic settings"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:873
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:17
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:873
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:17
 msgid "Blob or clone ID"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:152
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:152
 msgid "Cache hostnames by IP"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:46
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:636
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:750
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:46
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:636
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:750
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:80
 msgid "Cancel"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:159
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:159
 msgid "Changes are valid but have not been saved or applied."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:630
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:630
 msgid ""
 "Choose a template. All generated fields and steps remain editable before "
 "saving."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:63
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:77
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:77
 msgid "Clear"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:63
 msgid "Clear automatic hostlist"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:63
 msgid "Clear the managed automatic hostlist for %s?"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:39
 msgid "Clone TLS ClientHello"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:877
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:18
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:877
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:18
 msgid "Clone fallback blob"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:156
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:156
 msgid "Configuration has been saved and applied. Zapret2 was reloaded."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:158
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:158
 msgid "Configuration has been saved but not applied."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1047
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1054
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1047
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1054
 msgid "Configure ordered traffic-matching Profiles and processing steps."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:124
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:127
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:124
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:127
 msgid "Configure traffic interception and runtime settings."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:129
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:129
 msgid ""
 "Configure traffic interception and runtime settings. Ordered Profiles are "
 "configured on the Profiles page."
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:87
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:87
 msgid "Confirm"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:143
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:143
 msgid "Connection tracking mark"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:169
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:169
 msgid "Correct the reported errors and validate again."
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:57
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:57
 msgid "Corrupt the transport checksum"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:730
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:730
 msgid "Create a Profile before adding a step."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:87
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:87
 msgid "Create list"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:39
 msgid "Create local list"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:50
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:945
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:46
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:50
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:945
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:46
 msgid "DHT directory number"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:150
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:150
 msgid "Debug logging"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:852
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:11
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:852
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:11
 msgid "Delay (milliseconds)"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:60
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:79
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:320
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:403
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:483
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:618
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:60
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:79
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:320
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:403
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:483
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:618
 msgid "Delete"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:318
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:318
 msgid "Delete Profile"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:20
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:20
 msgid "Delete existing SNI names"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:60
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:60
 msgid "Delete list %s?"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:60
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:60
 msgid "Delete local list"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:403
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:403
 msgid "Delete step"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:19
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:19
 msgid "Delete the SNI extension"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:319
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:319
 msgid "Delete this Profile and all of its ordered steps?"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:403
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:403
 msgid "Delete this processing step?"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:847
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:10
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:847
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:10
 msgid "Direction"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:566
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:566
 msgid "Disable"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:153
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:153
 msgid "Disable nfqws2 conntrack"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:156
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:156
 msgid "Disable payload detectors"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:157
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:157
 msgid "Disable reassembly"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:563
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:563
 msgid "Disable this Profile"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:38
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:554
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:38
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:554
 msgid "Disabled"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:928
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:36
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:928
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:36
 msgid "Disorder-after position"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:32
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:32
 msgid "Domain"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1072
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1072
 msgid "Domain filtering"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:86
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:86
 msgid "Domain lists"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:43
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:43
 msgid ""
 "Domain lists accept domains and ^exact.domain. IP lists accept IPv4, IPv6 "
 "and CIDR. Empty lines and # comments are allowed."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:361
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:361
 msgid "Domains +%d / −%d"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:474
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:609
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:474
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:609
 msgid "Down"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:28
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:28
 msgid "Drop packet"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:73
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:454
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:588
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:73
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:454
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:588
 msgid "Edit"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:39
 msgid "Edit local list"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:508
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:508
 msgid "Effective context"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:624
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:624
 msgid "Empty Profile (disabled)"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:566
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:566
 msgid "Enable"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:983
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:61
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:983
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:61
 msgid "Enable IP fragmentation"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:133
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:133
 msgid "Enable Zapret2"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1149
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1149
 msgid "Enable managed automatic hostlist"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:563
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:563
 msgid "Enable this Profile"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:554
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1080
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:554
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1080
 msgid "Enabled"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1121
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1121
 msgid "Enter a domain or ^exact.domain."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:906
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:922
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:906
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:922
 msgid "Enter a hostname without ^."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1122
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1122
 msgid "Enter an IPv4/IPv6 address or CIDR."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:862
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:862
 msgid "Enter exactly four ASCII letters."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:69
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:80
 msgid "Entries"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:154
 msgid "Established timeout"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:142
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:142
 msgid "Exclude packet marks"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1115
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1115
 msgid "Excluded IP addresses"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1130
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1130
 msgid "Excluded IP lists"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1128
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1128
 msgid "Excluded domain lists"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1113
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1113
 msgid "Excluded domains"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:142
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:142
 msgid "Exclusion always takes precedence."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:897
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:30
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:897
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:30
 msgid "Existing SNI name type"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:75
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:75
 msgid "Export"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:154
 msgid "FIN timeout"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1153
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1153
 msgid "Failure threshold"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1154
 msgid "Failure window (seconds)"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:45
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:45
 msgid "Fake disorder"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:46
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:46
 msgid "Fake host split"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:40
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:40
 msgid "Fake packet"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:38
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:38
 msgid "Fake packet pattern"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:44
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:44
 msgid "Fake split"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:658
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:658
 msgid "Filters and steps"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:37
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:37
 msgid "Flow window size"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:870
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:16
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:870
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:16
 msgid "Forced cutoff payloads"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:137
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:137
 msgid "Forward source networks"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:802
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:802
 msgid "Function default"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:782
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:782
 msgid "Function defaults"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:52
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:62
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:52
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:62
 msgid "Generated"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:143
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:143
 msgid "Generated packet mark"
 msgstr ""
 
@@ -481,594 +481,594 @@ msgstr ""
 msgid "Grant access to the Zapret2 OpenWrt adapter"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:32
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:32
 msgid "HTTP Host header case"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:858
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:13
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:858
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:13
 msgid "HTTP Host spelling"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:35
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:35
 msgid "HTTP Unix line endings"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:625
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:625
 msgid "HTTP conservative (enabled)"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:33
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:33
 msgid "HTTP domain case"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:34
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:34
 msgid "HTTP method line break"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:920
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:35
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:920
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:35
 msgid "Host template"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:66
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:66
 msgid "ICMP fragment position"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1094
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1094
 msgid "ICMP type and code"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:69
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:80
 msgid "ID"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:32
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:32
 msgid "IP address"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:86
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:86
 msgid "IP address lists"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:152
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:152
 msgid "IP cache lifetime (seconds)"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1073
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1073
 msgid "IP filtering"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:67
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:67
 msgid "IP fragment position"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:826
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:826
 msgid "IP fragmentation"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1097
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1097
 msgid "IP protocols"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:350
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:350
 msgid "IP protocols %s"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:362
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:362
 msgid "IPs +%d / −%d"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:340
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1083
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:340
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1083
 msgid "IPv4 + IPv6"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:977
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:59
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:977
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:59
 msgid "IPv4 IP ID policy"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:151
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:151
 msgid "IPv4 PBR bind fix"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:952
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:48
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:952
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:48
 msgid "IPv4 TTL"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:962
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:50
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:962
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:50
 msgid "IPv4 automatic TTL"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:953
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:953
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:49
 msgid "IPv6 Hop Limit"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:151
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:151
 msgid "IPv6 PBR bind fix"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:963
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:963
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:51
 msgid "IPv6 automatic Hop Limit"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:42
 msgid "Import local text file"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:27
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:27
 msgid "Inbound range"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:141
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:141
 msgid "Include packet marks"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1114
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1114
 msgid "Included IP addresses"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1129
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1129
 msgid "Included IP lists"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1127
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1127
 msgid "Included domain lists"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1112
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1112
 msgid "Included domains"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1088
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1088
 msgid "Initial packets"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:21
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:21
 msgid "Insert the SNI name first"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:140
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:140
 msgid "Interception mode"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:168
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:168
 msgid "Invalid"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:60
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:60
 msgid "Keep IP ID sequence between packets"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1089
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1089
 msgid "Keep matching packets queued"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:24
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:24
 msgid "Keep the original packet"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:24
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:24
 msgid "Last refresh failed: %s"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1106
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1106
 msgid "Layer-7 protocols"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:43
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:43
 msgid "Legacy multiple disorder"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:40
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:40
 msgid "List ID"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:41
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:41
 msgid "List type"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:95
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:97
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:95
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:97
 #: root/usr/share/luci/menu.d/luci-app-zapret2.json:24
 msgid "Local lists"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:53
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:53
 #: root/usr/share/luci/menu.d/luci-app-zapret2.json:29
 msgid "Log"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1177
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1177
 msgid "Log automatic hostlist decisions"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:155
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:155
 msgid "Lua garbage collection interval"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:824
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:824
 msgid "Main action"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:95
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:95
 msgid "Manage local domain and IP lists."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:97
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:97
 msgid ""
 "Manage local domain and IP lists. Automatic hostlists are maintained by "
 "nfqws2 and can only be viewed, exported, or cleared."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:140
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:140
 msgid "Match packet marks"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1071
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1071
 msgid "Matching conditions"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:943
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:44
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:943
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:44
 msgid "Maximum UDP length"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1157
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1157
 msgid "Maximum incoming sequence"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1156
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1156
 msgid "Maximum retransmission sequence"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:942
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:43
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:942
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:43
 msgid "Minimum UDP length"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:30
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:30
 msgid "Modify packet"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:55
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:55
 msgid "Move TCP timestamp first"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:42
 msgid "Multiple disorder"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:41
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:41
 msgid "Multiple split"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:147
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:147
 msgid "NFQUEUE number"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1078
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1078
 msgid "Name"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:898
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:31
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:898
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:31
 msgid "New SNI name type"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:957
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:957
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:63
 msgid "Next-header value"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:440
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:440
 msgid "No"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:680
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:680
 msgid "No Profiles are configured."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:364
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:364
 msgid "No domain or IP filter"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:81
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:81
 msgid "No lists available."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1137
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1137
 msgid "No local lists available"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:30
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:50
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:30
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:50
 msgid "No log entries are available."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:370
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:517
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:370
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:517
 msgid "No processing steps"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:775
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:777
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:775
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:777
 msgid "Not configured"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:19
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:208
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:19
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:208
 msgid "Not validated"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:939
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:40
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:939
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:40
 msgid "OOB byte"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:940
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:41
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:940
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:41
 msgid "OOB urgent pointer"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:150
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:150
 msgid "Off"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:506
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:655
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:506
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:655
 msgid "Order"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:848
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:848
 msgid "Original direction"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:52
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:61
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:52
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:61
 msgid "Other original / reply"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
 msgid "Other protocol original-direction packets"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
 msgid "Other protocol reply-direction packets"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:26
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:26
 msgid "Outbound range"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:49
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:57
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:57
 msgid "PID"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:825
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:825
 msgid "Packet headers and sending"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:141
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:141
 msgid ""
 "Packets are selected by mark before Profile matching. This is separate from "
 "domain and IP filtering."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1060
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1060
 msgid ""
 "Packets use the first enabled matching Profile, then follow its ordered "
 "steps."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:944
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:45
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:944
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:45
 msgid "Pattern offset"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:56
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:56
 msgid ""
 "Payload and range conditions apply only to actions that follow them in this "
 "Profile."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:821
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:821
 msgid "Payload and ranges"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:25
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:25
 msgid "Payload filter"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:833
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:8
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:833
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:8
 msgid "Payload values"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:912
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:34
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:912
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:34
 msgid "Position expression"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:134
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:134
 msgid "Process IPv4"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:134
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:134
 msgid "Process IPv6"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:136
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:136
 msgid "Process forwarded traffic"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:138
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:138
 msgid "Process router-local traffic"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:656
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:656
 msgid "Profile"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1075
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1075
 msgid "Profile ID"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:683
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:683
 msgid "Profile order"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:702
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:702
 msgid "Profile workspace"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:50
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:58
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1047
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1054
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1059
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:50
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:58
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1047
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1054
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1059
 #: root/usr/share/luci/menu.d/luci-app-zapret2.json:19
 msgid "Profiles"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:627
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:627
 msgid "QUIC standard (disabled)"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1087
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1087
 msgid "Queue mode"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:132
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:132
 msgid "Queue settings"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:979
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:979
 msgid "Random"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:839
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:9
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:839
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:9
 msgid "Range expression"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:56
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:56
 msgid "Recent log"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:69
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:80
 msgid "Referenced by"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:79
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:79
 msgid "Referenced lists cannot be deleted or renamed."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:87
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:66
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:87
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:66
 msgid "Refresh"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:30
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:30
 msgid "Reload"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:56
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:56
 msgid "Remove TCP NOP options"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:853
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:12
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:853
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:12
 msgid "Repeats"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:849
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:849
 msgid "Reply direction"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1169
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1169
 msgid "Reset retransmission counter"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1007
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1012
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1007
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1012
 msgid "Result"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1155
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1155
 msgid "Retransmission threshold"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:984
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:62
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:984
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:62
 msgid "Reverse fragment order"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:37
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:37
 msgid "Running"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:38
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:38
 msgid "SYN payload"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:154
 msgid "SYN timeout"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:946
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:47
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:946
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:47
 msgid "SYN/ACK split mode"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:36
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:36
 msgid "SYN/ACK window size"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:51
 msgid "Save list"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:20
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:209
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:20
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:209
 msgid "Saving also validates the current changes."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:73
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:73
 msgid "Scroll to bottom"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:29
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:29
 msgid "Send RST with ACK"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:29
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:29
 msgid "Send packet"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:938
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:938
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:39
 msgid "Sequence overlap"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:37
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:37
 msgid "Sequence overlap pattern"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:978
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:978
 msgid "Sequential"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:49
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:56
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:56
 msgid "Service"
 msgstr ""
 
@@ -1076,387 +1076,387 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:69
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:80
 msgid "Size"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:25
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:25
 msgid "Skip fake packet 1"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:26
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:26
 msgid "Skip fake packet 2"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:27
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:27
 msgid "Skip fake packet 3"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:28
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:28
 msgid "Skip fake packet 4"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:23
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:23
 msgid "Skip if optional data is unavailable"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:52
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:52
 msgid "Split SYN/ACK"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:29
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:29
 msgid "Start"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:104
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:659
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1006
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1011
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:104
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:659
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1006
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1011
 msgid "Status"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:507
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:507
 msgid "Step"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:746
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:827
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:746
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:827
 msgid "Step type"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:31
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:31
 msgid "Stop"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:38
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:38
 msgid "Stopped unexpectedly"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:51
 msgid "Synthetic SYN/ACK"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:150
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:150
 msgid "System log"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:955
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:53
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:955
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:53
 msgid "TCP acknowledgement offset"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:64
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:64
 msgid "TCP fragment position"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:51
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:59
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:59
 msgid "TCP original / reply"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
 msgid "TCP original-direction packets"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:48
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:48
 msgid "TCP out-of-band"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1092
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1092
 msgid "TCP ports"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
 msgid "TCP reply-direction packets"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:31
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:31
 msgid "TCP reset"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:47
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:47
 msgid "TCP segment"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:954
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:52
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:954
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:52
 msgid "TCP sequence offset"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:956
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:54
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:956
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:54
 msgid "TCP timestamp offset"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:904
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:33
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:904
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:33
 msgid "TLS SNI hostname"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:626
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:626
 msgid "TLS conservative (enabled)"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:899
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:32
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:899
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:32
 msgid "TLS modifications"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:632
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:632
 msgid "Template"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/strategy.js:109
+#: htdocs/luci-static/resources/zapret2/v4r33/strategy.js:109
 msgid "The configuration exceeds the 128 KiB limit."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:190
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:190
 msgid "The current changes are being validated."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:684
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:684
 msgid ""
 "The first enabled matching Profile is used. Later Profiles are not evaluated."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:49
 msgid "The list exceeds the allowed size."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:264
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:264
 msgid "The maximum number of Profiles has been reached."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:735
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:735
 msgid "The step limit has been reached."
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/rpc.js:21
+#: htdocs/luci-static/resources/zapret2/v4r33/rpc.js:21
 msgid "This LuCI application requires Zapret2 API v%d and UCI schema v%d."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:127
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:127
 msgid ""
 "This application requires Zapret2 configuration version 2. The current "
 "settings cannot be edited."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:44
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:44
 msgid ""
 "This list is in use. Its ID and type cannot be changed until all Profile "
 "references are removed."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1055
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1055
 msgid "This page requires Zapret2 configuration version 2."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:132
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:132
 msgid "Traffic interception"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:657
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:657
 msgid "Traffic match"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:65
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:65
 msgid "UDP fragment position"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:49
 msgid "UDP length"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:941
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:941
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:42
 msgid "UDP length increment"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:51
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:60
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:60
 msgid "UDP original / reply"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1158
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1158
 msgid "UDP original-direction packets"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1093
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1093
 msgid "UDP ports"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1159
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1159
 msgid "UDP reply-direction packets"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:154
 msgid "UDP timeout"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:19
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:19
 msgid "Unable to read the selected file."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:79
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:79
 msgid "Unable to update service status: %s"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:981
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:981
 msgid "Unchanged"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:36
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:36
 msgid "Unknown"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:8
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:8
 msgid "Unknown error"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:59
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:59
 msgid "Unknown step"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:464
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:599
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:464
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:599
 msgid "Up"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:424
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:424
 msgid "Updates following steps"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1099
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1099
 msgid "Use * or protocol number 0..255."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1094
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1094
 msgid "Use *, TYPE or TYPE:CODE."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:141
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:142
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:141
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:142
 msgid "Use 0xVALUE/0xMASK."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:48
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:48
 msgid "Use 1 to 32 lowercase letters, digits or underscores for the list ID."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:992
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:992
 msgid "Use a multiple of 8 from 8 to 1480."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1092
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1093
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1092
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1093
 msgid "Use a port, range, *, or ~ exclusion."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:914
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:930
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:914
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:930
 msgid "Use a safe nfqws2 position expression."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:843
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:843
 msgid "Use a valid nfqws2 n/a/d/s/p/b/x range expression."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:971
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:971
 msgid "Use delta,min-max within valid TTL bounds."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:144
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:144
 msgid "Use one nonzero hexadecimal bit."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:154
 msgid "Valid"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:154
 msgid "Valid with warnings"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:138
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1020
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:138
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1020
 msgid "Validate"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:998
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:998
 msgid "Validate changes"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1001
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1001
 msgid ""
 "Validate the current changes with the same compiler used when the service "
 "starts. This does not save or apply the configuration."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:189
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:189
 msgid "Validating"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:138
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1020
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:138
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1020
 msgid "Validating…"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:579
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:579
 msgid "View"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:53
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:53
 msgid "View recent Zapret2 service messages."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:135
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:135
 msgid "WAN networks"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:865
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:15
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:865
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:15
 msgid "Window scale"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:864
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:14
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:864
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:14
 msgid "Window size"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:440
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:440
 msgid "Yes"
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:124
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:127
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:129
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:124
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:127
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:129
 #: root/usr/share/luci/menu.d/luci-app-zapret2.json:3
 msgid "Zapret2"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/rpc.js:28
+#: htdocs/luci-static/resources/zapret2/v4r33/rpc.js:28
 msgid "Zapret2 returned an invalid response."
 msgstr ""
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:980
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:980
 msgid "Zero"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:13
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:13
 msgid "line %d"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:11
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:11
 msgid "option %s"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:10
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:10
 msgid "section %s"
 msgstr ""
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:12
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:12
 msgid "step %s"
 msgstr ""

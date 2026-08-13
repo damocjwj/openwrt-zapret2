@@ -2,7 +2,7 @@
 'require baseclass';
 'require uci';
 
-/* Versioned browser model for luci-app-zapret2 4.0.0-r31. */
+/* Versioned browser model for luci-app-zapret2 4.0.0-r33. */
 
 var API_VERSION = 1;
 var SCHEMA_VERSION = 2;

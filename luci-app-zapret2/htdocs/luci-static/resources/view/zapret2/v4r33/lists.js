@@ -1,9 +1,9 @@
 'use strict';
 'require view';
 'require ui';
-'require zapret2.v4r31.rpc as api';
-'require zapret2.v4r31.strategy as model';
-'require zapret2.v4r31.ui as zui';
+'require zapret2.v4r33.rpc as api';
+'require zapret2.v4r33.strategy as model';
+'require zapret2.v4r33.ui as zui';
 
 var index = [], limits = {};
 
@@ -43,12 +43,12 @@ function editList(item) {
 			zui.sectionDescription(_('Domain lists accept domains and ^exact.domain. IP lists accept IPv4, IPv6 and CIDR. Empty lines and # comments are allowed.')),
 			referenced ? zui.alertMessage(_('This list is in use. Its ID and type cannot be changed until all Profile references are removed.'), 'notice') : E([]),
 			content,
-			zui.actionRow([ E('button', { class: 'btn', click: ui.hideModal }, _('Cancel')), E('button', { class: 'btn cbi-button-positive', click: function() {
+			zui.modalActions([ E('button', { class: 'btn', click: ui.hideModal }, _('Cancel')), E('button', { class: 'btn cbi-button-positive', click: function() {
 				var listId = id.value.trim(), listType = type.value, text = content.value;
 				if (!model.validId(listId)) { zui.notifyError(new Error(_('Use 1 to 32 lowercase letters, digits or underscores for the list ID.'))); return; }
 				if (bytes(text) > +(limits.file_bytes || 1048576)) { zui.notifyError(new Error(_('The list exceeds the allowed size.'))); return; }
 				return api.listPut(listId, listType, text, existing && existing.id, existing && existing.type).then(function() { ui.hideModal(); return refresh(); }).catch(zui.notifyError);
-			} }, _('Save list')) ], 'right')
+			} }, _('Save list')) ])
 		]);
 	}).catch(zui.notifyError);
 }
@@ -65,8 +65,8 @@ function clearAuto(item) {
 
 function table(type, title) {
 	var items = index.filter(function(item) { return item.type === type; });
-	return E('div', { class: 'cbi-section' }, [ E('h3', {}, title), E('table', { class: 'table' }, [
-		E('tr', { class: 'tr table-titles' }, [ E('th', { class: 'th left top' }, _('ID')), E('th', { class: 'th top' }, _('Entries')), E('th', { class: 'th top' }, _('Size')), E('th', { class: 'th left top' }, _('Referenced by')), E('th', { class: 'th cbi-section-actions top' }, _('Actions')) ])
+	var node = E('table', { class: 'table' }, [
+		E('tr', { class: 'tr table-titles' }, [ E('th', { class: 'th left top' }, _('ID')), E('th', { class: 'th top' }, _('Entries')), E('th', { class: 'th top' }, _('Size')), E('th', { class: 'th left top' }, _('Referenced by')), E('th', { class: 'th center nowrap cbi-section-actions top' }, _('Actions')) ])
 	].concat(items.length ? items.map(function(item) {
 		var actions = [];
 		if (type !== 'auto_domain') {
@@ -77,8 +77,9 @@ function table(type, title) {
 			actions.push(E('button', { class: 'btn cbi-button-negative', click: ui.createHandlerFn(null, clearAuto, item) }, _('Clear')));
 		else
 			actions.push(E('button', { class: 'btn cbi-button-negative', disabled: +item.references > 0, title: +item.references > 0 ? _('Referenced lists cannot be deleted or renamed.') : '', click: ui.createHandlerFn(null, removeList, item) }, _('Delete')));
-		return E('tr', { class: 'tr' }, [ E('td', { class: 'td left top', 'data-title': _('ID') }, item.id), E('td', { class: 'td top', 'data-title': _('Entries') }, String(item.entries || 0)), E('td', { class: 'td top', 'data-title': _('Size') }, '%1024.2mB'.format(item.size || 0)), E('td', { class: 'td left top', 'data-title': _('Referenced by') }, (item.profiles || []).join(', ') || '-'), E('td', { class: 'td cbi-section-actions top', 'data-title': _('Actions') }, zui.tableActions(actions)) ]);
-	}) : [ E('tr', { class: 'tr placeholder' }, E('td', { class: 'td', colspan: 5 }, _('No lists available.'))) ])) ]);
+		return E('tr', { class: 'tr' }, [ E('td', { class: 'td left top', 'data-title': _('ID') }, item.id), E('td', { class: 'td top', 'data-title': _('Entries') }, String(item.entries || 0)), E('td', { class: 'td top', 'data-title': _('Size') }, '%1024.2mB'.format(item.size || 0)), E('td', { class: 'td left top', 'data-title': _('Referenced by') }, (item.profiles || []).join(', ') || '-'), E('td', { class: 'td center nowrap cbi-section-actions top', 'data-title': _('Actions') }, zui.tableActions(actions)) ]);
+	}) : [ E('tr', { class: 'tr placeholder' }, E('td', { class: 'td', colspan: 5 }, _('No lists available.'))) ]));
+	return E('div', { class: 'cbi-section' }, [ E('h3', {}, title), zui.fitActionColumn(node) ]);
 }
 
 function renderManager() {

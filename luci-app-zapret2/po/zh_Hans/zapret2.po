@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: luci-app-zapret2 4.0.0-r31\n"
+"Project-Id-Version: luci-app-zapret2 4.0.0-r33\n"
 "PO-Revision-Date: 2026-08-13 10:20+0800\n"
 "Last-Translator: Damoc\n"
 "Language-Team: Chinese (Simplified)\n"
@@ -10,295 +10,295 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:371
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:371
 msgid "%d steps"
 msgstr "%d 个步骤"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:53
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:63
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:69
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:80
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:513
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:660
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1008
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1013
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:53
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:513
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:660
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1008
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1013
 msgid "Actions"
 msgstr "操作"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:646
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:767
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:646
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:767
 msgid "Add"
 msgstr "添加"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:629
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:694
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:629
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:694
 msgid "Add Profile"
 msgstr "添加 Profile"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:703
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:703
 msgid "Add a Profile to configure its filters and processing steps."
 msgstr "添加 Profile 后可配置其过滤器和处理步骤。"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:58
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:58
 msgid "Add a TCP MD5 option"
 msgstr "添加 TCP MD5 选项"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:743
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:743
 msgid "Add ordered step"
 msgstr "添加有序步骤"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:543
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:543
 msgid "Add step"
 msgstr "添加步骤"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1082
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1082
 msgid "Address family"
 msgstr "地址族"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:132
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:132
 msgid "Advanced runtime"
 msgstr "高级运行参数"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:140
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:140
 msgid "All eligible traffic"
 msgstr "全部符合条件的流量"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:140
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:140
 msgid ""
 "All mode may include proxy or VPN tunnels unless an external mark excludes "
 "them."
 msgstr "“全部”模式也可能接管代理或 VPN 隧道，除非外部为其打标并在此排除。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:850
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:850
 msgid "Any direction"
 msgstr "任意方向"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:22
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:22
 msgid "Append the SNI name last"
 msgstr "将 SNI 名称追加到末尾"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:153
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:153
 msgid ""
 "Autohostlist requires conntrack and will be rejected when this is enabled."
 msgstr "自动主机列表依赖连接跟踪，启用此项时相关配置会被拒绝。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:86
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:86
 msgid "Automatic domain lists"
 msgstr "自动域名列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:363
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1074
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:363
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1074
 msgid "Automatic hostlist"
 msgstr "自动主机列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:132
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:132
 msgid "Basic settings"
 msgstr "基本设置"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:873
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:17
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:873
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:17
 msgid "Blob or clone ID"
 msgstr "Blob 或克隆 ID"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:152
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:152
 msgid "Cache hostnames by IP"
 msgstr "按 IP 缓存主机名"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:46
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:636
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:750
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:46
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:636
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:750
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:80
 msgid "Cancel"
 msgstr "取消"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:159
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:159
 msgid "Changes are valid but have not been saved or applied."
 msgstr "当前修改有效，但尚未保存或应用。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:630
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:630
 msgid ""
 "Choose a template. All generated fields and steps remain editable before "
 "saving."
 msgstr "选择模板。保存前仍可编辑模板生成的所有字段和步骤。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:63
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:77
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:77
 msgid "Clear"
 msgstr "清空"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:63
 msgid "Clear automatic hostlist"
 msgstr "清空自动主机列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:63
 msgid "Clear the managed automatic hostlist for %s?"
 msgstr "清空由系统管理的自动主机列表 %s？"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:39
 msgid "Clone TLS ClientHello"
 msgstr "克隆 TLS ClientHello"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:877
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:18
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:877
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:18
 msgid "Clone fallback blob"
 msgstr "克隆回退 Blob"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:156
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:156
 msgid "Configuration has been saved and applied. Zapret2 was reloaded."
 msgstr "配置已保存并应用，Zapret2 已重新加载。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:158
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:158
 msgid "Configuration has been saved but not applied."
 msgstr "配置已保存，但尚未应用。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1047
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1054
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1047
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1054
 msgid "Configure ordered traffic-matching Profiles and processing steps."
 msgstr "配置有序的流量匹配 Profile 和处理步骤。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:124
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:127
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:124
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:127
 msgid "Configure traffic interception and runtime settings."
 msgstr "配置流量接管和运行参数。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:129
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:129
 msgid ""
 "Configure traffic interception and runtime settings. Ordered Profiles are "
 "configured on the Profiles page."
 msgstr "配置流量接管和运行参数。有序 Profile 请在“配置文件”页面中设置。"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:87
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:87
 msgid "Confirm"
 msgstr "确认"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:143
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:143
 msgid "Connection tracking mark"
 msgstr "连接跟踪标记"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:169
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:169
 msgid "Correct the reported errors and validate again."
 msgstr "请修正报告的错误，然后重新校验。"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:57
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:57
 msgid "Corrupt the transport checksum"
 msgstr "破坏传输层校验和"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:730
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:730
 msgid "Create a Profile before adding a step."
 msgstr "请先创建 Profile，再添加步骤。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:87
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:87
 msgid "Create list"
 msgstr "创建列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:39
 msgid "Create local list"
 msgstr "创建本地列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:50
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:945
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:46
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:50
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:945
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:46
 msgid "DHT directory number"
 msgstr "DHT 目录编号"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:150
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:150
 msgid "Debug logging"
 msgstr "调试日志"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:852
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:11
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:852
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:11
 msgid "Delay (milliseconds)"
 msgstr "延迟（毫秒）"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:60
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:79
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:320
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:403
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:483
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:618
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:60
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:79
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:320
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:403
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:483
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:618
 msgid "Delete"
 msgstr "删除"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:318
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:318
 msgid "Delete Profile"
 msgstr "删除 Profile"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:20
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:20
 msgid "Delete existing SNI names"
 msgstr "删除现有 SNI 名称"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:60
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:60
 msgid "Delete list %s?"
 msgstr "删除列表 %s？"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:60
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:60
 msgid "Delete local list"
 msgstr "删除本地列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:403
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:403
 msgid "Delete step"
 msgstr "删除步骤"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:19
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:19
 msgid "Delete the SNI extension"
 msgstr "删除 SNI 扩展"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:319
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:319
 msgid "Delete this Profile and all of its ordered steps?"
 msgstr "删除此 Profile 及其全部有序步骤？"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:403
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:403
 msgid "Delete this processing step?"
 msgstr "删除此处理步骤？"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:847
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:10
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:847
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:10
 msgid "Direction"
 msgstr "方向"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:566
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:566
 msgid "Disable"
 msgstr "禁用"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:153
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:153
 msgid "Disable nfqws2 conntrack"
 msgstr "禁用 nfqws2 连接跟踪"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:156
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:156
 msgid "Disable payload detectors"
 msgstr "禁用 Payload 检测器"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:157
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:157
 msgid "Disable reassembly"
 msgstr "禁用重组"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:563
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:563
 msgid "Disable this Profile"
 msgstr "禁用此 Profile"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:38
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:554
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:38
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:554
 msgid "Disabled"
 msgstr "已禁用"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:928
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:36
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:928
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:36
 msgid "Disorder-after position"
 msgstr "乱序后置位置"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:32
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:32
 msgid "Domain"
 msgstr "域名"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1072
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1072
 msgid "Domain filtering"
 msgstr "域名过滤"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:86
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:86
 msgid "Domain lists"
 msgstr "域名列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:43
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:43
 msgid ""
 "Domain lists accept domains and ^exact.domain. IP lists accept IPv4, IPv6 "
 "and CIDR. Empty lines and # comments are allowed."
@@ -306,185 +306,185 @@ msgstr ""
 "域名列表接受普通域名和 ^精确域名；IP 列表接受 IPv4、IPv6 和 CIDR。允许空行和"
 "以 # 开头的注释。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:361
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:361
 msgid "Domains +%d / −%d"
 msgstr "域名 +%d / −%d"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:474
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:609
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:474
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:609
 msgid "Down"
 msgstr "下移"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:28
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:28
 msgid "Drop packet"
 msgstr "丢弃数据包"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:73
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:454
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:588
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:73
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:454
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:588
 msgid "Edit"
 msgstr "编辑"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:39
 msgid "Edit local list"
 msgstr "编辑本地列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:508
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:508
 msgid "Effective context"
 msgstr "生效上下文"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:624
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:624
 msgid "Empty Profile (disabled)"
 msgstr "空白 Profile（禁用）"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:566
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:566
 msgid "Enable"
 msgstr "启用"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:983
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:61
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:983
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:61
 msgid "Enable IP fragmentation"
 msgstr "启用 IP 分片"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:133
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:133
 msgid "Enable Zapret2"
 msgstr "启用 Zapret2"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1149
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1149
 msgid "Enable managed automatic hostlist"
 msgstr "启用托管自动主机列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:563
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:563
 msgid "Enable this Profile"
 msgstr "启用此 Profile"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:554
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1080
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:554
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1080
 msgid "Enabled"
 msgstr "已启用"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1121
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1121
 msgid "Enter a domain or ^exact.domain."
 msgstr "输入域名或 ^精确域名。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:906
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:922
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:906
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:922
 msgid "Enter a hostname without ^."
 msgstr "请输入不带精确匹配前缀的主机名。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1122
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1122
 msgid "Enter an IPv4/IPv6 address or CIDR."
 msgstr "输入 IPv4/IPv6 地址或 CIDR。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:862
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:862
 msgid "Enter exactly four ASCII letters."
 msgstr "请恰好输入四个 ASCII 字母。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:69
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:80
 msgid "Entries"
 msgstr "条目数"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:154
 msgid "Established timeout"
 msgstr "已建立连接超时"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:142
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:142
 msgid "Exclude packet marks"
 msgstr "排除数据包标记"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1115
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1115
 msgid "Excluded IP addresses"
 msgstr "排除的 IP 地址"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1130
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1130
 msgid "Excluded IP lists"
 msgstr "排除的 IP 列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1128
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1128
 msgid "Excluded domain lists"
 msgstr "排除的域名列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1113
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1113
 msgid "Excluded domains"
 msgstr "排除的域名"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:142
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:142
 msgid "Exclusion always takes precedence."
 msgstr "排除规则始终优先。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:897
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:30
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:897
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:30
 msgid "Existing SNI name type"
 msgstr "现有 SNI 名称类型"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:75
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:75
 msgid "Export"
 msgstr "导出"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:154
 msgid "FIN timeout"
 msgstr "FIN 超时"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1153
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1153
 msgid "Failure threshold"
 msgstr "失败阈值"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1154
 msgid "Failure window (seconds)"
 msgstr "失败判定时间窗口（秒）"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:45
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:45
 msgid "Fake disorder"
 msgstr "伪造乱序"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:46
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:46
 msgid "Fake host split"
 msgstr "伪造主机名拆分"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:40
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:40
 msgid "Fake packet"
 msgstr "伪造数据包"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:38
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:38
 msgid "Fake packet pattern"
 msgstr "伪造数据包模式"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:44
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:44
 msgid "Fake split"
 msgstr "伪造拆分"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:658
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:658
 msgid "Filters and steps"
 msgstr "过滤器与步骤"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:37
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:37
 msgid "Flow window size"
 msgstr "流量窗口大小"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:870
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:16
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:870
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:16
 msgid "Forced cutoff payloads"
 msgstr "强制截止的 Payload"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:137
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:137
 msgid "Forward source networks"
 msgstr "转发流量来源网络"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:802
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:802
 msgid "Function default"
 msgstr "函数默认值"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:782
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:782
 msgid "Function defaults"
 msgstr "函数默认值"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:52
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:62
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:52
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:62
 msgid "Generated"
 msgstr "生成包"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:143
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:143
 msgid "Generated packet mark"
 msgstr "生成包标记"
 
@@ -492,595 +492,595 @@ msgstr "生成包标记"
 msgid "Grant access to the Zapret2 OpenWrt adapter"
 msgstr "授予访问 Zapret2 OpenWrt 适配层的权限"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:32
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:32
 msgid "HTTP Host header case"
 msgstr "HTTP Host 标头大小写"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:858
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:13
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:858
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:13
 msgid "HTTP Host spelling"
 msgstr "HTTP Host 拼写"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:35
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:35
 msgid "HTTP Unix line endings"
 msgstr "HTTP Unix 换行符"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:625
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:625
 msgid "HTTP conservative (enabled)"
 msgstr "HTTP 保守策略（启用）"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:33
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:33
 msgid "HTTP domain case"
 msgstr "HTTP 域名大小写"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:34
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:34
 msgid "HTTP method line break"
 msgstr "HTTP 方法前换行"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:920
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:35
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:920
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:35
 msgid "Host template"
 msgstr "主机名模板"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:66
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:66
 msgid "ICMP fragment position"
 msgstr "ICMP 分片位置"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1094
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1094
 msgid "ICMP type and code"
 msgstr "ICMP 类型和代码"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:69
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:80
 msgid "ID"
 msgstr "标识符"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:32
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:32
 msgid "IP address"
 msgstr "IP 地址"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:86
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:86
 msgid "IP address lists"
 msgstr "IP 地址列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:152
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:152
 msgid "IP cache lifetime (seconds)"
 msgstr "IP 缓存有效期（秒）"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1073
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1073
 msgid "IP filtering"
 msgstr "IP 过滤"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:67
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:67
 msgid "IP fragment position"
 msgstr "IP 分片位置"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:826
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:826
 msgid "IP fragmentation"
 msgstr "IP 分片"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1097
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1097
 msgid "IP protocols"
 msgstr "IP 协议"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:350
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:350
 msgid "IP protocols %s"
 msgstr "IP 协议 %s"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:362
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:362
 msgid "IPs +%d / −%d"
 msgstr "IP +%d / −%d"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:340
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1083
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:340
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1083
 msgid "IPv4 + IPv6"
 msgstr "IPv4 + IPv6"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:977
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:59
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:977
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:59
 msgid "IPv4 IP ID policy"
 msgstr "IPv4 IP ID 策略"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:151
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:151
 msgid "IPv4 PBR bind fix"
 msgstr "IPv4 PBR 绑定修复"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:952
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:48
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:952
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:48
 msgid "IPv4 TTL"
 msgstr "IPv4 TTL"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:962
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:50
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:962
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:50
 msgid "IPv4 automatic TTL"
 msgstr "IPv4 自动 TTL"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:953
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:953
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:49
 msgid "IPv6 Hop Limit"
 msgstr "IPv6 跳数限制"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:151
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:151
 msgid "IPv6 PBR bind fix"
 msgstr "IPv6 PBR 绑定修复"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:963
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:963
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:51
 msgid "IPv6 automatic Hop Limit"
 msgstr "IPv6 自动跳数限制"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:42
 msgid "Import local text file"
 msgstr "导入本地文本文件"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:27
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:27
 msgid "Inbound range"
 msgstr "入站范围"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:141
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:141
 msgid "Include packet marks"
 msgstr "包含数据包标记"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1114
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1114
 msgid "Included IP addresses"
 msgstr "包含的 IP 地址"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1129
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1129
 msgid "Included IP lists"
 msgstr "包含的 IP 列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1127
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1127
 msgid "Included domain lists"
 msgstr "包含的域名列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1112
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1112
 msgid "Included domains"
 msgstr "包含的域名"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1088
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1088
 msgid "Initial packets"
 msgstr "初始数据包"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:21
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:21
 msgid "Insert the SNI name first"
 msgstr "将 SNI 名称插入开头"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:140
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:140
 msgid "Interception mode"
 msgstr "流量接管模式"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:168
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:168
 msgid "Invalid"
 msgstr "无效"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:60
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:60
 msgid "Keep IP ID sequence between packets"
 msgstr "在数据包之间保持 IP ID 序列"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1089
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1089
 msgid "Keep matching packets queued"
 msgstr "持续将匹配的数据包加入队列"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:24
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:24
 msgid "Keep the original packet"
 msgstr "保留原始数据包"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:24
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:24
 msgid "Last refresh failed: %s"
 msgstr "最近一次刷新失败：%s"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1106
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1106
 msgid "Layer-7 protocols"
 msgstr "应用层协议"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:43
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:43
 msgid "Legacy multiple disorder"
 msgstr "传统多段乱序"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:40
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:40
 msgid "List ID"
 msgstr "列表 ID"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:41
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:41
 msgid "List type"
 msgstr "列表类型"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:95
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:97
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:95
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:97
 #: root/usr/share/luci/menu.d/luci-app-zapret2.json:24
 msgid "Local lists"
 msgstr "本地列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:53
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:53
 #: root/usr/share/luci/menu.d/luci-app-zapret2.json:29
 msgid "Log"
 msgstr "日志"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1177
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1177
 msgid "Log automatic hostlist decisions"
 msgstr "记录自动主机列表判定"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:155
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:155
 msgid "Lua garbage collection interval"
 msgstr "Lua 垃圾回收间隔"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:824
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:824
 msgid "Main action"
 msgstr "主要动作"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:95
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:95
 msgid "Manage local domain and IP lists."
 msgstr "管理本地域名和 IP 列表。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:97
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:97
 msgid ""
 "Manage local domain and IP lists. Automatic hostlists are maintained by "
 "nfqws2 and can only be viewed, exported, or cleared."
 msgstr ""
 "管理本地域名和 IP 列表。自动主机列表由 nfqws2 维护，只能查看、导出或清空。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:140
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:140
 msgid "Match packet marks"
 msgstr "匹配数据包标记"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1071
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1071
 msgid "Matching conditions"
 msgstr "匹配条件"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:943
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:44
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:943
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:44
 msgid "Maximum UDP length"
 msgstr "UDP 最大长度"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1157
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1157
 msgid "Maximum incoming sequence"
 msgstr "最大入向序列值"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1156
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1156
 msgid "Maximum retransmission sequence"
 msgstr "最大重传序列值"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:942
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:43
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:942
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:43
 msgid "Minimum UDP length"
 msgstr "UDP 最小长度"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:30
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:30
 msgid "Modify packet"
 msgstr "修改数据包"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:55
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:55
 msgid "Move TCP timestamp first"
 msgstr "将 TCP 时间戳移到开头"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:42
 msgid "Multiple disorder"
 msgstr "多段乱序"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:41
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:41
 msgid "Multiple split"
 msgstr "多段拆分"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:147
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:147
 msgid "NFQUEUE number"
 msgstr "NFQUEUE 队列号"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1078
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1078
 msgid "Name"
 msgstr "名称"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:898
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:31
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:898
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:31
 msgid "New SNI name type"
 msgstr "新 SNI 名称类型"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:957
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:63
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:957
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:63
 msgid "Next-header value"
 msgstr "下一标头值"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:440
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:440
 msgid "No"
 msgstr "否"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:680
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:680
 msgid "No Profiles are configured."
 msgstr "尚未配置 Profile。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:364
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:364
 msgid "No domain or IP filter"
 msgstr "未设置域名或 IP 过滤"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:81
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:81
 msgid "No lists available."
 msgstr "没有可用列表。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1137
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1137
 msgid "No local lists available"
 msgstr "没有可用的本地列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:30
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:50
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:30
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:50
 msgid "No log entries are available."
 msgstr "暂无日志。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:370
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:517
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:370
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:517
 msgid "No processing steps"
 msgstr "未设置处理步骤"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:775
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:777
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:775
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:777
 msgid "Not configured"
 msgstr "尚未配置"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:19
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:208
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:19
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:208
 msgid "Not validated"
 msgstr "未校验"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:939
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:40
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:939
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:40
 msgid "OOB byte"
 msgstr "OOB 字节"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:940
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:41
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:940
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:41
 msgid "OOB urgent pointer"
 msgstr "OOB 紧急指针"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:150
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:150
 msgid "Off"
 msgstr "关闭"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:506
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:655
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:506
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:655
 msgid "Order"
 msgstr "顺序"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:848
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:848
 msgid "Original direction"
 msgstr "原向"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:52
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:61
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:52
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:61
 msgid "Other original / reply"
 msgstr "其他协议原向 / 回向"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
 msgid "Other protocol original-direction packets"
 msgstr "其他协议原向数据包数"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
 msgid "Other protocol reply-direction packets"
 msgstr "其他协议回向数据包数"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:26
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:26
 msgid "Outbound range"
 msgstr "出站范围"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:49
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:57
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:57
 msgid "PID"
 msgstr "PID"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:825
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:825
 msgid "Packet headers and sending"
 msgstr "数据包标头与发送"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:141
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:141
 msgid ""
 "Packets are selected by mark before Profile matching. This is separate from "
 "domain and IP filtering."
 msgstr "数据包会在 Profile 匹配前按标记筛选，此设置与域名和 IP 过滤相互独立。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1060
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1060
 msgid ""
 "Packets use the first enabled matching Profile, then follow its ordered "
 "steps."
 msgstr "数据包由第一个已启用且匹配的 Profile 处理，并依次执行其中的步骤。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:944
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:45
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:944
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:45
 msgid "Pattern offset"
 msgstr "模式偏移"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:56
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:56
 msgid ""
 "Payload and range conditions apply only to actions that follow them in this "
 "Profile."
 msgstr "Payload 和范围条件仅影响同一 Profile 中位于其后的动作。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:821
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:821
 msgid "Payload and ranges"
 msgstr "Payload 与范围"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:25
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:25
 msgid "Payload filter"
 msgstr "Payload 过滤器"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:833
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:8
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:833
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:8
 msgid "Payload values"
 msgstr "载荷类型"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:912
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:34
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:912
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:34
 msgid "Position expression"
 msgstr "位置表达式"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:134
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:134
 msgid "Process IPv4"
 msgstr "处理 IPv4"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:134
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:134
 msgid "Process IPv6"
 msgstr "处理 IPv6"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:136
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:136
 msgid "Process forwarded traffic"
 msgstr "处理转发流量"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:138
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:138
 msgid "Process router-local traffic"
 msgstr "处理路由器本机流量"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:656
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:656
 msgid "Profile"
 msgstr "Profile"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1075
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1075
 msgid "Profile ID"
 msgstr "Profile ID"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:683
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:683
 msgid "Profile order"
 msgstr "Profile 顺序"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:702
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:702
 msgid "Profile workspace"
 msgstr "Profile 工作区"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:50
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:58
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1047
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1054
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1059
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:50
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:58
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1047
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1054
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1059
 #: root/usr/share/luci/menu.d/luci-app-zapret2.json:19
 msgid "Profiles"
 msgstr "配置文件"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:627
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:627
 msgid "QUIC standard (disabled)"
 msgstr "QUIC 标准策略（禁用）"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1087
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1087
 msgid "Queue mode"
 msgstr "队列模式"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:132
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:132
 msgid "Queue settings"
 msgstr "队列设置"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:979
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:979
 msgid "Random"
 msgstr "随机"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:839
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:9
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:839
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:9
 msgid "Range expression"
 msgstr "范围表达式"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:56
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:56
 msgid "Recent log"
 msgstr "最近日志"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:69
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:80
 msgid "Referenced by"
 msgstr "引用方"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:79
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:79
 msgid "Referenced lists cannot be deleted or renamed."
 msgstr "被引用的列表不能删除或重命名。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:87
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:66
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:87
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:66
 msgid "Refresh"
 msgstr "刷新"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:30
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:30
 msgid "Reload"
 msgstr "重新加载"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:56
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:56
 msgid "Remove TCP NOP options"
 msgstr "删除 TCP NOP 选项"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:853
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:12
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:853
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:12
 msgid "Repeats"
 msgstr "重复次数"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:849
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:849
 msgid "Reply direction"
 msgstr "回向"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1169
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1169
 msgid "Reset retransmission counter"
 msgstr "重置重传计数器"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1007
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1012
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1007
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1012
 msgid "Result"
 msgstr "结果"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1155
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1155
 msgid "Retransmission threshold"
 msgstr "重传阈值"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:984
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:62
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:984
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:62
 msgid "Reverse fragment order"
 msgstr "反向发送分片"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:37
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:37
 msgid "Running"
 msgstr "运行中"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:38
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:38
 msgid "SYN payload"
 msgstr "SYN Payload"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:154
 msgid "SYN timeout"
 msgstr "SYN 超时"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:946
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:47
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:946
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:47
 msgid "SYN/ACK split mode"
 msgstr "SYN/ACK 拆分模式"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:36
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:36
 msgid "SYN/ACK window size"
 msgstr "SYN/ACK 窗口大小"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:51
 msgid "Save list"
 msgstr "保存列表"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:20
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:209
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:20
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:209
 msgid "Saving also validates the current changes."
 msgstr "保存时也会校验当前修改。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:73
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:73
 msgid "Scroll to bottom"
 msgstr "滚动到底部"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:29
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:29
 msgid "Send RST with ACK"
 msgstr "发送带 ACK 的 RST"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:29
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:29
 msgid "Send packet"
 msgstr "发送数据包"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:938
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:39
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:938
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:39
 msgid "Sequence overlap"
 msgstr "序列号重叠"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:37
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:37
 msgid "Sequence overlap pattern"
 msgstr "序列重叠模式"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:978
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:978
 msgid "Sequential"
 msgstr "顺序递增"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:49
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:56
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:56
 msgid "Service"
 msgstr "服务"
 
@@ -1088,387 +1088,387 @@ msgstr "服务"
 msgid "Settings"
 msgstr "设置"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:69
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:80
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:69
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:80
 msgid "Size"
 msgstr "大小"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:25
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:25
 msgid "Skip fake packet 1"
 msgstr "跳过伪造数据包 1"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:26
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:26
 msgid "Skip fake packet 2"
 msgstr "跳过伪造数据包 2"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:27
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:27
 msgid "Skip fake packet 3"
 msgstr "跳过伪造数据包 3"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:28
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:28
 msgid "Skip fake packet 4"
 msgstr "跳过伪造数据包 4"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:23
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:23
 msgid "Skip if optional data is unavailable"
 msgstr "可选数据不可用时跳过"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:52
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:52
 msgid "Split SYN/ACK"
 msgstr "拆分 SYN/ACK"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:29
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:29
 msgid "Start"
 msgstr "启动"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:104
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:659
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1006
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1011
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:104
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:659
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1006
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1011
 msgid "Status"
 msgstr "状态"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:507
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:507
 msgid "Step"
 msgstr "步骤"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:746
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:827
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:746
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:827
 msgid "Step type"
 msgstr "步骤类型"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:31
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:31
 msgid "Stop"
 msgstr "停止"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:38
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:38
 msgid "Stopped unexpectedly"
 msgstr "异常停止"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:51
 msgid "Synthetic SYN/ACK"
 msgstr "合成 SYN/ACK"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:150
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:150
 msgid "System log"
 msgstr "系统日志"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:955
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:53
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:955
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:53
 msgid "TCP acknowledgement offset"
 msgstr "TCP 确认号偏移"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:64
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:64
 msgid "TCP fragment position"
 msgstr "TCP 分片位置"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:51
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:59
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:59
 msgid "TCP original / reply"
 msgstr "TCP 原向 / 回向"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
 msgid "TCP original-direction packets"
 msgstr "TCP 原向数据包数"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:48
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:48
 msgid "TCP out-of-band"
 msgstr "TCP 带外数据"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1092
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1092
 msgid "TCP ports"
 msgstr "TCP 端口"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
 msgid "TCP reply-direction packets"
 msgstr "TCP 回向数据包数"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:31
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:31
 msgid "TCP reset"
 msgstr "TCP 重置"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:47
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:47
 msgid "TCP segment"
 msgstr "TCP 分段"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:954
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:52
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:954
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:52
 msgid "TCP sequence offset"
 msgstr "TCP 序列号偏移"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:956
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:54
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:956
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:54
 msgid "TCP timestamp offset"
 msgstr "TCP 时间戳偏移"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:904
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:33
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:904
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:33
 msgid "TLS SNI hostname"
 msgstr "TLS SNI 主机名"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:626
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:626
 msgid "TLS conservative (enabled)"
 msgstr "TLS 保守策略（启用）"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:899
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:32
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:899
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:32
 msgid "TLS modifications"
 msgstr "TLS 修改"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:632
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:632
 msgid "Template"
 msgstr "模板"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/strategy.js:109
+#: htdocs/luci-static/resources/zapret2/v4r33/strategy.js:109
 msgid "The configuration exceeds the 128 KiB limit."
 msgstr "配置超过 128 KiB 上限。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:190
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:190
 msgid "The current changes are being validated."
 msgstr "正在校验当前修改。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:684
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:684
 msgid ""
 "The first enabled matching Profile is used. Later Profiles are not evaluated."
 msgstr "使用第一个已启用且匹配的 Profile，不再检查后续 Profile。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:49
 msgid "The list exceeds the allowed size."
 msgstr "列表大小超过允许的上限。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:264
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:264
 msgid "The maximum number of Profiles has been reached."
 msgstr "已达到 Profile 数量上限。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:735
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:735
 msgid "The step limit has been reached."
 msgstr "已达到步骤数量上限。"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/rpc.js:21
+#: htdocs/luci-static/resources/zapret2/v4r33/rpc.js:21
 msgid "This LuCI application requires Zapret2 API v%d and UCI schema v%d."
 msgstr "此 LuCI 应用需要 Zapret2 API v%d 和 UCI 配置结构 v%d。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:127
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:127
 msgid ""
 "This application requires Zapret2 configuration version 2. The current "
 "settings cannot be edited."
 msgstr "此应用需要 Zapret2 配置版本 2，当前设置无法编辑。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:44
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:44
 msgid ""
 "This list is in use. Its ID and type cannot be changed until all Profile "
 "references are removed."
 msgstr "此列表正在使用。移除所有 Profile 引用前，不能修改其 ID 和类型。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1055
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1055
 msgid "This page requires Zapret2 configuration version 2."
 msgstr "此页面需要 Zapret2 配置版本 2。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:132
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:132
 msgid "Traffic interception"
 msgstr "流量接管"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:657
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:657
 msgid "Traffic match"
 msgstr "流量匹配"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:65
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:65
 msgid "UDP fragment position"
 msgstr "UDP 分片位置"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:49
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:49
 msgid "UDP length"
 msgstr "UDP 长度"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:941
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:42
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:941
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:42
 msgid "UDP length increment"
 msgstr "UDP 长度增量"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:51
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:60
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:51
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:60
 msgid "UDP original / reply"
 msgstr "UDP 原向 / 回向"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1158
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1158
 msgid "UDP original-direction packets"
 msgstr "UDP 原向数据包数"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1093
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1093
 msgid "UDP ports"
 msgstr "UDP 端口"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:148
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1159
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:148
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1159
 msgid "UDP reply-direction packets"
 msgstr "UDP 回向数据包数"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:154
 msgid "UDP timeout"
 msgstr "UDP 超时"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:19
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:19
 msgid "Unable to read the selected file."
 msgstr "无法读取所选文件。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:79
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:79
 msgid "Unable to update service status: %s"
 msgstr "无法更新服务状态：%s"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:981
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:981
 msgid "Unchanged"
 msgstr "保持不变"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:36
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:36
 msgid "Unknown"
 msgstr "未知"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:8
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:8
 msgid "Unknown error"
 msgstr "未知错误"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:59
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:59
 msgid "Unknown step"
 msgstr "未知步骤"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:464
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:599
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:464
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:599
 msgid "Up"
 msgstr "上移"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:424
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:424
 msgid "Updates following steps"
 msgstr "更新后续步骤"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1099
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1099
 msgid "Use * or protocol number 0..255."
 msgstr "使用 * 或 0..255 的协议号。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1094
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1094
 msgid "Use *, TYPE or TYPE:CODE."
 msgstr "使用 *、TYPE 或 TYPE:CODE。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:141
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:142
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:141
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:142
 msgid "Use 0xVALUE/0xMASK."
 msgstr "请使用 0x值/0x掩码 格式。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/lists.js:48
+#: htdocs/luci-static/resources/view/zapret2/v4r33/lists.js:48
 msgid "Use 1 to 32 lowercase letters, digits or underscores for the list ID."
 msgstr "列表 ID 应使用 1 至 32 个小写字母、数字或下划线。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:992
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:992
 msgid "Use a multiple of 8 from 8 to 1480."
 msgstr "请输入 8 到 1480 之间的 8 的倍数。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1092
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1093
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1092
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1093
 msgid "Use a port, range, *, or ~ exclusion."
 msgstr "使用端口、端口范围、* 或 ~ 排除项。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:914
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:930
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:914
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:930
 msgid "Use a safe nfqws2 position expression."
 msgstr "使用安全的 nfqws2 位置表达式。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:843
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:843
 msgid "Use a valid nfqws2 n/a/d/s/p/b/x range expression."
 msgstr "使用有效的 nfqws2 n/a/d/s/p/b/x 范围表达式。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:971
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:971
 msgid "Use delta,min-max within valid TTL bounds."
 msgstr "使用 delta,min-max 格式，最小值和最大值须在 1～255 内。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:144
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:144
 msgid "Use one nonzero hexadecimal bit."
 msgstr "请使用仅含一个非零位的十六进制标记。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:154
 msgid "Valid"
 msgstr "有效"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:154
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:154
 msgid "Valid with warnings"
 msgstr "有效，但有警告"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:138
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1020
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:138
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1020
 msgid "Validate"
 msgstr "校验"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:998
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:998
 msgid "Validate changes"
 msgstr "校验修改"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1001
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1001
 msgid ""
 "Validate the current changes with the same compiler used when the service "
 "starts. This does not save or apply the configuration."
 msgstr "使用与服务启动时相同的编译器校验当前修改。此操作不会保存或应用配置。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:189
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:189
 msgid "Validating"
 msgstr "正在校验"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:138
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:1020
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:138
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:1020
 msgid "Validating…"
 msgstr "正在校验…"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:579
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:579
 msgid "View"
 msgstr "查看"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/log.js:53
+#: htdocs/luci-static/resources/view/zapret2/v4r33/log.js:53
 msgid "View recent Zapret2 service messages."
 msgstr "查看近期的 Zapret2 服务消息。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:135
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:135
 msgid "WAN networks"
 msgstr "WAN 网络"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:865
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:15
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:865
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:15
 msgid "Window scale"
 msgstr "窗口缩放因子"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:864
-#: htdocs/luci-static/resources/zapret2/v4r31/fields.js:14
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:864
+#: htdocs/luci-static/resources/zapret2/v4r33/fields.js:14
 msgid "Window size"
 msgstr "窗口大小"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:440
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:440
 msgid "Yes"
 msgstr "是"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:124
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:127
-#: htdocs/luci-static/resources/view/zapret2/v4r31/config.js:129
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:124
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:127
+#: htdocs/luci-static/resources/view/zapret2/v4r33/config.js:129
 #: root/usr/share/luci/menu.d/luci-app-zapret2.json:3
 msgid "Zapret2"
 msgstr "Zapret2"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/rpc.js:28
+#: htdocs/luci-static/resources/zapret2/v4r33/rpc.js:28
 msgid "Zapret2 returned an invalid response."
 msgstr "Zapret2 返回了无效响应。"
 
-#: htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js:980
+#: htdocs/luci-static/resources/view/zapret2/v4r33/profiles.js:980
 msgid "Zero"
 msgstr "置零"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:13
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:13
 msgid "line %d"
 msgstr "第 %d 行"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:11
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:11
 msgid "option %s"
 msgstr "选项 %s"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:10
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:10
 msgid "section %s"
 msgstr "配置节 %s"
 
-#: htdocs/luci-static/resources/zapret2/v4r31/ui.js:12
+#: htdocs/luci-static/resources/zapret2/v4r33/ui.js:12
 msgid "step %s"
 msgstr "步骤 %s"
