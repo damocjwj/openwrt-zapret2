@@ -2,7 +2,7 @@
 'require baseclass';
 'require ui';
 
-/* Versioned browser helpers for luci-app-zapret2 4.0.0-r30. */
+/* Versioned browser helpers for luci-app-zapret2 4.0.0-r33. */
 
 function errorText(error) {
 	if (!error) return _('Unknown error');
@@ -39,18 +39,29 @@ function badge(text, kind) {
 }
 
 function actionRow(buttons, className, attributes) {
-	var content = [];
-	(buttons || []).filter(Boolean).forEach(function(button) {
-		if (content.length) content.push(' ');
-		content.push(button);
-	});
-	return E('div', Object.assign({ class: className || 'cbi-page-actions' }, attributes || {}), content);
+	return E('div', Object.assign({ class: className || 'cbi-page-actions' }, attributes || {}),
+		(buttons || []).filter(Boolean));
+}
+
+function modalActions(buttons) {
+	return actionRow(buttons, 'button-row');
 }
 
 function tableActions(buttons) {
-	return actionRow(buttons, 'nowrap', {
-		style: 'display:inline-flex;gap:.25rem;justify-content:center;white-space:nowrap',
+	return actionRow(buttons, 'nowrap');
+}
+
+function fitActionColumn(table) {
+	if (!table || !table.querySelectorAll)
+		return table;
+
+	table.querySelectorAll('th.cbi-section-actions, td.cbi-section-actions').forEach(function (cell) {
+		cell.style.width = '1%';
+		cell.style.minWidth = 'max-content';
+		cell.style.whiteSpace = 'nowrap';
 	});
+
+	return table;
 }
 
 function pageHeader(title, description) {
@@ -76,7 +87,7 @@ function counter(data, key) {
 function confirm(title, message, label, callback) {
 	ui.showModal(title, [
 		sectionDescription(message),
-		actionRow([
+		modalActions([
 			E('button', { class: 'btn', click: ui.hideModal }, _('Cancel')),
 			E('button', {
 				class: 'btn cbi-button-negative important',
@@ -85,7 +96,7 @@ function confirm(title, message, label, callback) {
 					return Promise.resolve(callback()).catch(notifyError);
 				}
 			}, label || _('Confirm'))
-		], 'right')
+		])
 	]);
 }
 
@@ -95,7 +106,9 @@ return baseclass.extend({
 	notifyWarnings: notifyWarnings,
 	badge: badge,
 	actionRow: actionRow,
+	modalActions: modalActions,
 	tableActions: tableActions,
+	fitActionColumn: fitActionColumn,
 	pageHeader: pageHeader,
 	sectionDescription: sectionDescription,
 	alertMessage: alertMessage,

@@ -72,8 +72,8 @@ jobs:
           make -j2 package/luci-app-zapret2/compile V=s
           for package in \
             'zapret2_1.0.4-r8_*.ipk' \
-            'luci-app-zapret2_4.0.0-r30_all.ipk' \
-            'luci-i18n-zapret2-zh-cn_4.0.0-r30_all.ipk'; do
+            'luci-app-zapret2_4.0.0-r31_all.ipk' \
+            'luci-i18n-zapret2-zh-cn_4.0.0-r31_all.ipk'; do
             find bin/packages -type f -name "$package" -print -quit | grep -q .
           done
       - name: Verify dependency metadata and linkage

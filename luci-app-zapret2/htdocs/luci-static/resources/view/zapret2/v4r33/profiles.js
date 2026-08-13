@@ -3,19 +3,24 @@
 'require form';
 'require uci';
 'require ui';
-'require zapret2.v4r30.rpc as api';
-'require zapret2.v4r30.strategy as model';
-'require zapret2.v4r30.ui as zui';
-'require zapret2.v4r30.fields as fields';
+'require zapret2.v4r33.rpc as api';
+'require zapret2.v4r33.strategy as model';
+'require zapret2.v4r33.ui as zui';
+'require zapret2.v4r33.fields as fields';
 var map,
 	profileGrid,
 	stepGrid,
 	lists = [],
-	activeProfileId = null;
-var notValidatedMessage = _(
-	'Changes have not been validated. Saving validates them before writing.',
-);
-var candidateStatus = { kind: 'notice', message: notValidatedMessage };
+	activeProfileId = null,
+	lastValidationResult = null,
+	candidateRevision = 0;
+var candidateStatus = {
+	kind: 'notice',
+	label: _('Not validated'),
+	result: _('Saving also validates the current changes.'),
+	detail: '',
+	busy: false,
+};
 var LABELS = {
 	payload: _('Payload filter'),
 	out_range: _('Outbound range'),
@@ -108,44 +113,103 @@ function supporting(option) {
 		return model.supports(type, option);
 	});
 }
-function setCandidateStatus(kind, message) {
-	candidateStatus = { kind: kind, message: message };
-	var node = document.getElementById('zapret2-candidate-status');
-	if (!node) return;
-	node.className = 'alert-message ' + kind;
-	node.textContent = message;
+function setCandidateStatus(kind, label, result, detail, busy) {
+	candidateStatus = {
+		kind: kind,
+		label: label,
+		result: result,
+		detail: detail || '',
+		busy: !!busy,
+	};
+	var state = document.getElementById('zapret2-validation-state');
+	var message = document.getElementById('zapret2-validation-result');
+	var details = document.getElementById('zapret2-validation-detail');
+	var button = document.getElementById('zapret2-validation-button');
+	if (state) state.replaceChildren(zui.badge(label, kind));
+	if (message) message.textContent = result;
+	if (details) {
+		details.className = 'alert-message ' + (kind === 'danger' ? 'error' : 'warning');
+		details.textContent = candidateStatus.detail;
+		details.hidden = !candidateStatus.detail;
+	}
+	if (button) {
+		button.disabled = candidateStatus.busy;
+		button.className = 'btn cbi-button-action' + (candidateStatus.busy ? ' spinning' : '');
+		button.textContent = candidateStatus.busy ? _('Validating…') : _('Validate');
+	}
+}
+function diagnosticText(items) {
+	return (items || [])
+		.map(function (item) {
+			return item.message || String(item);
+		})
+		.join('\n');
+}
+function setValidationSuccess(result, state) {
+	var warnings = (result && result.diagnostics && result.diagnostics.warnings) || [];
+	var saved = state === 'saved';
+	var applied = state === 'applied';
+	setCandidateStatus(
+		warnings.length ? 'warning' : 'success',
+		warnings.length ? _('Valid with warnings') : _('Valid'),
+		applied
+			? _('Configuration has been saved and applied. Zapret2 was reloaded.')
+			: saved
+				? _('Configuration has been saved but not applied.')
+				: _('Changes are valid but have not been saved or applied.'),
+		diagnosticText(warnings),
+		false,
+	);
+}
+function setValidationError(error) {
+	lastValidationResult = null;
+	setCandidateStatus(
+		'danger',
+		_('Invalid'),
+		_('Correct the reported errors and validate again.'),
+		zui.errorText(error),
+		false,
+	);
 }
 function validateCandidate() {
+	var revision = candidateRevision;
 	return api.validate(model.candidate()).then(function (result) {
-		var warnings = (result.diagnostics && result.diagnostics.warnings) || [];
-		setCandidateStatus(
-			warnings.length ? 'warning' : 'success',
-			warnings.length
-				? _(
-						'Validation passed with %d warnings. Changes have not been saved or applied.',
-					).format(warnings.length)
-				: _('Validation passed. Changes have not been saved or applied.'),
-		);
-		zui.notifyWarnings(result.diagnostics);
+		if (revision !== candidateRevision) return result;
+		lastValidationResult = result;
+		setValidationSuccess(result, 'changed');
 		return result;
+	}).catch(function (error) {
+		if (revision === candidateRevision) setValidationError(error);
+		throw error;
 	});
 }
 function validateCurrentChanges() {
-	setCandidateStatus('warning', _('Validating changes…'));
+	setCandidateStatus(
+		'warning',
+		_('Validating'),
+		_('The current changes are being validated.'),
+		'',
+		true,
+	);
 	return map
 		.parse()
 		.then(validateCandidate)
 		.catch(function (error) {
-			setCandidateStatus(
-				'error',
-				_('Validation failed: %s').format(error.message || _('Unknown error')),
-			);
-			zui.notifyError(error);
+			if (candidateStatus.busy) setValidationError(error);
+			return false;
 		});
 }
 function invalidateCandidateStatus() {
-	if (candidateStatus.kind !== 'notice' || candidateStatus.message !== notValidatedMessage)
-		setCandidateStatus('notice', notValidatedMessage);
+	candidateRevision++;
+	lastValidationResult = null;
+	if (candidateStatus.kind !== 'notice' || candidateStatus.busy)
+		setCandidateStatus(
+			'notice',
+			_('Not validated'),
+			_('Saving also validates the current changes.'),
+			'',
+			false,
+		);
 }
 function modalSave(section, modalMap, event) {
 	modalMap.checkDepends();
@@ -446,18 +510,15 @@ function renderProfileSteps(profile, steps) {
 						STEP_PARAMETER_COLUMNS.map(function (column) {
 							return E('th', { class: 'th' }, column[1]);
 						}),
-							[E('th', { class: 'th center cbi-section-actions', style: 'width:1%;min-width:max-content;text-align:center;white-space:nowrap' }, _('Actions'))],
+							[E('th', { class: 'th center nowrap cbi-section-actions', style: 'min-width:max-content' }, _('Actions'))],
 					),
 				),
 			])
 		: E('em', {}, _('No processing steps'));
 	if (steps.length) {
 		cbi_update_table(content, rows);
+		zui.fitActionColumn(content);
 		content.querySelectorAll('th.cbi-section-actions, td.cbi-section-actions').forEach(function (cell) {
-			cell.style.width = '1%';
-			cell.style.minWidth = 'max-content';
-			cell.style.textAlign = 'center';
-			cell.style.whiteSpace = 'nowrap';
 			cell.style.position = 'sticky';
 			cell.style.right = '0';
 			cell.style.zIndex = cell.tagName === 'TH' ? '3' : '2';
@@ -568,7 +629,7 @@ function addProfileDialog() {
 			E('label', { class: 'cbi-value-title' }, _('Template')),
 			E('div', { class: 'cbi-value-field' }, selector),
 		]),
-		zui.actionRow([
+		zui.modalActions([
 			E('button', { class: 'btn', click: ui.hideModal }, _('Cancel')),
 			E(
 				'button',
@@ -581,7 +642,7 @@ function addProfileDialog() {
 				},
 				_('Add'),
 			),
-		], 'right'),
+		]),
 	]);
 	return Promise.resolve(false);
 }
@@ -593,7 +654,7 @@ function renderProfileOverview(profiles) {
 			E('th', { class: 'th left top' }, _('Traffic match')),
 			E('th', { class: 'th left top' }, _('Filters and steps')),
 			E('th', { class: 'th' }, _('Status')),
-			E('th', { class: 'th cbi-section-actions', style: 'width:1%;white-space:nowrap' }, _('Actions')),
+			E('th', { class: 'th center nowrap cbi-section-actions' }, _('Actions')),
 		]),
 	]);
 	if (profiles.length) {
@@ -615,6 +676,7 @@ function renderProfileOverview(profiles) {
 	} else {
 		cbi_update_table(table, [], E('em', {}, _('No Profiles are configured.')));
 	}
+	zui.fitActionColumn(table);
 	return E('div', { class: 'cbi-section' }, [
 		E('h3', {}, _('Profile order')),
 		zui.sectionDescription(_('The first enabled matching Profile is used. Later Profiles are not evaluated.')),
@@ -682,7 +744,7 @@ function addStepDialog(profile) {
 					E('label', { class: 'cbi-value-title' }, _('Step type')),
 					E('div', { class: 'cbi-value-field' }, selector),
 				]),
-				zui.actionRow([
+				zui.modalActions([
 					E('button', { class: 'btn', click: ui.hideModal }, _('Cancel')),
 					E(
 						'button',
@@ -702,7 +764,7 @@ function addStepDialog(profile) {
 						},
 						_('Add'),
 					),
-				], 'right'),
+				]),
 			]);
 		})
 		.catch(zui.notifyError);
@@ -930,6 +992,29 @@ function configureStepOptions(a) {
 	});
 }
 function renderValidation() {
+	var table = E('table', { class: 'table cbi-section-table' }, [
+		E('tr', { class: 'tr table-titles' }, [
+			E('th', { class: 'th top', style: 'width:1%;white-space:nowrap' }, _('Status')),
+			E('th', { class: 'th left top' }, _('Result')),
+			E('th', { class: 'th center nowrap cbi-section-actions top' }, _('Actions')),
+		]),
+		E('tr', { class: 'tr cbi-section-table-row' }, [
+			E('td', { id: 'zapret2-validation-state', class: 'td middle', style: 'width:1%;white-space:nowrap', 'data-title': _('Status') }, zui.badge(candidateStatus.label, candidateStatus.kind)),
+			E('td', { id: 'zapret2-validation-result', class: 'td left middle', 'data-title': _('Result') }, candidateStatus.result),
+			E('td', { class: 'td center nowrap cbi-section-actions middle', 'data-title': _('Actions') },
+				zui.tableActions([
+					E('button', {
+						id: 'zapret2-validation-button',
+						class: 'btn cbi-button-action' + (candidateStatus.busy ? ' spinning' : ''),
+						disabled: candidateStatus.busy || null,
+						click: ui.createHandlerFn(null, validateCurrentChanges),
+					}, candidateStatus.busy ? _('Validating…') : _('Validate')),
+				]),
+			),
+		]),
+	]);
+	zui.fitActionColumn(table);
+
 	return E('div', { class: 'cbi-section' }, [
 		E('h3', {}, _('Validate changes')),
 		zui.sectionDescription(
@@ -937,18 +1022,11 @@ function renderValidation() {
 				'Validate the current changes with the same compiler used when the service starts. This does not save or apply the configuration.',
 			),
 		),
-		zui.actionRow([
-			E(
-				'button',
-				{ class: 'btn cbi-button-action', click: ui.createHandlerFn(null, validateCurrentChanges) },
-				_('Validate'),
-			),
-		]),
-		zui.alertMessage(candidateStatus.message, candidateStatus.kind, { id: 'zapret2-candidate-status' }),
-		zui.sectionDescription(
-			_(
-				'Save validates the changes before writing them. Save & Apply also reloads the service.',
-			),
+		table,
+		zui.alertMessage(
+			candidateStatus.detail,
+			candidateStatus.kind === 'danger' ? 'error' : 'warning',
+			{ id: 'zapret2-validation-detail', hidden: candidateStatus.detail ? null : '', style: 'white-space:pre-wrap' },
 		),
 	]);
 }
@@ -1136,7 +1214,9 @@ return view.extend({
 		});
 	},
 	handleSave: function () {
-		return map.save(validateCandidate);
+		return map.save(validateCandidate).then(function () {
+			setValidationSuccess(lastValidationResult, 'saved');
+		});
 	},
 	handleSaveApply: function (event, mode) {
 		return this.handleSave()
@@ -1147,10 +1227,7 @@ return view.extend({
 				return api.service('reload');
 			})
 			.then(function (result) {
-				setCandidateStatus(
-					'success',
-					_('Configuration saved and applied. Zapret2 was reloaded.'),
-				);
+				setValidationSuccess(lastValidationResult, 'applied');
 				return result;
 			})
 			.catch(function (error) {

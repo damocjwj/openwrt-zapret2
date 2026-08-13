@@ -2,7 +2,7 @@
 'require baseclass';
 'require rpc';
 
-/* Versioned browser client for luci-app-zapret2 4.0.0-r30. */
+/* Versioned browser client for luci-app-zapret2 4.0.0-r33. */
 
 var API_VERSION = 1;
 var SCHEMA_VERSION = 2;

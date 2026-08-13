@@ -13,21 +13,21 @@
 	"admin/services/zapret2/config": {
 		"title": "Settings",
 		"order": 10,
-		"action": { "type": "view", "path": "zapret2/v4r30/config" }
+		"action": { "type": "view", "path": "zapret2/v4r33/config" }
 	},
 	"admin/services/zapret2/profiles": {
 		"title": "Profiles",
 		"order": 20,
-		"action": { "type": "view", "path": "zapret2/v4r30/profiles" }
+		"action": { "type": "view", "path": "zapret2/v4r33/profiles" }
 	},
 	"admin/services/zapret2/lists": {
 		"title": "Local lists",
 		"order": 30,
-		"action": { "type": "view", "path": "zapret2/v4r30/lists" }
+		"action": { "type": "view", "path": "zapret2/v4r33/lists" }
 	},
 	"admin/services/zapret2/log": {
 		"title": "Log",
 		"order": 40,
-		"action": { "type": "view", "path": "zapret2/v4r30/log" }
+		"action": { "type": "view", "path": "zapret2/v4r33/log" }
 	}
 }
