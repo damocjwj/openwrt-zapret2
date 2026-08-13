@@ -2,7 +2,7 @@
 'require baseclass';
 'require ui';
 
-/* Versioned browser helpers for luci-app-zapret2 4.0.0-r30. */
+/* Versioned browser helpers for luci-app-zapret2 4.0.0-r31. */
 
 function errorText(error) {
 	if (!error) return _('Unknown error');

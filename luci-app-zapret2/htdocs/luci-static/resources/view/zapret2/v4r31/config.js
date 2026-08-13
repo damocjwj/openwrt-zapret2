@@ -5,9 +5,9 @@
 'require uci';
 'require ui';
 'require tools.widgets as widgets';
-'require zapret2.v4r30.rpc as api';
-'require zapret2.v4r30.strategy as model';
-'require zapret2.v4r30.ui as zui';
+'require zapret2.v4r31.rpc as api';
+'require zapret2.v4r31.strategy as model';
+'require zapret2.v4r31.ui as zui';
 
 var map, currentStatus = null, serviceBusy = false;
 

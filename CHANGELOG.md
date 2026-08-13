@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.4-r8 / 4.0.0-r31 - 2026-08-13
+
+- Replace the full-width validation banner with a compact LuCI status table.
+- Keep validation state distinct for unsaved, saved and applied changes, and
+  show detailed warnings or errors only when present.
+- Disable the validation action while it is running and restore it after
+  client-side or RPC validation failures.
+- Expand the English documentation and add complete Simplified Chinese project,
+  architecture and LuCI guides.
+- Correct the documented `all`-mode behavior and describe the current API,
+  rollback, queue-mode and upgrade boundaries.
+
 ## 1.0.4-r8 / 4.0.0-r30 - 2026-08-13
 
 - Make newly added steps transactional so dismissing the editor removes the

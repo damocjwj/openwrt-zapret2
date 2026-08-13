@@ -3,7 +3,7 @@
 const fs = require('fs');
 const assert = require('assert');
 const path = require('path');
-const model = require('../htdocs/luci-static/resources/zapret2/v4r30/strategy.js');
+const model = require('../htdocs/luci-static/resources/zapret2/v4r31/strategy.js');
 const root = path.resolve(__dirname, '..');
 
 model.setInfo({
@@ -56,11 +56,11 @@ assert.strictEqual(candidate.sections[1].type, 'profile');
 
 const menu = JSON.parse(fs.readFileSync(path.join(root, 'root/usr/share/luci/menu.d/luci-app-zapret2.json'), 'utf8'));
 const acl = JSON.parse(fs.readFileSync(path.join(root, 'root/usr/share/rpcd/acl.d/luci-app-zapret2.json'), 'utf8'));
-const rpc = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/zapret2/v4r30/rpc.js'), 'utf8');
+const rpc = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/zapret2/v4r31/rpc.js'), 'utf8');
 assert.strictEqual(menu['admin/services/zapret2'].action.type, 'firstchild');
 [ 'config', 'profiles', 'lists', 'log' ].forEach((page) => {
-	assert.strictEqual(menu['admin/services/zapret2/' + page].action.path, 'zapret2/v4r30/' + page);
-	const view = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r30/' + page + '.js'), 'utf8');
+	assert.strictEqual(menu['admin/services/zapret2/' + page].action.path, 'zapret2/v4r31/' + page);
+	const view = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r31/' + page + '.js'), 'utf8');
 	assert(view.includes('return view.extend({'));
 });
 assert(!menu['admin/services/zapret2/runtime']);
@@ -80,11 +80,11 @@ assert(!acl['luci-app-zapret2'].read.ubus.zapret2.includes('plan'));
 assert(!acl['luci-app-zapret2'].read.ubus.zapret2.includes('runtime'));
 assert(acl['luci-app-zapret2'].write.ubus.zapret2.includes('list_clear'));
 
-const config = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r30/config.js'), 'utf8');
-const profiles = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r30/profiles.js'), 'utf8');
-const lists = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r30/lists.js'), 'utf8');
-const logs = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r30/log.js'), 'utf8');
-const helpers = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/zapret2/v4r30/ui.js'), 'utf8');
+const config = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r31/config.js'), 'utf8');
+const profiles = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r31/profiles.js'), 'utf8');
+const lists = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r31/lists.js'), 'utf8');
+const logs = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r31/log.js'), 'utf8');
+const helpers = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/zapret2/v4r31/ui.js'), 'utf8');
 assert(!config.includes('api.runtime'));
 assert(!config.includes("_('Configuration')"));
 assert(!config.includes('validateSaved'));
@@ -273,7 +273,30 @@ assert(!helpers.includes("E('div', { class: 'right' }"));
 assert(!helpers.includes("kind === 'danger' ? ' cbi-button-negative' : ''"));
 assert(!helpers.includes('function notifyInfo'));
 assert(profiles.includes("warnings.length ? 'warning' : 'success'"));
-assert(profiles.includes("setCandidateStatus('warning', _('Validating changes…'))"));
+assert(profiles.includes("_('Not validated')"));
+assert(profiles.includes("_('Validating')"));
+assert(profiles.includes("_('Valid with warnings')"));
+assert(profiles.includes("_('Valid')"));
+assert(profiles.includes("_('Invalid')"));
+assert(profiles.includes("class: 'table cbi-section-table'"));
+assert(profiles.includes("class: 'tr cbi-section-table-row'"));
+assert(profiles.includes("id: 'zapret2-validation-state'"));
+assert(profiles.includes("id: 'zapret2-validation-result'"));
+assert(profiles.includes("id: 'zapret2-validation-button'"));
+assert(profiles.includes("id: 'zapret2-validation-detail'"));
+assert(profiles.includes("id: 'zapret2-validation-state', class: 'td middle', style: 'width:1%;white-space:nowrap'"));
+assert(profiles.includes("id: 'zapret2-validation-detail', hidden: candidateStatus.detail ? null : '', style: 'white-space:pre-wrap'"));
+assert(profiles.includes("candidateStatus.busy ? ' spinning' : ''"));
+assert(profiles.includes('button.disabled = candidateStatus.busy'));
+assert(profiles.includes("setValidationSuccess(lastValidationResult, 'saved')"));
+assert(profiles.includes("setValidationSuccess(lastValidationResult, 'applied')"));
+assert(profiles.includes('if (candidateStatus.busy) setValidationError(error)'));
+assert(profiles.includes('candidateRevision = 0'));
+assert(profiles.includes('var revision = candidateRevision'));
+assert(profiles.includes('if (revision !== candidateRevision) return result'));
+assert(profiles.includes('candidateRevision++'));
+assert(!profiles.includes('zapret2-candidate-status'));
+assert(!profiles.includes('Save validates the changes before writing. Save & Apply also reloads the service.'));
 assert(profiles.includes("enabled ? 'success' : 'notice'"));
 assert(!config.includes("class: 'alert-message warning', hidden"));
 [ config, profiles, lists ].forEach((source) => {
@@ -290,7 +313,7 @@ assert(!config.includes("class: 'alert-message warning', hidden"));
  * of a view.extend() instance, without duplicating browser-side rendering. */
 global._ = (value) => value;
 for (const page of [ 'config', 'profiles', 'lists', 'log' ]) {
-	const source = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r30/' + page + '.js'), 'utf8');
+	const source = fs.readFileSync(path.join(root, 'htdocs/luci-static/resources/view/zapret2/v4r31/' + page + '.js'), 'utf8');
 	const aliases = [];
 	for (const match of source.matchAll(/'require ([^']+)';/g)) {
 		const directive = match[1].split(/\s+as\s+/);
