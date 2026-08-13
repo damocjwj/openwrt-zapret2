@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=zapret2
 PKG_VERSION:=1.0.4
-PKG_RELEASE:=4
+PKG_RELEASE:=8
 
 # Use GitHub's archive route, which accepts the exact source filename that the
 # OpenWrt downloader appends and redirects to the immutable codeload archive.
@@ -10,6 +10,9 @@ PKG_SOURCE:=v$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/bol-van/zapret2/archive/refs/tags
 PKG_HASH:=3e18cdff2fd3342bd73e44418befaf466446d4c9ad38692406cd5a494c79896c
 PKG_BUILD_DIR:=$(BUILD_DIR)/zapret2-$(PKG_VERSION)
+# nfqws2 includes sys/capability.h but uses the Linux capability syscalls
+# directly, so libcap is required for staging headers only, not at runtime.
+PKG_BUILD_DEPENDS:=libcap
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=docs/LICENSE.txt
@@ -23,7 +26,7 @@ define Package/zapret2
   CATEGORY:=Network
   SUBMENU:=Firewall
   TITLE:=OpenWrt-native integration for the zapret2 NFQUEUE engine
-  URL:=https://github.com/bol-van/zapret2
+  URL:=https://github.com/damocjwj/openwrt-zapret2
   DEPENDS:=+firewall4 +kmod-nfnetlink-queue +kmod-nft-queue \
 	+libnetfilter-queue +libmnl +liblua5.3 +rpcd +ucode +zlib
   PROVIDES:=zapret2-nfqws

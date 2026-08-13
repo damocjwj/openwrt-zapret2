@@ -9,16 +9,25 @@ acl=$package_dir/files/usr/share/rpcd/acl.d/zapret2.json
 init=$package_dir/files/etc/init.d/zapret2
 list=$package_dir/files/usr/libexec/zapret2-list
 migrate=$package_dir/files/usr/libexec/zapret2-init
+makefile=$package_dir/Makefile
 
 sh -n "$compiler"; sh -n "$init"; sh -n "$list"
 node -e 'JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"))' "$acl"
 node -e 'const j=JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"));if(j.api_version!==1||j.schema_version!==2||!Array.isArray(j.sections))process.exit(1)' "$package_dir/tests/fixtures/valid-basic.json"
 [ "$(base64 -d "$package_dir/tests/fixtures/quic-v1-initial.bin.b64" | wc -c)" = 1200 ]
+grep -Fq 'PKG_RELEASE:=8' "$makefile"
+grep -Fq 'PKG_BUILD_DEPENDS:=libcap' "$makefile"
+! grep -Eq '^[[:space:]]*DEPENDS:.*\+libcap([[:space:]]|$)' "$makefile"
 
 grep -Fq 'plan-dir) plan_dir "$2"' "$compiler"
 for artifact in argv rules.nft manifest.json diagnostics.json; do grep -Fq "\$output/$artifact" "$compiler"; done
 grep -Fq 'set -- "$PROG" --dry-run' "$compiler"
 grep -Fq 'write_rules "$TABLE" "$output/rules.nft"' "$compiler"
+grep -Fq 'port_sets_overlap "$tcp_port_file" "$tcp_keepalive_file"' "$compiler"
+grep -Fq 'previous rules and state were restored' "$compiler"
+! grep -Fq 'all-traffic mode requires explicit risk acknowledgement' "$compiler"
+! grep -Fq 'wildcard or negated transport interception requires explicit risk acknowledgement' "$compiler"
+! grep -Fq 'config_get_bool all_traffic_ack' "$compiler"
 grep -Fq "const compiler = '/usr/libexec/zapret2/compiler.sh'" "$backend"
 grep -Fq "const API_VERSION = 1" "$rpc"; grep -Fq "const SCHEMA_VERSION = 2" "$rpc"
 grep -Fq "failure('unsupported_schema_version', 'schema_version=2 is required.')" "$rpc"

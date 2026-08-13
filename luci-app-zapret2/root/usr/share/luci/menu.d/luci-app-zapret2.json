@@ -11,23 +11,23 @@
 		}
 	},
 	"admin/services/zapret2/config": {
-		"title": "Plugin configuration",
+		"title": "Settings",
 		"order": 10,
-		"action": { "type": "view", "path": "zapret2/v4r10/config" }
+		"action": { "type": "view", "path": "zapret2/v4r30/config" }
 	},
 	"admin/services/zapret2/profiles": {
-		"title": "Strategy configuration",
+		"title": "Profiles",
 		"order": 20,
-		"action": { "type": "view", "path": "zapret2/v4r10/profiles" }
+		"action": { "type": "view", "path": "zapret2/v4r30/profiles" }
 	},
 	"admin/services/zapret2/lists": {
 		"title": "Local lists",
 		"order": 30,
-		"action": { "type": "view", "path": "zapret2/v4r10/lists" }
+		"action": { "type": "view", "path": "zapret2/v4r30/lists" }
 	},
 	"admin/services/zapret2/log": {
 		"title": "Log",
 		"order": 40,
-		"action": { "type": "view", "path": "zapret2/v4r10/log" }
+		"action": { "type": "view", "path": "zapret2/v4r30/log" }
 	}
 }

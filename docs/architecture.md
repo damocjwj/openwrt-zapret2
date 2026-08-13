@@ -14,6 +14,9 @@ OpenWrt. It is not a fork of the upstream packet-processing implementation.
   normalized manifest and structured diagnostics.
 - Candidate planning and actual startup use the same compiler. Valid plans are
   checked with `nfqws2 --dry-run` and `nft -c` before application.
+- Applied runtime metadata is staged on the runtime filesystem. If its commit
+  fails after nftables replacement, the compiler restores the previous table
+  and state before reporting failure.
 - procd only manages the validated `nfqws2` process lifecycle. Stop and failed
   reload paths do not alter firewall4, routing, proxies or unrelated tables.
 
@@ -45,6 +48,11 @@ notrack. Both bits must be reserved from other firewall components.
 The generated nftables rules are derived from enabled Profile filters and are
 confined to `inet zapret2`. Standard flow offload configurations that bypass
 NFQUEUE are rejected rather than modified automatically.
+
+Queue mode belongs to the nftables interception layer, which runs before the
+engine can select a Profile. Overlapping TCP or UDP filters therefore must use
+the same queue mode; configurations that mix `initial` and `keepalive` across
+an overlapping port or range are rejected.
 
 ## Profiles and lists
 

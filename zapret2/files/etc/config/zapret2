@@ -11,6 +11,8 @@ config zapret2 'main'
 	option process_forwarded '1'
 	option process_local '0'
 	option intercept_mode 'marked'
+	# Retained only so upgrades from earlier releases preserve this conffile.
+	# The current control plane ignores this legacy option.
 	option all_traffic_ack '0'
 	# list include_mark '0x10000000/0x10000000'
 	# list exclude_mark '0x08000000/0x08000000'

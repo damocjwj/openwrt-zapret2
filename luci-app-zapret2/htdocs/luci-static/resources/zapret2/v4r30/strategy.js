@@ -2,7 +2,7 @@
 'require baseclass';
 'require uci';
 
-/* Versioned browser model for luci-app-zapret2 4.0.0-r10. */
+/* Versioned browser model for luci-app-zapret2 4.0.0-r30. */
 
 var API_VERSION = 1;
 var SCHEMA_VERSION = 2;
@@ -106,14 +106,10 @@ function candidateFromSections(source) {
 	});
 	var result = { api_version: API_VERSION, schema_version: SCHEMA_VERSION, sections: sections };
 	if (new TextEncoder().encode(JSON.stringify(result)).length > MAX_CANDIDATE_BYTES)
-		throw new Error(_('The candidate configuration exceeds 128 KiB.'));
+		throw new Error(_('The configuration exceeds the 128 KiB limit.'));
 	return result;
 }
 function candidate() { return candidateFromSections(uci.sections('zapret2')); }
-
-function diagnosticMessages(diagnostics, kind) {
-	return ((diagnostics && diagnostics[kind]) || []).map(function(item) { return item.message || String(item); });
-}
 
 var exported = {
 	API_VERSION: API_VERSION, SCHEMA_VERSION: SCHEMA_VERSION,
@@ -122,7 +118,7 @@ var exported = {
 	validPort: validPort, validIcmp: validIcmp, validProtocol: validProtocol,
 	validMark: validMark, validSingleBitMark: validSingleBitMark, validMatchMark: validMatchMark,
 	validAutottl: validAutottl, validFragPos: validFragPos, validRange: validRange, validPosition: validPosition,
-	candidate: candidate, candidateFromSections: candidateFromSections, diagnosticMessages: diagnosticMessages
+	candidate: candidate, candidateFromSections: candidateFromSections
 };
 if (typeof module !== 'undefined') module.exports = exported;
 if (typeof baseclass !== 'undefined') return baseclass.extend(exported);

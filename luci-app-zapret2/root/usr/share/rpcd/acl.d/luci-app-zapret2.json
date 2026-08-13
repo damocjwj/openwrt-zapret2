@@ -3,7 +3,7 @@
 		"description": "Grant access to the Zapret2 OpenWrt adapter",
 		"read": {
 			"ubus": {
-				"zapret2": [ "info", "status", "runtime", "validate", "plan", "list_index", "list_get", "log" ]
+					"zapret2": [ "info", "status", "validate", "list_index", "list_get", "log" ]
 			},
 			"uci": [ "zapret2" ]
 		},

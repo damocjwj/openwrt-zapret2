@@ -11,9 +11,9 @@ jobs:
   source-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Install test dependencies
-        run: sudo apt-get update && sudo apt-get install -y gettext
+        run: sudo apt-get update && sudo apt-get install -y gettext shellcheck
       - name: Check core package contract
         run: sh zapret2/tests/test-contract.sh
       - name: Check LuCI JavaScript syntax
@@ -26,3 +26,65 @@ jobs:
         run: |
           msgfmt --check --check-format -o /dev/null \
             luci-app-zapret2/po/zh_Hans/zapret2.po
+          msgcmp luci-app-zapret2/po/zh_Hans/zapret2.po \
+            luci-app-zapret2/po/templates/zapret2.pot
+          ! grep -Eq '^#,.*fuzzy' luci-app-zapret2/po/zh_Hans/zapret2.po
+      - name: Check shell execution paths
+        run: |
+          shellcheck --severity=error \
+            zapret2/files/usr/libexec/compiler.sh \
+            zapret2/files/usr/libexec/zapret2-init \
+            zapret2/files/usr/libexec/zapret2-list \
+            zapret2/files/etc/init.d/zapret2 \
+            zapret2/tests/*.sh
+
+  package-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      SDK_ARCHIVE: openwrt-sdk-24.10.4-mediatek-filogic_gcc-13.3.0_musl.Linux-x86_64.tar.zst
+      SDK_SHA256: b9762b8e1c8e114b0e6a252b98e94e6e4a1d2496beb9f6044c26227a8d78dee0
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Install SDK dependencies
+        run: sudo apt-get update && sudo apt-get install -y build-essential gawk gettext libncurses-dev python3 rsync unzip zstd
+      - name: Download verified OpenWrt SDK
+        run: |
+          curl --fail --location --retry 3 --output "$SDK_ARCHIVE" \
+            "https://downloads.openwrt.org/releases/24.10.4/targets/mediatek/filogic/$SDK_ARCHIVE"
+          echo "$SDK_SHA256  $SDK_ARCHIVE" | sha256sum -c -
+          mkdir sdk
+          tar --zstd -xf "$SDK_ARCHIVE" -C sdk --strip-components=1
+      - name: Install feeds and this repository
+        working-directory: sdk
+        run: |
+          sed -i 's#^src-git-full base .*#src-git-full base https://github.com/openwrt/openwrt.git^v24.10.4#' feeds.conf.default
+          printf 'src-link zapret2 %s\n' "$GITHUB_WORKSPACE" >> feeds.conf.default
+          ./scripts/feeds update -a
+          test -f feeds/base/package/libs/libcap/Makefile
+          ./scripts/feeds install -a
+          printf 'CONFIG_PACKAGE_zapret2=m\nCONFIG_PACKAGE_luci-app-zapret2=m\nCONFIG_PACKAGE_luci-i18n-zapret2-zh-cn=m\n' >> .config
+          make defconfig
+      - name: Build packages
+        working-directory: sdk
+        run: |
+          make -j2 package/zapret2/compile V=s
+          make -j2 package/luci-app-zapret2/compile V=s
+          for package in \
+            'zapret2_1.0.4-r8_*.ipk' \
+            'luci-app-zapret2_4.0.0-r30_all.ipk' \
+            'luci-i18n-zapret2-zh-cn_4.0.0-r30_all.ipk'; do
+            find bin/packages -type f -name "$package" -print -quit | grep -q .
+          done
+      - name: Verify dependency metadata and linkage
+        working-directory: sdk
+        run: |
+          core_ipk="$(find bin/packages -type f -name 'zapret2_1.0.4-r8_*.ipk' -print -quit)"
+          mkdir -p /tmp/zapret2-control /tmp/zapret2-data
+          tar -xOzf "$core_ipk" ./control.tar.gz > /tmp/zapret2-control.tar.gz
+          tar -xOzf "$core_ipk" ./data.tar.gz > /tmp/zapret2-data.tar.gz
+          tar -xzf /tmp/zapret2-control.tar.gz -C /tmp/zapret2-control
+          tar -xzf /tmp/zapret2-data.tar.gz -C /tmp/zapret2-data
+          ! sed -n '/^Depends:/p' /tmp/zapret2-control/control | grep -Eq '(^|[, ])libcap([, ]|$)'
+          readelf -d /tmp/zapret2-data/usr/sbin/nfqws2 | grep -F '(NEEDED)'
+          ! readelf -d /tmp/zapret2-data/usr/sbin/nfqws2 | grep -Fq 'libcap.so'

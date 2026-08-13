@@ -3,16 +3,17 @@
 'require form';
 'require uci';
 'require ui';
-'require zapret2.v4r10.rpc as api';
-'require zapret2.v4r10.strategy as model';
-'require zapret2.v4r10.ui as zui';
+'require zapret2.v4r30.rpc as api';
+'require zapret2.v4r30.strategy as model';
+'require zapret2.v4r30.ui as zui';
+'require zapret2.v4r30.fields as fields';
 var map,
 	profileGrid,
 	stepGrid,
 	lists = [],
-	expandedProfiles = {};
+	activeProfileId = null;
 var notValidatedMessage = _(
-	'Not validated. Saving will validate again before writing this configuration.',
+	'Changes have not been validated. Saving validates them before writing.',
 );
 var candidateStatus = { kind: 'notice', message: notValidatedMessage };
 var LABELS = {
@@ -45,68 +46,10 @@ var LABELS = {
 	synack: _('Synthetic SYN/ACK'),
 	synack_split: _('Split SYN/ACK'),
 };
-var STEP_PARAMETER_COLUMNS = [
-	['value', _('Payload values'), 'list'],
-	['range', _('Range expression')],
-	['direction', _('Direction')],
-	['delay', _('Delay (milliseconds)')],
-	['repeats', _('Repeats')],
-	['spell', _('HTTP Host spelling')],
-	['size', _('Window size')],
-	['scale', _('Window scale')],
-	['forced_cutoff', _('Forced cutoff payloads'), 'list'],
-	['blob', _('Blob or clone ID')],
-	['fallback', _('Clone fallback blob')],
-	['sni_del_ext', 'sni del ext', 'flag'],
-	['sni_del', 'sni del', 'flag'],
-	['sni_first', 'sni first', 'flag'],
-	['sni_last', 'sni last', 'flag'],
-	['optional', 'optional', 'flag'],
-	['nodrop', 'nodrop', 'flag'],
-	['nofake1', 'nofake1', 'flag'],
-	['nofake2', 'nofake2', 'flag'],
-	['nofake3', 'nofake3', 'flag'],
-	['nofake4', 'nofake4', 'flag'],
-	['rstack', 'rstack', 'flag'],
-	['sni_snt', _('Existing SNI name type')],
-	['sni_snt_new', _('New SNI name type')],
-	['tls_mod', _('TLS modifications'), 'list'],
-	['tls_sni', _('TLS SNI hostname')],
-	['position', _('Position expression')],
-	['host', _('Host template')],
-	['disorder_after', _('Disorder-after position')],
-	['seqovl_pattern', 'seqovl pattern'],
-	['pattern', 'pattern'],
-	['seqovl', _('Sequence overlap')],
-	['byte', _('OOB byte')],
-	['urp', _('OOB urgent pointer')],
-	['increment', _('UDP length increment')],
-	['min', _('Minimum UDP length')],
-	['max', _('Maximum UDP length')],
-	['pattern_offset', _('Pattern offset')],
-	['dn', _('DHT directory number')],
-	['mode', _('SYN/ACK split mode')],
-	['ip_ttl', _('IPv4 TTL')],
-	['ip6_ttl', _('IPv6 Hop Limit')],
-	['ip_autottl', _('IPv4 automatic TTL')],
-	['ip6_autottl', _('IPv6 automatic Hop Limit')],
-	['tcp_seq', _('TCP sequence offset')],
-	['tcp_ack', _('TCP acknowledgement offset')],
-	['tcp_ts', _('TCP timestamp offset')],
-	['tcp_ts_up', 'tcp ts up', 'flag'],
-	['tcp_nop_del', 'tcp nop del', 'flag'],
-	['badsum', 'badsum', 'flag'],
-	['tcp_md5', 'TCP MD5', 'flag'],
-	['ip_id', _('IPv4 IP ID policy')],
-	['ip_id_conn', 'IP ID conn', 'flag'],
-	['ipfrag', _('Enable IP fragmentation'), 'flag'],
-	['ipfrag_disorder', _('Reverse fragment order'), 'flag'],
-	['ipfrag_next', _('Next-header value')],
-	['ipfrag_pos_tcp', 'TCP fragment position'],
-	['ipfrag_pos_udp', 'UDP fragment position'],
-	['ipfrag_pos_icmp', 'ICMP fragment position'],
-	['ipfrag_pos', 'IP fragment position'],
-];
+var STEP_PARAMETER_COLUMNS = fields.columns();
+var STEP_ORDER_DESCRIPTION = _(
+	'Payload and range conditions apply only to actions that follow them in this Profile.',
+);
 function label(type) {
 	return LABELS[type] || type || _('Unknown step');
 }
@@ -179,16 +122,16 @@ function validateCandidate() {
 			warnings.length ? 'warning' : 'success',
 			warnings.length
 				? _(
-						'Validation passed with %d warnings. The current changes can be saved but are not applied.',
+						'Validation passed with %d warnings. Changes have not been saved or applied.',
 					).format(warnings.length)
-				: _('Validation passed. The current changes can be saved but are not applied.'),
+				: _('Validation passed. Changes have not been saved or applied.'),
 		);
 		zui.notifyWarnings(result.diagnostics);
 		return result;
 	});
 }
 function validateCurrentChanges() {
-	setCandidateStatus('notice', _('Validating the current changes…'));
+	setCandidateStatus('warning', _('Validating changes…'));
 	return map
 		.parse()
 		.then(validateCandidate)
@@ -211,6 +154,9 @@ function modalSave(section, modalMap, event) {
 		.then(function () {
 			return section.handleModalCancel(modalMap, event, true);
 		})
+		.then(function () {
+			return rerender();
+		})
 		.catch(function (error) {
 			zui.notifyError(error);
 			return false;
@@ -220,7 +166,21 @@ function rerender() {
 	return map.reset().catch(zui.notifyError);
 }
 function mutate(callback) {
-	return map.parse().then(callback).then(rerender).catch(zui.notifyError);
+	return map
+		.parse()
+		.then(callback)
+		.then(function (result) {
+			invalidateCandidateStatus();
+			return rerender().then(function () {
+				return result;
+			});
+		})
+		.catch(zui.notifyError);
+}
+function toggleProfile(sectionId, enabled) {
+	return mutate(function () {
+		uci.set('zapret2', sectionId, 'enabled', enabled ? '1' : '0');
+	});
 }
 function addStep(profile, type, values) {
 	var id = uniqueId(type);
@@ -237,9 +197,9 @@ function addStep(profile, type, values) {
 function addPreset(kind) {
 	return mutate(function () {
 		if (sections('profile').length >= +(model.info().limits.profiles || 8))
-			throw new Error(_('The maximum number of profiles has been reached.'));
+			throw new Error(_('The maximum number of Profiles has been reached.'));
 		var id = uniqueId(kind);
-		expandedProfiles[id] = true;
+		activeProfileId = id;
 		uci.add('zapret2', 'profile', id);
 		uci.set('zapret2', id, 'id', id);
 		uci.set('zapret2', id, 'order', String(nextOrder('profile')));
@@ -291,16 +251,21 @@ function move(sectionId, type, direction) {
 }
 function removeProfile(id) {
 	zui.confirm(
-		_('Delete profile'),
+		_('Delete Profile'),
 		_('Delete this Profile and all of its ordered steps?'),
 		_('Delete'),
 		function () {
 			return mutate(function () {
+				var profiles = sections('profile'),
+					index = profiles.findIndex(function (profile) {
+						return profile['.name'] === id;
+					}),
+					next = profiles[index + 1] || profiles[index - 1];
 				sections('step', profileId(uci.get('zapret2', id))).forEach(function (step) {
 					uci.remove('zapret2', step['.name']);
 				});
 				uci.remove('zapret2', id);
-				delete expandedProfiles[id];
+				if (activeProfileId === id) activeProfileId = next ? profileId(next) : null;
 			});
 		},
 	);
@@ -334,11 +299,19 @@ function filterSummary(profile) {
 	if (profile.autohostlist === '1') parts.push(_('Automatic hostlist'));
 	return parts.length ? parts.join(' · ') : _('No domain or IP filter');
 }
-function pipeline(profile) {
+function pipelineOverview(profile) {
 	var values = sections('step', profileId(profile)).map(function (step) {
 		return label(step.type);
 	});
-	return values.length ? values.join(' → ') : _('No processing steps');
+	if (!values.length) return _('No processing steps');
+	return _('%d steps').format(values.length) + ' · ' + values.slice(0, 3).join(' → ') +
+		(values.length > 3 ? ' …' : '');
+}
+function overviewLines(primary, secondary) {
+	return E('div', { class: 'left' }, [
+		E('div', {}, primary),
+		secondary ? E('div', { class: 'cbi-value-description' }, secondary) : E([]),
+	]);
 }
 function editProfile(id) {
 	return map
@@ -369,16 +342,6 @@ function removeStep(id) {
 		});
 	});
 	return Promise.resolve(false);
-}
-function stepPanelId(profile) {
-	return 'zapret2-profile-steps-' + String(profile).replace(/[^A-Za-z0-9_-]/g, '_');
-}
-function setStepsExpanded(profile, button, panel, count, expanded) {
-	expandedProfiles[profile] = expanded;
-	panel.hidden = !expanded;
-	panel.style.display = expanded ? '' : 'none';
-	button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-	button.textContent = (expanded ? _('Collapse steps (%d)') : _('Expand steps (%d)')).format(count);
 }
 function stepContext(step) {
 	var context = { payload: [], outRange: '', inRange: '' },
@@ -416,7 +379,7 @@ function stepParameterValue(step, column) {
 	return value == null || value === '' ? '—' : String(value);
 }
 function stepActions(step, steps) {
-	return E('div', { class: 'nowrap' }, [
+	return zui.tableActions([
 		E(
 			'button',
 			{
@@ -426,7 +389,6 @@ function stepActions(step, steps) {
 			},
 			_('Edit'),
 		),
-		' ',
 		E(
 			'button',
 			{
@@ -437,7 +399,6 @@ function stepActions(step, steps) {
 			},
 			_('Up'),
 		),
-		' ',
 		E(
 			'button',
 			{
@@ -448,7 +409,6 @@ function stepActions(step, steps) {
 			},
 			_('Down'),
 		),
-		' ',
 		E(
 			'button',
 			{
@@ -486,26 +446,28 @@ function renderProfileSteps(profile, steps) {
 						STEP_PARAMETER_COLUMNS.map(function (column) {
 							return E('th', { class: 'th' }, column[1]);
 						}),
-						[E('th', { class: 'th cbi-section-actions' }, _('Actions'))],
+							[E('th', { class: 'th center cbi-section-actions', style: 'width:1%;min-width:max-content;text-align:center;white-space:nowrap' }, _('Actions'))],
 					),
 				),
 			])
 		: E('em', {}, _('No processing steps'));
 	if (steps.length) {
 		cbi_update_table(content, rows);
-		content.querySelectorAll('.cbi-section-actions').forEach(function (cell) {
+		content.querySelectorAll('th.cbi-section-actions, td.cbi-section-actions').forEach(function (cell) {
+			cell.style.width = '1%';
+			cell.style.minWidth = 'max-content';
+			cell.style.textAlign = 'center';
+			cell.style.whiteSpace = 'nowrap';
 			cell.style.position = 'sticky';
 			cell.style.right = '0';
 			cell.style.zIndex = cell.tagName === 'TH' ? '3' : '2';
 			if (cell.tagName !== 'TH') cell.style.backgroundColor = 'inherit';
 		});
 	}
-	return E('div', { id: stepPanelId(profile), class: 'cbi-section-node' }, [
-		E(
-			'p',
-			{ class: 'cbi-value-description' },
-			_('Payload and range conditions apply only to actions that follow them in this Profile.'),
-		),
+	return E('div', { class: 'cbi-section-node' }, [
+		steps.length
+			? E('div', { style: 'max-width:100%;overflow-x:auto;overflow-y:visible' }, content)
+			: content,
 		E('div', { class: 'cbi-section-create' }, [
 			E(
 				'button',
@@ -517,159 +479,183 @@ function renderProfileSteps(profile, steps) {
 				_('Add step'),
 			),
 		]),
-		steps.length
-			? E('div', { style: 'max-width:100%;overflow-x:auto;overflow-y:visible' }, content)
-			: content,
 	]);
 }
-function renderCards() {
-	var profiles = sections('profile');
-	var cards = profiles.length
-		? E(
-				[],
-				profiles.map(function (profile, index) {
-					var id = profileId(profile),
-						steps = sections('step', id);
-					var panel = renderProfileSteps(id, steps);
-					var toggle = E('button', {
-						type: 'button',
-						class: 'btn',
-						'aria-controls': stepPanelId(id),
-						click: function (event) {
-							event.preventDefault();
-							setStepsExpanded(id, toggle, panel, steps.length, !expandedProfiles[id]);
-						},
-					});
-					setStepsExpanded(id, toggle, panel, steps.length, !!expandedProfiles[id]);
-					return E('div', { class: 'cbi-section' }, [
-						E('h4', {}, [
-							'%d. %s '.format(index + 1, profile.name || id),
-							zui.badge(
-								profile.enabled === '1' ? _('Enabled') : _('Disabled'),
-								profile.enabled === '1' ? 'success' : 'notice',
-							),
-						]),
-						E(
-							'p',
-							{ class: 'cbi-value-description' },
-							_('Traffic match: %s').format(profileTraffic(profile)),
-						),
-						E(
-							'p',
-							{ class: 'cbi-value-description' },
-							_('Domain/IP filters: %s').format(filterSummary(profile)),
-						),
-						E(
-							'p',
-							{ class: 'cbi-value-description' },
-							_('Processing steps: %s').format(pipeline(profile)),
-						),
-						E('div', { class: 'cbi-page-actions' }, [
-							toggle,
-							' ',
-							E(
-								'button',
-								{
-									type: 'button',
-									class: 'btn cbi-button-action',
-									click: ui.createHandlerFn(null, editProfile, profile['.name']),
-								},
-								_('Edit'),
-							),
-							' ',
-							E(
-								'button',
-								{
-									type: 'button',
-									class: 'btn cbi-button-up',
-									disabled: index === 0 ? true : null,
-									click: ui.createHandlerFn(null, move, profile['.name'], 'profile', -1),
-								},
-								_('Up'),
-							),
-							' ',
-							E(
-								'button',
-								{
-									type: 'button',
-									class: 'btn cbi-button-down',
-									disabled: index === profiles.length - 1 ? true : null,
-									click: ui.createHandlerFn(null, move, profile['.name'], 'profile', 1),
-								},
-								_('Down'),
-							),
-							' ',
-							E(
-								'button',
-								{
-									type: 'button',
-									class: 'btn cbi-button-negative',
-									click: ui.createHandlerFn(null, removeProfile, profile['.name']),
-								},
-								_('Delete'),
-							),
-						]),
-						panel,
-					]);
-				}),
-			)
-		: E('em', {}, _('No profiles configured.'));
-	return E('div', { class: 'cbi-section' }, [
-		E('h3', {}, _('Zapret2 Profiles')),
+function selectProfile(id) {
+	activeProfileId = id;
+	return rerender();
+}
+function profileState(profile) {
+	var enabled = profile.enabled === '1';
+	return zui.badge(enabled ? _('Enabled') : _('Disabled'), enabled ? 'success' : 'notice');
+}
+function profileToggleButton(profile) {
+	var enabled = profile.enabled === '1';
+	return E(
+		'button',
+		{
+			type: 'button',
+			class: 'btn cbi-button-neutral enable-disable',
+			title: enabled ? _('Disable this Profile') : _('Enable this Profile'),
+			click: ui.createHandlerFn(null, toggleProfile, profile['.name'], !enabled),
+		},
+		enabled ? _('Disable') : _('Enable'),
+	);
+}
+function profileOverviewActions(profile, index, profiles, selected) {
+	return zui.tableActions([
 		E(
-			'div',
-			{ class: 'alert-message notice' },
-			_('Packet interception → first matching enabled Profile → ordered processing steps'),
+			'button',
+			{
+				type: 'button',
+				class: 'btn cbi-button-action',
+				disabled: selected ? true : null,
+				click: ui.createHandlerFn(null, selectProfile, profile['.name']),
+			},
+			_('View'),
 		),
 		E(
-			'p',
-			{},
-			_(
-				'Each Profile contains traffic matching conditions and ordered processing steps. Once it matches, later Profiles are not evaluated.',
+			'button',
+			{
+				type: 'button',
+				class: 'btn cbi-button-action',
+				click: ui.createHandlerFn(null, editProfile, profile['.name']),
+			},
+			_('Edit'),
+		),
+		profileToggleButton(profile),
+		E(
+			'button',
+			{
+				type: 'button',
+				class: 'btn cbi-button-up',
+				disabled: index === 0 ? true : null,
+				click: ui.createHandlerFn(null, move, profile['.name'], 'profile', -1),
+			},
+			_('Up'),
+		),
+		E(
+			'button',
+			{
+				type: 'button',
+				class: 'btn cbi-button-down',
+				disabled: index === profiles.length - 1 ? true : null,
+				click: ui.createHandlerFn(null, move, profile['.name'], 'profile', 1),
+			},
+			_('Down'),
+		),
+		E(
+			'button',
+			{
+				type: 'button',
+				class: 'btn cbi-button-negative',
+				click: ui.createHandlerFn(null, removeProfile, profile['.name']),
+			},
+			_('Delete'),
+		),
+	]);
+}
+function addProfileDialog() {
+	var selector = E('select', { class: 'cbi-input-select' }, [
+		E('option', { value: 'blank' }, _('Empty Profile (disabled)')),
+		E('option', { value: 'http' }, _('HTTP conservative (enabled)')),
+		E('option', { value: 'tls' }, _('TLS conservative (enabled)')),
+		E('option', { value: 'quic' }, _('QUIC standard (disabled)')),
+	]);
+	ui.showModal(_('Add Profile'), [
+		zui.sectionDescription(_('Choose a template. All generated fields and steps remain editable before saving.')),
+		E('div', { class: 'cbi-value' }, [
+			E('label', { class: 'cbi-value-title' }, _('Template')),
+			E('div', { class: 'cbi-value-field' }, selector),
+		]),
+		zui.actionRow([
+			E('button', { class: 'btn', click: ui.hideModal }, _('Cancel')),
+			E(
+				'button',
+				{
+					class: 'btn cbi-button-positive',
+					click: function () {
+						ui.hideModal();
+						return addPreset(selector.value);
+					},
+				},
+				_('Add'),
 			),
-		),
-		cards,
+		], 'right'),
+	]);
+	return Promise.resolve(false);
+}
+function renderProfileOverview(profiles) {
+	var table = E('table', { class: 'table cbi-section-table' }, [
+		E('tr', { class: 'tr table-titles' }, [
+			E('th', { class: 'th' }, _('Order')),
+			E('th', { class: 'th left top' }, _('Profile')),
+			E('th', { class: 'th left top' }, _('Traffic match')),
+			E('th', { class: 'th left top' }, _('Filters and steps')),
+			E('th', { class: 'th' }, _('Status')),
+			E('th', { class: 'th cbi-section-actions', style: 'width:1%;white-space:nowrap' }, _('Actions')),
+		]),
+	]);
+	if (profiles.length) {
+		cbi_update_table(
+			table,
+			profiles.map(function (profile, index) {
+				var id = profileId(profile),
+					selected = profile['.name'] === activeProfileId;
+				return [
+					String(index + 1),
+					overviewLines(profile.name || id, id),
+					E('div', { class: 'left' }, profileTraffic(profile)),
+					overviewLines(filterSummary(profile), pipelineOverview(profile)),
+					profileState(profile),
+					profileOverviewActions(profile, index, profiles, selected),
+				];
+			}),
+		);
+	} else {
+		cbi_update_table(table, [], E('em', {}, _('No Profiles are configured.')));
+	}
+	return E('div', { class: 'cbi-section' }, [
+		E('h3', {}, _('Profile order')),
+		zui.sectionDescription(_('The first enabled matching Profile is used. Later Profiles are not evaluated.')),
+		table,
 		E('div', { class: 'cbi-section-create' }, [
 			E(
 				'button',
 				{
 					type: 'button',
 					class: 'btn cbi-button-add',
-					click: ui.createHandlerFn(null, addPreset, 'blank'),
+					click: ui.createHandlerFn(null, addProfileDialog),
 				},
-				_('Add blank profile'),
-			),
-			' ',
-			E(
-				'button',
-				{
-					type: 'button',
-					class: 'btn cbi-button-add',
-					click: ui.createHandlerFn(null, addPreset, 'http'),
-				},
-				_('Add HTTP preset'),
-			),
-			' ',
-			E(
-				'button',
-				{
-					type: 'button',
-					class: 'btn cbi-button-add',
-					click: ui.createHandlerFn(null, addPreset, 'tls'),
-				},
-				_('Add TLS preset'),
-			),
-			' ',
-			E(
-				'button',
-				{
-					type: 'button',
-					class: 'btn cbi-button-add',
-					click: ui.createHandlerFn(null, addPreset, 'quic'),
-				},
-				_('Add QUIC preset'),
+				_('Add Profile'),
 			),
 		]),
+	]);
+}
+function renderProfileWorkspace(profile) {
+	if (!profile)
+		return E('div', { class: 'cbi-section' }, [
+			E('h3', {}, _('Profile workspace')),
+			E('em', {}, _('Add a Profile to configure its filters and processing steps.')),
+		]);
+	var id = profileId(profile),
+		steps = sections('step', id);
+	return E('div', { class: 'cbi-section' }, [
+		E('h3', {}, profile.name || id),
+		zui.sectionDescription(STEP_ORDER_DESCRIPTION),
+		renderProfileSteps(id, steps),
+	]);
+}
+function renderCards() {
+	var profiles = sections('profile');
+	if (!profiles.some(function (profile) { return profile['.name'] === activeProfileId; }))
+		activeProfileId = profiles.length ? profiles[0]['.name'] : null;
+	var active = profiles.find(function (profile) {
+		return profile['.name'] === activeProfileId;
+	});
+	return E('div', {}, [
+		renderProfileOverview(profiles),
+		renderProfileWorkspace(active),
 	]);
 }
 function addStepDialog(profile) {
@@ -677,7 +663,7 @@ function addStepDialog(profile) {
 		.parse()
 		.then(function () {
 			if (!uci.get('zapret2', profile))
-				throw new Error(_('Create a profile before adding a step.'));
+				throw new Error(_('Create a Profile before adding a step.'));
 			if (
 				sections('step').length >= +(model.info().limits.steps || 128) ||
 				sections('step', profile).length >= +(model.info().limits.profile_steps || 32)
@@ -691,18 +677,13 @@ function addStepDialog(profile) {
 				}),
 			);
 			ui.showModal(_('Add ordered step'), [
-				E(
-					'p',
-					{},
-					_('Payload and range steps affect only actions that follow them in this Profile.'),
-				),
+				zui.sectionDescription(STEP_ORDER_DESCRIPTION),
 				E('div', { class: 'cbi-value' }, [
 					E('label', { class: 'cbi-value-title' }, _('Step type')),
 					E('div', { class: 'cbi-value-field' }, selector),
 				]),
-				E('div', { class: 'right' }, [
+				zui.actionRow([
 					E('button', { class: 'btn', click: ui.hideModal }, _('Cancel')),
-					' ',
 					E(
 						'button',
 						{
@@ -710,14 +691,18 @@ function addStepDialog(profile) {
 							click: function () {
 								ui.hideModal();
 								var id = addStep(profile, selector.value, {});
-								return rerender().then(function () {
-									return stepGrid.renderMoreOptionsModal(id);
+								stepGrid.map.addedSection = id;
+								invalidateCandidateStatus();
+								return stepGrid.renderMoreOptionsModal(id).catch(function (error) {
+									uci.remove('zapret2', id);
+									delete stepGrid.map.addedSection;
+									throw error;
 								});
 							},
 						},
 						_('Add'),
 					),
-				]),
+				], 'right'),
 			]);
 		})
 		.catch(zui.notifyError);
@@ -770,7 +755,7 @@ function configureStepOptions(a) {
 	a.tab(
 		'condition',
 		_('Payload and ranges'),
-		_('Payload and range steps affect only later actions in this Profile.'),
+		STEP_ORDER_DESCRIPTION,
 	);
 	a.tab('action', _('Main action'));
 	a.tab('packet', _('Packet headers and sending'));
@@ -796,9 +781,9 @@ function configureStepOptions(a) {
 	range.depends('type', 'out_range');
 	range.depends('type', 'in_range');
 	addList(a, 'action', 'direction', _('Direction'), [
-		['out', _('Outbound')],
-		['in', _('Inbound')],
-		['any', _('Any')],
+		['out', _('Original direction')],
+		['in', _('Reply direction')],
+		['any', _('Any direction')],
 	]);
 	addValue(a, 'action', 'delay', _('Delay (milliseconds)'), 'range(0,60000)');
 	addValue(a, 'action', 'repeats', _('Repeats'), 'range(1,20)');
@@ -843,7 +828,7 @@ function configureStepOptions(a) {
 		'nofake4',
 		'rstack',
 	].forEach(function (name) {
-		addFlag(a, 'action', name, name.replace(/_/g, ' '));
+		addFlag(a, 'action', name, fields.label(name));
 	});
 	addValue(a, 'action', 'sni_snt', _('Existing SNI name type'), 'range(0,255)');
 	addValue(a, 'action', 'sni_snt_new', _('New SNI name type'), 'range(0,255)');
@@ -881,7 +866,7 @@ function configureStepOptions(a) {
 		validator(model.validPosition, _('Use a safe nfqws2 position expression.')),
 	);
 	['seqovl_pattern', 'pattern'].forEach(function (name) {
-		var option = addValue(a, 'action', name, name.replace(/_/g, ' '));
+		var option = addValue(a, 'action', name, fields.label(name));
 		['fake_default_http', 'fake_default_tls', 'fake_default_quic'].forEach(function (item) {
 			option.value(item, item);
 		});
@@ -923,7 +908,7 @@ function configureStepOptions(a) {
 		);
 	});
 	['badsum', 'tcp_md5', 'tcp_ts_up', 'tcp_nop_del', 'ip_id_conn'].forEach(function (name) {
-		addFlag(a, 'packet', name, name.replace(/_/g, ' '));
+		addFlag(a, 'packet', name, fields.label(name));
 	});
 	addList(a, 'packet', 'ip_id', _('IPv4 IP ID policy'), [
 		['seq', _('Sequential')],
@@ -938,7 +923,7 @@ function configureStepOptions(a) {
 			a,
 			'fragment',
 			name,
-			name.replace(/_/g, ' '),
+			fields.label(name),
 			null,
 			validator(model.validFragPos, _('Use a multiple of 8 from 8 to 1480.')),
 		);
@@ -946,31 +931,23 @@ function configureStepOptions(a) {
 }
 function renderValidation() {
 	return E('div', { class: 'cbi-section' }, [
-		E('h3', {}, _('Validate current changes')),
-		E(
-			'p',
-			{},
+		E('h3', {}, _('Validate changes')),
+		zui.sectionDescription(
 			_(
-				'This checks the complete, unsaved configuration with the same compiler used at service start. It does not save the configuration, reload Zapret2, or change traffic handling.',
+				'Validate the current changes with the same compiler used when the service starts. This does not save or apply the configuration.',
 			),
 		),
-		E('div', { class: 'cbi-page-actions' }, [
+		zui.actionRow([
 			E(
 				'button',
 				{ class: 'btn cbi-button-action', click: ui.createHandlerFn(null, validateCurrentChanges) },
-				_('Validate current changes'),
+				_('Validate'),
 			),
 		]),
-		E(
-			'div',
-			{ id: 'zapret2-candidate-status', class: 'alert-message ' + candidateStatus.kind },
-			candidateStatus.message,
-		),
-		E(
-			'p',
-			{ class: 'cbi-value-description' },
+		zui.alertMessage(candidateStatus.message, candidateStatus.kind, { id: 'zapret2-candidate-status' }),
+		zui.sectionDescription(
 			_(
-				'Save validates again before writing. Save & Apply validates, writes the configuration, then reloads the service.',
+				'Save validates the changes before writing them. Save & Apply also reloads the service.',
 			),
 		),
 	]);
@@ -990,19 +967,21 @@ return view.extend({
 	render: function (data) {
 		if (data[1].error)
 			return E('div', { class: 'cbi-map' }, [
-				E('h2', {}, _('Zapret2 strategies')),
-				E('div', { class: 'alert-message error' }, zui.errorText(data[1].error)),
-				E('p', {}, _('Configuration is read-only until the core API and schema versions match.')),
+				zui.pageHeader(_('Profiles'), _('Configure ordered traffic-matching Profiles and processing steps.')),
+				zui.alertMessage(zui.errorText(data[1].error), 'error'),
 			]);
 		model.setInfo(data[1]);
 		lists = (data[2] && data[2].lists) || [];
 		if (uci.get('zapret2', 'main', 'schema_version') !== '2')
-			return E(
-				'div',
-				{ class: 'alert-message error' },
-				_('This page requires Zapret2 UCI schema v2.'),
-			);
-		map = new form.Map('zapret2');
+			return E('div', { class: 'cbi-map' }, [
+				zui.pageHeader(_('Profiles'), _('Configure ordered traffic-matching Profiles and processing steps.')),
+				zui.alertMessage(_('This page requires Zapret2 configuration version 2.'), 'error'),
+			]);
+		map = new form.Map(
+			'zapret2',
+			_('Profiles'),
+			_('Packets use the first enabled matching Profile, then follow its ordered steps.'),
+		);
 		var cards = map.section(form.NamedSection, '_cards');
 		cards.anonymous = true;
 		cards.render = renderCards;
@@ -1099,8 +1078,8 @@ return view.extend({
 			['auto_retrans_threshold', _('Retransmission threshold'), 'range(2,10)'],
 			['auto_retrans_maxseq', _('Maximum retransmission sequence'), 'range(1,16777216)'],
 			['auto_incoming_maxseq', _('Maximum incoming sequence'), 'range(1,16777216)'],
-			['auto_udp_out', _('UDP outbound packets'), 'range(1,64)'],
-			['auto_udp_in', _('UDP inbound packets'), 'range(0,64)'],
+			['auto_udp_out', _('UDP original-direction packets'), 'range(1,64)'],
+			['auto_udp_in', _('UDP reply-direction packets'), 'range(0,64)'],
 		].forEach(function (item) {
 			var q = profileGrid.taboption('auto', form.Value, item[0], item[1]);
 			q.datatype = item[2];
@@ -1138,6 +1117,12 @@ return view.extend({
 			return E([]);
 		};
 		configureStepOptions(stepGrid);
+		var inheritedStepCancel = stepGrid.handleModalCancel;
+		stepGrid.handleModalCancel = function (modalMap, event, isSaving) {
+			return inheritedStepCancel.apply(this, arguments).then(function () {
+				return isSaving ? null : rerender();
+			});
+		};
 		stepGrid.handleModalSave = function (modalMap, event) {
 			return modalSave(this, modalMap, event);
 		};
@@ -1164,7 +1149,7 @@ return view.extend({
 			.then(function (result) {
 				setCandidateStatus(
 					'success',
-					_('Saved and applied. Zapret2 has reloaded this configuration.'),
+					_('Configuration saved and applied. Zapret2 was reloaded.'),
 				);
 				return result;
 			})

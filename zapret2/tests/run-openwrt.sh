@@ -3,7 +3,7 @@
 set -eu
 
 fixture_dir=${1:-.}
-compiler=/usr/libexec/zapret2/compiler.sh
+compiler=${COMPILER:-/usr/libexec/zapret2/compiler.sh}
 mkdir -m 700 -p /var/run/zapret2
 candidate=$(mktemp -d /var/run/zapret2/candidate-XXXXXX)
 current=$(mktemp -d /var/run/zapret2/candidate-XXXXXX)
@@ -76,5 +76,12 @@ if "$compiler" plan-dir "$candidate" >/dev/null 2>&1; then
 	echo 'invalid mark was accepted' >&2
 	exit 1
 fi
+
+cp "$fixture_dir/invalid-queue-mode-overlap" "$candidate/zapret2"
+if "$compiler" plan-dir "$candidate" >"$candidate/overlap.out" 2>&1; then
+	echo 'overlapping initial/keepalive port filters were accepted' >&2
+	exit 1
+fi
+grep -Fq 'TCP port filters must not overlap between initial and keepalive queue modes' "$candidate/overlap.out"
 
 echo 'zapret2 OpenWrt compiler fixtures passed'

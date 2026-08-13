@@ -25,6 +25,7 @@ RULES_STATE=$STATE_DIR/rules.nft
 SUMMARY_STATE=$STATE_DIR/summary
 MANIFEST_STATE=$STATE_DIR/manifest.json
 DIAGNOSTICS_STATE=$STATE_DIR/diagnostics.json
+STATE_FILES='argv applied_hash wan_devices source_devices rules.nft summary manifest.json diagnostics.json'
 MAX_PROFILES=8
 MAX_PROFILE_ITEMS=32
 MAX_ITEMS=128
@@ -213,7 +214,6 @@ load_config() {
 	config_get_bool ipv4 main ipv4 1
 	config_get_bool ipv6 main ipv6 1
 	config_get intercept_mode main intercept_mode marked
-	config_get_bool all_traffic_ack main all_traffic_ack 0
 	config_get_bool process_forwarded main process_forwarded 1
 	config_get_bool process_local main process_local 0
 	config_get connection_mark main connection_mark 0x20000000
@@ -273,6 +273,29 @@ normalize_ports() {
 		valid_port_filter "$value" || { set_error "invalid port filter: $value"; return 1; }
 		case "$value" in \~*|'*') printf '*\n' >"$aggregate" ;; *) grep -Fqx '*' "$aggregate" 2>/dev/null || grep -Fqx "$value" "$aggregate" 2>/dev/null || printf '%s\n' "$value" >>"$aggregate" ;; esac
 	done <"$source"
+}
+
+# Queue mode is enforced by nftables before nfqws2 can select a Profile. A
+# transport port therefore cannot safely use both modes: the unlimited
+# keepalive rule would take precedence over the initial-packet rule for every
+# Profile using that port.
+port_sets_overlap() {
+	awk '
+		FILENAME == ARGV[1] {
+			if ($0 == "*") { any = 1; next }
+			n++
+			if (index($0, "-") > 0) { split($0, p, "-"); lo[n] = p[1] + 0; hi[n] = p[2] + 0 }
+			else { lo[n] = hi[n] = $0 + 0 }
+			next
+		}
+		{
+			if (any || $0 == "*") { found = 1; exit }
+			if (index($0, "-") > 0) { split($0, p, "-"); a = p[1] + 0; b = p[2] + 0 }
+			else { a = b = $0 + 0 }
+			for (i = 1; i <= n; i++) if (a <= hi[i] && b >= lo[i]) { found = 1; exit }
+		}
+		END { exit found ? 0 : 1 }
+	' "$1" "$2"
 }
 valid_icmp() {
 	local value="$1" type code
@@ -689,7 +712,7 @@ validate_values() {
 	[ -z "$input_error" ] || { set_error "$input_error"; return 1; }
 	validate_declared_schema || return 1
 	[ "$schema_version" = 2 ] || { set_error 'incompatible zapret2 configuration; schema_version 2 is required'; return 1; }
-	valid_bool "$enabled" && valid_bool "$ipv4" && valid_bool "$ipv6" && valid_bool "$all_traffic_ack" && valid_bool "$process_forwarded" && valid_bool "$process_local" && valid_bool "$bind_fix4" && valid_bool "$bind_fix6" && valid_bool "$ipcache_hostname" && valid_bool "$ctrack_disable" || { set_error 'boolean options must be 0 or 1'; return 1; }
+	valid_bool "$enabled" && valid_bool "$ipv4" && valid_bool "$ipv6" && valid_bool "$process_forwarded" && valid_bool "$process_local" && valid_bool "$bind_fix4" && valid_bool "$bind_fix6" && valid_bool "$ipcache_hostname" && valid_bool "$ctrack_disable" || { set_error 'boolean options must be 0 or 1'; return 1; }
 	[ "$ipv4" = 1 ] || [ "$ipv6" = 1 ] || { set_error 'IPv4, IPv6, or both must be enabled'; return 1; }
 	[ "$process_forwarded" = 1 ] || [ "$process_local" = 1 ] || { set_error 'enable forwarded traffic, local traffic, or both'; return 1; }
 	case "$intercept_mode" in marked|all) ;; *) set_error 'intercept_mode must be marked or all'; return 1;; esac
@@ -697,7 +720,6 @@ validate_values() {
 	normalize_marks "$include_mark_file" "$input_dir/include.normalized" || return 1
 	normalize_marks "$exclude_mark_file" "$input_dir/exclude.normalized" || return 1
 	if [ "$enabled" = 1 ] && [ "$intercept_mode" = marked ] && [ ! -s "$input_dir/include.normalized" ]; then set_error 'marked interception requires at least one include_mark while enabled'; return 1; fi
-	if [ "$enabled" = 1 ] && [ "$intercept_mode" = all ] && [ "$all_traffic_ack" != 1 ]; then set_error 'all-traffic mode requires explicit risk acknowledgement'; return 1; fi
 	for marks in "$connection_mark" "$generated_mark"; do valid_single_bit_mark "$marks" || { set_error 'internal marks must be nonzero single bits'; return 1; }; done
 	[ "$((connection_mark & generated_mark))" -eq 0 ] || { set_error 'connection and generated-packet marks must not overlap'; return 1; }
 	for number in "$queue_num" "$tcp_out_packets" "$tcp_in_packets" "$udp_out_packets" "$udp_in_packets" "$other_out_packets" "$other_in_packets" "$ipcache_lifetime" "$ctrack_syn_timeout" "$ctrack_established_timeout" "$ctrack_fin_timeout" "$ctrack_udp_timeout" "$lua_gc_interval"; do valid_uint "$number" || { set_error 'queue, packet limits and timeouts must be unsigned integers'; return 1; }; done
@@ -722,6 +744,12 @@ validate_values() {
 		while IFS= read -r entry; do mask=${entry#*/}; [ "$((mask & internal_bits))" -eq 0 ] || { set_error "external mark mask overlaps a reserved internal mark: $entry"; return 1; }; done <"$marks"
 	done
 	generate_args || return 1
+	port_sets_overlap "$tcp_port_file" "$tcp_keepalive_file" && {
+		set_error 'TCP port filters must not overlap between initial and keepalive queue modes'; return 1
+	}
+	port_sets_overlap "$udp_port_file" "$udp_keepalive_file" && {
+		set_error 'UDP port filters must not overlap between initial and keepalive queue modes'; return 1
+	}
 	while IFS= read -r path; do
 		case "$path" in "$AUTO_LIST_DIR"/*.domain) id=${path##*/}; id=${id%.domain}; valid_id "$id" || { set_error 'invalid managed autohostlist path'; return 1; };; *) set_error 'invalid managed autohostlist path'; return 1;; esac
 		[ ! -L "$path" ] && { [ ! -e "$path" ] || [ -f "$path" ]; } || { set_error "managed autohostlist is not a regular file: $path"; return 1; }
@@ -731,9 +759,6 @@ validate_values() {
 	fi
 	validate_disabled_profiles || return 1
 	[ "$(wc -l <"$tcp_port_file")" -le "$MAX_PORT_RANGES" ] && [ "$(wc -l <"$udp_port_file")" -le "$MAX_PORT_RANGES" ] && [ "$(wc -l <"$tcp_keepalive_file")" -le "$MAX_PORT_RANGES" ] && [ "$(wc -l <"$udp_keepalive_file")" -le "$MAX_PORT_RANGES" ] || { set_error 'aggregate port range count exceeds 64 per transport and queue mode'; return 1; }
-	if grep -Fqx '*' "$tcp_port_file" "$udp_port_file" "$tcp_keepalive_file" "$udp_keepalive_file" "$ipp_file" 2>/dev/null && [ "$all_traffic_ack" != 1 ]; then
-		set_error 'wildcard or negated transport interception requires explicit risk acknowledgement'; return 1
-	fi
 	[ "$intercept_mode" != all ] || add_warning 'all-traffic mode can include proxy and VPN tunnels unless external exclusion marks are configured'
 }
 
@@ -1080,12 +1105,13 @@ plan_current() {
 	load_config && validate_all && emit_plan "$1/plan"
 }
 activate_rules() {
-	local plan transaction hash
+	local plan transaction hash backup had_table=0 file
 	load_config || return 1
+	backup=$input_dir/applied-backup
 	if [ "$enabled" != 1 ]; then remove_table; clear_error; return 0; fi
 	validate_all || return 1
 	prepare_autohostlists || return 1
-	mkdir -p "$STATE_DIR"
+	mkdir -p "$STATE_DIR" && chmod 0700 "$STATE_DIR" || { set_error 'cannot secure the runtime state directory'; return 1; }
 	plan=$input_dir/plan; emit_plan "$plan" || { set_error 'cannot stage compiled runtime plan'; return 1; }
 	transaction=$input_dir/transaction.nft
 	cp "$plan/argv" "$ARGV_STATE.new" || { set_error 'cannot stage runtime arguments'; return 1; }
@@ -1097,13 +1123,38 @@ activate_rules() {
 		rm -f "$ARGV_STATE.new" "$RULES_STATE.new" "$SUMMARY_STATE.new" "$MANIFEST_STATE.new" "$DIAGNOSTICS_STATE.new" "$HASH_STATE.new" "$WAN_STATE.new" "$SOURCE_STATE.new"
 		set_error 'cannot stage runtime metadata'; return 1
 	}
-	if nft list table inet "$TABLE" >/dev/null 2>&1; then printf 'delete table inet %s\n' "$TABLE" >"$transaction"; fi
+	mkdir "$backup" || { set_error 'cannot create the runtime rollback directory'; return 1; }
+	if nft list table inet "$TABLE" >/dev/null 2>&1; then
+		had_table=1
+		[ -s "$RULES_STATE" ] || { set_error 'cannot replace an active table without its last known-good rules'; return 1; }
+	fi
+	printf '%s\n' "$had_table" >"$backup/had_table"
+	for file in $STATE_FILES; do
+		[ ! -f "$STATE_DIR/$file" ] || cp "$STATE_DIR/$file" "$backup/$file" || {
+			set_error 'cannot stage the previous runtime state'; return 1
+		}
+	done
+	if [ "$had_table" = 1 ]; then printf 'delete table inet %s\n' "$TABLE" >"$transaction"; fi
 	cat "$plan/rules.nft" >>"$transaction"
 	nft -f "$transaction" || { rm -f "$ARGV_STATE.new" "$HASH_STATE.new" "$WAN_STATE.new" "$SOURCE_STATE.new" "$RULES_STATE.new" "$SUMMARY_STATE.new" "$MANIFEST_STATE.new" "$DIAGNOSTICS_STATE.new"; set_error 'nftables transaction failed; previous rules were preserved'; return 1; }
-	mv "$ARGV_STATE.new" "$ARGV_STATE"; mv "$HASH_STATE.new" "$HASH_STATE"
-	mv "$WAN_STATE.new" "$WAN_STATE"; mv "$SOURCE_STATE.new" "$SOURCE_STATE"
-	mv "$RULES_STATE.new" "$RULES_STATE"; mv "$SUMMARY_STATE.new" "$SUMMARY_STATE"
-	mv "$MANIFEST_STATE.new" "$MANIFEST_STATE"; mv "$DIAGNOSTICS_STATE.new" "$DIAGNOSTICS_STATE"
+	if ! mv "$ARGV_STATE.new" "$ARGV_STATE" || ! mv "$HASH_STATE.new" "$HASH_STATE" ||
+		! mv "$WAN_STATE.new" "$WAN_STATE" || ! mv "$SOURCE_STATE.new" "$SOURCE_STATE" ||
+		! mv "$RULES_STATE.new" "$RULES_STATE" || ! mv "$SUMMARY_STATE.new" "$SUMMARY_STATE" ||
+		! mv "$MANIFEST_STATE.new" "$MANIFEST_STATE" || ! mv "$DIAGNOSTICS_STATE.new" "$DIAGNOSTICS_STATE"; then
+		: >"$backup/restore.nft"
+		nft list table inet "$TABLE" >/dev/null 2>&1 && printf 'delete table inet %s\n' "$TABLE" >>"$backup/restore.nft"
+		[ "$had_table" != 1 ] || cat "$backup/rules.nft" >>"$backup/restore.nft"
+		if nft -f "$backup/restore.nft"; then
+			for file in $STATE_FILES; do
+				rm -f "$STATE_DIR/$file"
+				[ ! -f "$backup/$file" ] || cp "$backup/$file" "$STATE_DIR/$file" || log "failed to restore runtime state file: $file"
+			done
+			set_error 'cannot commit runtime metadata; previous rules and state were restored'
+		else
+			set_error 'cannot commit runtime metadata and nftables rollback failed'
+		fi
+		return 1
+	fi
 	clear_error; log "schema v2 interception installed on $wan_devices (queue $queue_num)"
 }
 

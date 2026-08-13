@@ -2,7 +2,7 @@
 'require baseclass';
 'require ui';
 
-/* Versioned browser helpers for luci-app-zapret2 4.0.0-r10. */
+/* Versioned browser helpers for luci-app-zapret2 4.0.0-r30. */
 
 function errorText(error) {
 	if (!error) return _('Unknown error');
@@ -33,38 +33,39 @@ function notifyWarnings(diagnostics) {
 		ui.addNotification(null, E('p', { style: 'white-space:pre-wrap' }, messages.join('\n')), 'warning');
 }
 
-function notifyInfo(message) {
-	ui.addNotification(null, E('p', { style: 'white-space:pre-wrap' }, message), 'info');
-}
-
-function copyText(text) {
-	text = String(text || '');
-	if (!text) return Promise.resolve();
-	if (navigator.clipboard && navigator.clipboard.writeText)
-		return navigator.clipboard.writeText(text).then(function() { notifyInfo(_('Copied to clipboard.')); }).catch(notifyError);
-	var node = E('textarea', { style: 'position:fixed;left:-10000px;top:-10000px;opacity:0' });
-	node.value = text;
-	document.body.appendChild(node);
-	node.focus();
-	node.select();
-	try { document.execCommand('copy'); notifyInfo(_('Copied to clipboard.')); }
-	catch (error) { notifyError(error); }
-	node.remove();
-	return Promise.resolve();
-}
-
 function badge(text, kind) {
-	return E('span', { class: 'label ' + (kind || 'notice') }, text);
+	kind = kind || 'notice';
+	return E('span', { class: 'label ' + kind }, text);
 }
 
-function configState(value) {
-	return ({
-		applied: [ _('Applied'), 'success' ],
-		reload_required: [ _('Reload required'), 'warning' ],
-		disabled: [ _('Disabled'), 'notice' ],
-		stopped: [ _('Stopped unexpectedly'), 'warning' ],
-		incompatible: [ _('Incompatible schema'), 'warning' ]
-	}[value] || [ value || _('Unknown'), 'warning' ]);
+function actionRow(buttons, className, attributes) {
+	var content = [];
+	(buttons || []).filter(Boolean).forEach(function(button) {
+		if (content.length) content.push(' ');
+		content.push(button);
+	});
+	return E('div', Object.assign({ class: className || 'cbi-page-actions' }, attributes || {}), content);
+}
+
+function tableActions(buttons) {
+	return actionRow(buttons, 'nowrap', {
+		style: 'display:inline-flex;gap:.25rem;justify-content:center;white-space:nowrap',
+	});
+}
+
+function pageHeader(title, description) {
+	return E([], [
+		E('h2', {}, title),
+		description ? E('div', { class: 'cbi-map-descr' }, description) : E([])
+	]);
+}
+
+function sectionDescription(text) {
+	return E('p', { class: 'cbi-section-descr' }, text);
+}
+
+function alertMessage(text, kind, attributes) {
+	return E('div', Object.assign({ class: 'alert-message ' + (kind || 'notice') }, attributes || {}), text);
 }
 
 function counter(data, key) {
@@ -72,16 +73,11 @@ function counter(data, key) {
 	return value && Number(value.packets) || 0;
 }
 
-function stringify(value) {
-	return value == null ? '' : JSON.stringify(value, null, 2);
-}
-
 function confirm(title, message, label, callback) {
 	ui.showModal(title, [
-		E('p', {}, message),
-		E('div', { class: 'right' }, [
+		sectionDescription(message),
+		actionRow([
 			E('button', { class: 'btn', click: ui.hideModal }, _('Cancel')),
-			' ',
 			E('button', {
 				class: 'btn cbi-button-negative important',
 				click: function() {
@@ -89,7 +85,7 @@ function confirm(title, message, label, callback) {
 					return Promise.resolve(callback()).catch(notifyError);
 				}
 			}, label || _('Confirm'))
-		])
+		], 'right')
 	]);
 }
 
@@ -97,11 +93,12 @@ return baseclass.extend({
 	errorText: errorText,
 	notifyError: notifyError,
 	notifyWarnings: notifyWarnings,
-	notifyInfo: notifyInfo,
-	copyText: copyText,
 	badge: badge,
-	configState: configState,
+	actionRow: actionRow,
+	tableActions: tableActions,
+	pageHeader: pageHeader,
+	sectionDescription: sectionDescription,
+	alertMessage: alertMessage,
 	counter: counter,
-	stringify: stringify,
 	confirm: confirm
 });

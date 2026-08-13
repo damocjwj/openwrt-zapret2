@@ -4,24 +4,34 @@ set -eu
 
 CONFIG=/etc/config/zapret2
 BACKUP=$(mktemp /tmp/zapret2-device-config.XXXXXX)
-TEST_TABLE=zapret2_contract_test
-TEST_LIST=contract_runtime
+TEST_TABLE=zapret2_contract_$$
+TEST_LIST=contract_$$
+TEST_LIST_CREATED=0
 NIKKI_STOPPED=0
+ZAPRET2_WAS_RUNNING=0
 
 cp "$CONFIG" "$BACKUP"
 
 cleanup() {
 	set +e
 	nft delete table inet "$TEST_TABLE" 2>/dev/null
-	rm -f "/etc/zapret2/lists/$TEST_LIST.domain"
+	[ "$TEST_LIST_CREATED" != 1 ] || rm -f "/etc/zapret2/lists/$TEST_LIST.domain"
 	cp "$BACKUP" "$CONFIG"
 	rm -f "$BACKUP"
 	/etc/init.d/zapret2 stop >/dev/null 2>&1
+	[ "$ZAPRET2_WAS_RUNNING" != 1 ] || /etc/init.d/zapret2 start >/dev/null 2>&1
 	if [ "$NIKKI_STOPPED" = 1 ]; then
 		/etc/init.d/nikki start >/dev/null 2>&1
 	fi
 }
 trap cleanup EXIT INT TERM
+
+/etc/init.d/zapret2 running >/dev/null 2>&1 && ZAPRET2_WAS_RUNNING=1
+[ ! -e "/etc/zapret2/lists/$TEST_LIST.domain" ] || {
+	echo "test list already exists: $TEST_LIST" >&2
+	exit 1
+}
+/etc/init.d/zapret2 stop >/dev/null 2>&1 || true
 
 status_value() {
 	ubus call zapret2 status '{"api_version":1,"schema_version":2}' | jsonfilter -e "@.data.$1"
@@ -30,6 +40,7 @@ status_value() {
 ubus call zapret2 list_put \
 	"{\"api_version\":1,\"schema_version\":2,\"id\":\"$TEST_LIST\",\"type\":\"domain\",\"content\":\"www.bilibili.com\\n\"}" \
 	| grep -Fq '"ok": true'
+TEST_LIST_CREATED=1
 [ "$(ls -ldn /etc/zapret2/lists | awk '{print $1":"$4}')" = 'drwxr-x---:1' ]
 [ "$(ls -ln "/etc/zapret2/lists/$TEST_LIST.domain" | awk '{print $1":"$4}')" = '-rw-r-----:1' ]
 

@@ -2,7 +2,7 @@
 'require baseclass';
 'require rpc';
 
-/* Versioned browser client for luci-app-zapret2 4.0.0-r10. */
+/* Versioned browser client for luci-app-zapret2 4.0.0-r30. */
 
 var API_VERSION = 1;
 var SCHEMA_VERSION = 2;
@@ -43,9 +43,7 @@ function invoke(fn, args) {
 
 var callInfo = call('info');
 var callStatus = call('status');
-var callRuntime = call('runtime', [ 'include_argv', 'include_rules' ]);
 var callValidate = call('validate', [ 'candidate' ]);
-var callPlan = call('plan', [ 'candidate', 'include_rules' ]);
 var callService = call('service', [ 'action' ]);
 var callListIndex = call('list_index');
 var callListGet = call('list_get', [ 'id', 'type' ]);
@@ -59,13 +57,7 @@ return baseclass.extend({
 	SCHEMA_VERSION: SCHEMA_VERSION,
 	info: function() { return invoke(callInfo); },
 	status: function() { return invoke(callStatus); },
-	runtime: function(includeArgv, includeRules) {
-		return invoke(callRuntime, [ includeArgv === true, includeRules === true ]);
-	},
 	validate: function(candidate) { return invoke(callValidate, [ candidate || {} ]); },
-	plan: function(candidate, includeRules) {
-		return invoke(callPlan, [ candidate || {}, includeRules === true ]);
-	},
 	service: function(action) { return invoke(callService, [ action ]); },
 	listIndex: function() { return invoke(callListIndex); },
 	listGet: function(id, type) { return invoke(callListGet, [ id, type ]); },

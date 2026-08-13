@@ -25,7 +25,7 @@ config profile 'tcp_actions'
 	option order '10'
 	option family 'dual'
 	option queue_mode 'keepalive'
-	list tcp_port '~22'
+	list tcp_port '22'
 	list l7 'tls'
 
 config step 's_payload'

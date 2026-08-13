@@ -6,6 +6,10 @@ WORK=$(mktemp -d /tmp/zapret2-nikki-chain.XXXXXX)
 cp /etc/config/zapret2 "$WORK/zapret2"
 uci -q export nikki >"$WORK/nikki.uci"
 cp /etc/nikki/mixin.yaml "$WORK/mixin.yaml"
+NIKKI_WAS_RUNNING=0
+ZAPRET2_WAS_RUNNING=0
+/etc/init.d/nikki running >/dev/null 2>&1 && NIKKI_WAS_RUNNING=1
+/etc/init.d/zapret2 running >/dev/null 2>&1 && ZAPRET2_WAS_RUNNING=1
 
 cleanup() {
 	rc=$?
@@ -14,15 +18,16 @@ cleanup() {
 	/etc/init.d/zapret2 stop >/dev/null 2>&1
 	cp "$WORK/zapret2" /etc/config/zapret2
 	uci -q commit zapret2
+	[ "$ZAPRET2_WAS_RUNNING" != 1 ] || /etc/init.d/zapret2 start >/dev/null 2>&1
 	cp "$WORK/mixin.yaml" /etc/nikki/mixin.yaml
 	uci -q revert nikki
 	uci -q import nikki <"$WORK/nikki.uci"
-	original_test_profile=$(uci -q get nikki.config.test_profile)
-	uci -q set nikki.config.test_profile='0'
 	uci -q commit nikki
-	/etc/init.d/nikki restart >/dev/null 2>&1
-	uci -q set nikki.config.test_profile="${original_test_profile:-1}"
-	uci -q commit nikki
+	if [ "$NIKKI_WAS_RUNNING" = 1 ]; then
+		/etc/init.d/nikki restart >/dev/null 2>&1
+	else
+		/etc/init.d/nikki stop >/dev/null 2>&1
+	fi
 	rm -rf "$WORK"
 	exit "$rc"
 }
